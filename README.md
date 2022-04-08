@@ -16,26 +16,26 @@ Scrum Master:
 ## GIT TUTORIAL
 ### Primeira configuração
 
-- Pelo terminal entre na pasta onde irá guardar o projeto: cd /caminho/para/a/pasta, depois inicialize o git na pasta com o comando: git init 
+- Pelo terminal entre na pasta onde irá guardar o projeto: `cd /caminho/para/a/pasta`, depois inicialize o git na pasta com o comando: `git init` 
 
 - Outro jeito de fazer o citado acima: clique com o botão direito na pasta e selecione "Git Bash Here" para abrir o terminal do git
 
-- Crie um clone do repositório: git clone link-para-o-repositorio
+- Crie um clone do repositório: `git clone link-para-o-repositorio`
 
-- Entre na pasta criada pelo comando clone: cd /caminho/para/a/pasta/nova
+- Entre na pasta criada pelo comando clone: `cd /caminho/para/a/pasta/nova`
 
-- Crie sua branch usando como o padrão o nome da feature que você está a desenvolver: git checkout -b frontend_painel_adm
+- Crie sua branch usando como o padrão o nome da feature que você está a desenvolver: `git checkout -b frontend_painel_adm`
 
 - Após criada a branch você será redirecionado automaticamente a ela, neste espaço que você desenvolverá sua parte do projteto
 
 ### Rotina
-- Adicione as alterações feitas: git add .
+- Adicione as alterações feitas: `git add .`
 
-- Cheque em qual branch está e quais alterações foram adicionadas: git status
+- Cheque em qual branch está e quais alterações foram adicionadas: `git status`
 
-- Dê um commit com uma mensagem especificando as alterações realizadas: git commit -m "mensagem especificando o que foi feito"
+- Dê um commit com uma mensagem especificando as alterações realizadas: `git commit -m "mensagem especificando o que foi feito"`
 
-- Envie o commit feito para sua branch: git push origin suabranch
+- Envie o commit feito para sua branch: `git push origin suabranch`
 
 ### Quando estiver tudo prontinho
 - Volte para a main: `git checkout main`
