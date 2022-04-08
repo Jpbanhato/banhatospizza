@@ -38,37 +38,37 @@ Scrum Master:
 - Envie o commit feito para sua branch: git push origin suabranch
 
 ### Quando estiver tudo prontinho
-- Volte para a main: git checkout main
+- Volte para a main: `git checkout main`
 
-- Atualize a main: git pull
+- Atualize a main: `git pull`
 
-- Volte para a sua branch: git checkout nomedabranch
+- Volte para a sua branch: `git checkout nomedabranch`
 
-- Mescle a main com a sua branch : git merge main
+- Mescle a main com a sua branch : `git merge main`
 
-- Confirme o merge (apenas quando solicitado pelo Scrum Master): git push origin suabranch
+- Confirme o merge (apenas quando solicitado pelo Scrum Master): `git push origin suabranch`
 
 - Espera a confirmação do seu SCRUM 
 
-- Volte para a main: git checkout main
+- Volte para a main: `git checkout main`
 
-- Mescle a main com as alterações enviadas para sua branch (apenas quando solicitado pelo SM): git merge suabranch
+- Mescle a main com as alterações enviadas para sua branch (apenas quando solicitado pelo SM): `git merge suabranch`
 
-- Confirme o merge (apenas quando solicitado pelo SM): git push origin main
+- Confirme o merge (apenas quando solicitado pelo SM): `git push origin main`
 
 ### Comandos básicos
-- Para atualizar a main: git pull
+- Para atualizar a main: `git pull`
 
-- Para atualizar alguma branch: git pull origin branch
+- Para atualizar alguma branch: `git pull origin branch`
 
-- Ver informações da branch: git status
+- Ver informações da branch: `git status`
 
-- Para trocar de branch: git checkout branch_desejada
+- Para trocar de branch: `git checkout branch_desejada`
 
-- Adicionar todas as alterações feitas: git add .
+- Adicionar todas as alterações feitas: `git add .`
 
-- Adicionar alteração específica: git add arquivo-especifico
+- Adicionar alteração específica: `git add arquivo-especifico`
 
-- Para mesclar sua branch com a master (estando dentro da sua branch): git merge main
+- Para mesclar sua branch com a master (estando dentro da sua branch): `git merge main`
 
-- Para confirmar o merge: git push origin suabranch
+- Para confirmar o merge: `git push origin suabranch`
