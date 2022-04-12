@@ -1,20 +1,51 @@
-body{
-    background-color: #470000;
+@font-face {
+    font-family: "BakerieBold";
+    src: url('../assets/fonts/BakerieBold.otf');
 }
 
+body{
+    background-color: black;
+    font-family: BakerieBold;
+}
 
 .barra-titulo{
     height: 80px;
     color:#ecd393;
+    padding-left: 20px;
 }
 
 .barra-titulo h1{
+    font-family: BakerieBold;
     line-height: 80px;
+    border-left: 100px;
 }
 
 .imagem-fundo{
     height: 800px;
     margin-top: 10px;
-    opacity:0.5;
-    overflow: hidden;
+    opacity:0.55;
+}
+
+.historia{
+    height: 100%;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 30px;
+    opacity: none;
+}
+
+.historia h1{
+    font-size: 50px;
+    color: #ecd393;
+    text-transform: uppercase;
+    margin-top: 0px;
+}
+
+.historia p{
+    color: white;
+    text-transform: none;
+    font-weight:100;
+    margin-top: 0px;
+    font-size: 27px;
+    width: 35%;
 }
