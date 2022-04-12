@@ -1,4 +1,20 @@
+body{
+    background-color: #470000;
+}
+
+
 .barra-titulo{
     height: 80px;
-    background-color: grey;
+    color:#ecd393;
+}
+
+.barra-titulo h1{
+    line-height: 80px;
+}
+
+.imagem-fundo{
+    height: 800px;
+    margin-top: 10px;
+    opacity:0.5;
+    overflow: hidden;
 }
