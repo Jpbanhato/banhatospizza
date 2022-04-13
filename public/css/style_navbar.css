@@ -1,0 +1,27 @@
+.navigation {
+    background-color: #301506;
+}
+
+.nav-link {
+    color: #eff0ea;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav-link:hover {
+    color: #ecd393;
+    text-decoration: none;
+}
+
+.nav-img {
+    margin-left: 20px;
+}
+
+.navbar-nav {
+    margin-left: auto;
+    margin-right: 100px;
+}
+
+.navbar-toggler {
+    border-color: #eff0ea;
+}
