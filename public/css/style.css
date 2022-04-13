@@ -28,35 +28,39 @@ body h1{
     font-size:large;
 }
 
+.barra-titulo li{
+    padding-top: 1%;
+}
+
 .barra-titulo .crumb {
     color: ivory;
     font-size: large;
+    padding-top: 1%;
 }
 
 .barra-titulo h1{
     font-family: BakerieBold;
-    line-height: 80px;
-    border-left: 100px;
+    line-height: 100%;
+    border-left: 10%;
 }
 
 
 .texto-institucional{
     width: 100%;
-    opacity: 0.5;
+    height: 40%;
     border-radius: 2%;
+    background-repeat: no-repeat;
+    position: relative;
 }
 
 .texto-institucional p{
-    opacity: 1;
     color: ivory;
     text-transform: none;
     font-weight:100;
-    margin-top: 0px;
-    font-size: 27px;
-    width: 35%;
+    font-size: 1.5rem;
+    width: 40%;
     height: 100%;
-    padding: 30px;
-    opacity: 1;
+    padding: 5%;
 }
 
 .texto-institucional h1{
@@ -91,5 +95,10 @@ body h1{
 @media(max-width:1500px){
     .texto-institucional p{
         width: 100%;
+    }
+
+    .preceitos{
+        display: block;
+        width: 80%;
     }
 }
