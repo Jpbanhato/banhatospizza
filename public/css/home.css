@@ -1,0 +1,51 @@
+.latestProducts {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: var(--marrom);
+  gap: 40px;
+}
+
+.lpTitle {
+  color: var(--amarelo);
+  text-transform: uppercase;
+}
+
+.lpCards {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row nowrap;
+  justify-content: center;
+  width: 70%;
+  gap: 50px;
+}
+
+.card {
+  height: 300px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 15px;
+}
+
+.card img {
+  width: 90%;
+  border-radius: 15px;
+  transition: all 0.3s;
+}
+
+.card h5 {
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  color: var(--marrom) !important;
+}
+
+.card img:hover {
+  transform: scale(1.1);
+  border: 3px solid var(--amarelo) !important;
+}
