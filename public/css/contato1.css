@@ -35,6 +35,8 @@ body {
 .card {
     display: inline-block;
     margin: auto;
+    margin-bottom: 3%;
+    
 }
 
 
