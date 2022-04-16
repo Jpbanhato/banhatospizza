@@ -3,9 +3,12 @@
     src: url('../assets/fonts/BakerieBold.otf');
 }
 
+h1{
+    font-family: BakerieBold;
+}
+
 body{
     background-color: #301506;
-    font-family: BakerieBold;
 }
 
 body h1{
@@ -43,27 +46,32 @@ body h1{
     font-family: BakerieBold;
     line-height: 100%;
     border-left: 10%;
+    text-align: center;
 }
 
+.blackbox{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.58;
+    color: ivory;
+}
 
-.texto-institucional{
+.imagem-fundo{
     width: 100%;
     height: 40%;
     border-radius: 2%;
     background-repeat: no-repeat;
     position: relative;
-    opacity: 0.5;
 }
 
-.texto-institucional p{
+.texto-institucional{
     color: ivory;
-    text-transform: none;
     font-weight:100;
-    font-size: 1.5rem;
-    width: 40%;
+    font-size: 1.3rem;
+    width: 50%;
     height: 100%;
     padding: 5%;
-    opacity: 1;
 }
 
 .texto-institucional h1{
@@ -73,13 +81,17 @@ body h1{
     padding-left: 15px;
 }
 
+.caixas{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
 .preceitos{
-    font-size: 30px;
-    display: inline-block;
+    font-size: 1.3rem;
     height: fit-content;
     width: 27%;
-    margin-left:3%;
-    margin-right: 3%;
+    height: 15%;
     margin-top: 3%;
     margin-bottom: 3%;
     text-align: center;
@@ -87,24 +99,29 @@ body h1{
     transition: 0.5s;
     padding: 1%;
     border-radius: 5%;
+    box-shadow: 0 0 1em black;
 }
 
 .preceitos:hover{
-    box-shadow: 0 0 1em black;
+    box-shadow: 0 0 2em black;
     transition: 0.5s;
 }
-
 .carrossel{
     padding: 3%;
 }
 
 @media(max-width:1000px){
-    .texto-institucional p{
+    .texto-institucional{
         width: 100%;
     }
 
+    .caixas{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .preceitos{
-        display: block;
         width: 80%;
     }
 }
