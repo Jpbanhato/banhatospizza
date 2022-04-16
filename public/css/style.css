@@ -3,12 +3,12 @@
     src: url('../assets/fonts/BakerieBold.otf');
 }
 
-h1{
-    font-family: BakerieBold;
-}
-
 body{
     background-color: #301506;
+}
+
+h1{
+    font-family: "BakerieBold";
 }
 
 body h1{
@@ -43,7 +43,6 @@ body h1{
 }
 
 .barra-titulo h1{
-    font-family: BakerieBold;
     line-height: 100%;
     border-left: 10%;
     text-align: center;
@@ -99,7 +98,11 @@ body h1{
     transition: 0.5s;
     padding: 1%;
     border-radius: 5%;
-    box-shadow: 0 0 1em black;
+    box-shadow: 0 0 1rem black;
+}
+
+.preceitos h1{
+    font-family: 'BakerieBold';
 }
 
 .preceitos:hover{
