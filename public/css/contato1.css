@@ -1,15 +1,13 @@
 body {
 
+    text-align: center;
     padding: 0;
     margin-left: 5%;
+    margin-right: 5%;
     background-color: #301506;
-    
-    
-}
-
-@font-face {
     font-family: "Bakeriebold" ;
     src: url('../assets/fonts/Bakeriebold.otf');
+    
 }
 
 
@@ -32,17 +30,16 @@ body {
 
 
 
+
+.mb-3 {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
 .form-label {
     color: #eff0ea;
+    font-size: 20px;
 }
-
-
-.form-control {
-    width: 50%;
-
-}
-
-
 
 
 
@@ -53,6 +50,7 @@ body {
 }
 
 .maps iframe {
-    width: 50%;
+    width: 70%;
+    margin-bottom: 3%;
 
 }
