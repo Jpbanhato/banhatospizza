@@ -8,10 +8,7 @@ main {
   padding: 2rem 0;
 }
 
-.carousel-item img {
-  max-width: 1200px;
-  max-height: 670px;
-}
+
 
 .carousel-caption {
   color: var(--amarelo);
