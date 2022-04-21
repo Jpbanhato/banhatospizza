@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "BakerieBold";
+  src: url('../assets/fonts/BakerieBold.otf');
+}
+
+h1 {
+  font-family: BakerieBold;
+}
