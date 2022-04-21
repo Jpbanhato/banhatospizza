@@ -24,7 +24,6 @@ main {
 
 .lp-title {
   color: var(--amarelo);
-  text-transform: uppercase;
 }
 
 .lp-cards {
@@ -48,7 +47,7 @@ main {
 }
 
 .card img {
-  width: 100%;
+  width: 90%;
   border-radius: 15px;
   transition: all 0.3s;
 }
@@ -60,6 +59,5 @@ main {
 }
 
 .card img:hover {
-  transform: scale(1.1);
-  border: 3px solid var(--amarelo) !important;
+  transform: scale(1.05);
 }
