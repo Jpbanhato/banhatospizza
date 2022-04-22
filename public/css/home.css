@@ -8,8 +8,6 @@ main {
   padding: 2rem 0;
 }
 
-
-
 .carousel-caption {
   color: var(--amarelo);
 }
@@ -55,10 +53,69 @@ main {
 
 .card h5 {
   font-weight: 700;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto';
   color: var(--marrom) !important;
 }
 
 .card img:hover {
   transform: scale(1.05);
+}
+
+.call-to-action {
+  margin: 10px 11%;
+}
+
+.cta-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 20px;
+  padding: 0 3%;
+}
+
+.quem-somos {
+  background-color: var(--amarelo);
+}
+
+.contato {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: var(--amarelo);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.image-cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-cta img{
+  height: 500px;
+  width: 500px;
+}
+
+.text-cta {
+  width: 50%;
+}
+
+.text-cta h2 {
+  font-family: 'BakerieBold';
+  margin-bottom: 20px;
+}
+
+.text-cta p {
+  margin-bottom: 25px;
+  font-size: large;
+}
+
+.btn-cta {
+  background-color: var(--marrom);
+  color: white;
+  border-radius: 15px;
+  width: 160px;
+  box-shadow: 2px 2px 30px rgba(72, 73, 2, 0.556);
 }
