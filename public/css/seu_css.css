@@ -7,6 +7,10 @@ body{
     background-color: #301506;
 }
 
+a{
+    text-decoration: none;
+}
+
 h1 {
     font-family: BakerieBold;
     color: #ecd393;
@@ -19,8 +23,10 @@ h1 {
 }
 
 .main{
-    padding-left: 20%;
+    padding-top: 2%;
+    padding-left: 15%;
     padding-right: 20%;
+    padding-bottom: 5%;
 }
 
 .container{
@@ -44,15 +50,69 @@ h1 {
     padding: 3%;
     border-radius: 15%;
 }
+.produto h1{
+    font-size:xx-large;
+    color: #e4c26e;
+}
 
 .produto_txt{
     padding-left: 5%;
 }
 
-.produto h2{
-    font-size: medium;
-}
-
 .produto p{
     font-size:medium;
+}
+
+.botao {
+    display:flex;
+    flex-direction: row;
+    font-family: BakerieBold;
+    justify-content: center;
+    font-size: medium;
+    text-decoration: none;
+    background-color: #2e0000;
+    width: 30%;
+    height: 1.8rem;
+    border-radius: 10%;
+}
+
+.botao a{
+    color: #eff0ea;
+}
+
+.porcao{
+    background-color: rgb(223, 203, 27);
+}
+
+.entrada{
+    background-color: #8f0e0e;
+}
+
+.pizza{
+    background-color: #301506;
+}
+
+.calzone{
+    background-color: #381515;
+}
+
+.sobremesa{
+    background-color: rgb(201, 85, 104);
+}
+
+.cafe{
+    background-color: black;
+}
+
+.digestivos{
+    background-color: limegreen;
+}
+
+.queijos-frutas{
+    background-color: rgba(226, 226, 98, 0.514);
+    color:black
+}
+
+.bebida{
+    background-color: aqua;
 }
