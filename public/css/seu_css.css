@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: #301506;
+    background-color: rgb(83, 78, 78);
 }
 
 a{
@@ -18,10 +18,28 @@ h1 {
 
 .indicacao{
     display: flex;
-    height:5rem;
-    line-height: 5rem;
+    height:6rem;
+    line-height: 100px;
     font-size: larger;
-    justify-content: center;
+    justify-content: space-around;
+}
+
+.indicacao h1{
+    width: 10rem;
+    font-size: 2rem;
+    padding-top: 1%;
+}
+
+.filter{
+    display: flex;
+    background-color: rgb(83,78,78);
+    padding-left: 10%;
+}
+
+.bot{
+    font-family: BakerieBold;
+    color:#ecd393;
+    border: #ecd393;
 }
 
 .main{
@@ -99,9 +117,12 @@ h1 {
     padding-left: 5%;
 }
 
-.produto p{
-    font-size:medium;
+.desc{
+    font-size: medium;
+    line-height: 50%;
+    padding-top: 5%;
 }
+
 
 .botao {
     display:flex;
@@ -111,8 +132,9 @@ h1 {
     font-size: medium;
     text-decoration: none;
     background-color: #2e0000;
-    width: 30%;
+    width: 40%;
     height: 1.8rem;
+    padding-bottom: 0%;
     border-radius: 10%;
     color:#eff0ea;
 }
