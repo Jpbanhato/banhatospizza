@@ -19,14 +19,14 @@ h1 {
 .indicacao{
     display: flex;
     height:6rem;
-    line-height: 100px;
+    line-height: 6rem;
     font-size: larger;
     justify-content: space-around;
 }
 
 .indicacao h1{
     width: 10rem;
-    font-size: 2rem;
+    font-size: 3.2rem;
     padding-top: 1%;
 }
 
@@ -39,7 +39,7 @@ h1 {
 .bot{
     font-family: BakerieBold;
     color:#ecd393;
-    border: #ecd393;
+    border-radius: 10%;
 }
 
 .main{
@@ -238,5 +238,22 @@ h1 {
 
     .pagina{
         padding-left: 0;
+    }
+
+    .indicacao{
+        display: block;
+        width: 100vw;
+    }
+    
+    .container{
+        padding-top: 10%;
+    }
+
+    .indicacao h1{
+        padding-left: 10%;
+    }
+
+    .nav{
+        width: 14rem;
     }
 }
