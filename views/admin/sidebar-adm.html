@@ -18,30 +18,22 @@
 
 <body>
 
-  <a class="btn btn-primary botao-primario" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
-    aria-controls="offcanvasExample">
-    botão sidebar
-  </a>
-
+  <div class="botao-primario1">
+    <a class="btn btn-primary botao-primario2" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+      aria-controls="offcanvasExample"> <i class="bi bi-list"></i> </a>
+  </div>
   <!-- 
-
-  FAZER A BARRA LATERAL PARA APARECER SOMENTE OS ÍCONES.
   COLOCAR UM FLEXBOX PARA CONSEGUIR COLOCAR TODOS OS ELEMENTOS NO LUGAR CERTO.
--->
+  -->
 
-  <div class="container flebox_cont">
-
+  <div class="container flexbox_cont">
 
     <div class="offcanvas offcanvas-start inicio-sidebar" tabindex="-1" id="offcanvasExample"
       aria-labelledby="offcanvasExampleLabel">
       <div class="offcanvas-header titulo-topo">
+        <img src="/public/assets/Icone Redondo sem Fundo.png">
         <h5 class="offcanvas-title" id="offcanvasExampleLabel">Banhatos Pizza</h5>
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        <!-- 
-      Colocar o ícone da pizzaria ao lado do título
-      Mudar as fontes 
-
-    -->
+        <button type="button" class="btn-close text-reset botao-fechar" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 
       </div>
 
@@ -53,21 +45,10 @@
 
 
         <ul class="listas">
-          <!-- 
-          Colocar os links para as outras páginas.
-          Colocar um ID ou um target_blank para levar o usuário para a aba desejada. 
-          
-          CSS -> .corpo-sidebar ul {
-              background-color:;
-            }
 
-
-
-        -->
-
-          <li> <i class="bi bi-people"></i> <a class="#" href="#"></a> Usuários</li>
-          <li> <i class="bi bi-list-nested"></i> <a class="#" href="#"></a> Categorias</li>
-          <li> <i class="bi bi-boxes"></i> <a class="#" href="#"></a> Produtos</li>
+          <li> <i class="bi bi-people"></i> <a class="usuarios-1" href="usuarios.html"> Usuários </a></li>
+          <li> <i class="bi bi-list-nested"></i> <a class="categorias-1" href="categorias.html"> Categorias </a></li>
+          <li> <i class="bi bi-boxes"></i> <a class="produtos-1" href="produtos.html"> Produtos </a></li>
 
 
         </ul>
@@ -75,9 +56,9 @@
         <div class="botao-logout1">
           <button type="button" class="btn btn-primary botao-logout2" data-bs-toggle="modal"
             data-bs-target="#exampleModal">
-            Logout
+            Logout <i class="bi bi-box-arrow-right"></i>
           </button>
-
+      
           <!-- Modal -->
           <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -97,21 +78,9 @@
             </div>
           </div>
         </div>
-          <!-- 
-        Botão de logout.
-        Criar um background somente para ele.
-        Colocar o ícone para clicar e aparecer a opção de sair.
-        colocar um hover vermelho no css.
-        Colocar um modal para ativar uma mensagem que confirma se o usuário quer sair ou não.
-        COMO COLOCAR NA PARTE INFERIOR ESQUERDA ? 
-
-      -->
-        </div>
-
-      </div>
 
     </div>
-  </div>
+    </div>
   </div>
   <!-- Dentro da sidebar-->
 

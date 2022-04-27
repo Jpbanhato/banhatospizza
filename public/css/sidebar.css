@@ -5,24 +5,50 @@
 
 
 
-.botao-primario {
-    background-color: green;
+.botao-primario2 {
+    background-color: #301506;
+    color: #ecd393;
+    border: none;
 }
+
+.botao-primario1 :hover {
+    background-color: #ecd393;
+    color: #301506;
+}
+
 
 .flexbox_cont {
     display: flex;
+    flex-direction: column;
     justify-content: center;
 
 }
 
+
+
+
+
+
+.titulo-topo img {
+    width: 30%;
+    margin-left: -1rem;
+
+}
+
+
 .titulo-topo h5 {
+    float: inline-end;
     font-size: 1.5rem;
     font-family: "BakerieBold";
     src: url('../assets/fonts/BakerieBold.otf');
-
+    margin-left: 0rem;
     color:#ecd393;
     
 }
+
+
+
+
 
 .inicio-sidebar {
     width: 17%;
@@ -39,30 +65,144 @@
 .listas {
     margin-top: 5%;
     margin-bottom: 5%;
-    list-style: none;
+    
 }
 
-.listas li {
+.listas li{
+    font-size: 1.2rem;
     margin-bottom: 1rem;
     margin-left: -2rem;
     color: #eff0ea;
-    
+    text-decoration: none;
+    list-style: none;
 }
 
 .listas li:hover {
     color: #ecd393;
 }
 
-
-.botao-logout1 {
-    background-color:  #301506;
+.listas a {
+    font-size: 1.2rem;
+    list-style: none;
+    color: #eff0ea;
+    text-decoration: none;
 }
+
+.listas a:hover {
+    color: #ecd393;
+}
+
+
+
+
+
 .botao-logout2 {
-    margin-top: 24rem;
+    width: auto;
     background-color: red;
+    border: none;
+    position: fixed;
+    bottom: 0;
     
 }
 
 .botao-logout1 :hover {
     background-color: rgb(163, 0, 0);
+}
+
+
+
+
+@media (max-width: 800px) {
+
+    .flexbox_cont {
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+    
+    .titulo-topo img {
+        max-width: 25%;
+       
+    }
+
+    .titulo-topo h5 {
+        float: inline-end;
+        font-size: 1.5rem;
+        font-family: "BakerieBold";
+        src: url('../assets/fonts/BakerieBold.otf');
+        margin-left: 0rem;
+        color:#ecd393;
+        min-width: 40%;
+    
+        
+    }
+
+    .inicio-sidebar {
+        width: 80%;
+        background-color: #301506;
+    }
+    
+    .corpo-sidebar {
+        background-color: #301506;
+    }
+    
+    
+    
+    
+    .listas {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        
+    }
+    
+    .listas li{
+        text-align: center;
+        min-width: 40%;
+        font-size: 150%;
+        margin-bottom: 1rem;
+        margin-left: -2rem;
+        color: #eff0ea;
+        text-decoration: none;
+        list-style: none;
+    }
+    
+    .listas li:hover {
+        color: #ecd393;
+    }
+    
+    .listas a {
+        text-align: center;
+        min-width: 40%;
+        list-style: none;
+        color: #eff0ea;
+        text-decoration: none;
+    }
+    
+    .listas a:hover {
+        color: #ecd393;
+    }
+    
+    
+    .botao-logout1 {
+        max-width: 40%;
+        background-color:  #301506;
+    }
+    .botao-logout2 {
+        background-color: red;
+        border: none;
+ 
+        margin-left: 3rem;
+        max-width: 40%;
+    }
+    
+    .botao-logout1 :hover {
+        background-color: rgb(163, 0, 0);
+    }
+
+
+
+
+
+
 }
