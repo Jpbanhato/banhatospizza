@@ -15,17 +15,26 @@
 
 }
 
+.titulo-topo h5 {
+    font-size: 1.5rem;
+    font-family: "BakerieBold";
+    src: url('../assets/fonts/BakerieBold.otf');
+
+    color:#ecd393;
+    
+}
+
 .inicio-sidebar {
     width: 17%;
+    background-color: #301506;
 }
 
 .corpo-sidebar {
-    background-color: yellow;
+    background-color: #301506;
 }
 
-.corpo-sidebar ul {
-    background-color: blue;
-}
+
+
 
 .listas {
     margin-top: 5%;
@@ -35,18 +44,25 @@
 
 .listas li {
     margin-bottom: 1rem;
+    margin-left: -2rem;
+    color: #eff0ea;
     
 }
 
 .listas li:hover {
-    color: red;
+    color: #ecd393;
 }
 
 
 .botao-logout1 {
-    background-color: green;
+    background-color:  #301506;
 }
 .botao-logout2 {
-    margin-top: 18rem;
+    margin-top: 24rem;
+    background-color: red;
     
+}
+
+.botao-logout1 :hover {
+    background-color: rgb(163, 0, 0);
 }

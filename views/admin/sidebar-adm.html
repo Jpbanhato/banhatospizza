@@ -10,7 +10,6 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="/public/css/sidebar.css">
 
-
   <!-- ICONS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 
@@ -24,57 +23,81 @@
     botão sidebar
   </a>
 
-<!-- 
+  <!-- 
 
   FAZER A BARRA LATERAL PARA APARECER SOMENTE OS ÍCONES.
   COLOCAR UM FLEXBOX PARA CONSEGUIR COLOCAR TODOS OS ELEMENTOS NO LUGAR CERTO.
 -->
 
-<div class="container flebox_cont">
+  <div class="container flebox_cont">
 
 
-  <div class="offcanvas offcanvas-start inicio-sidebar" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-    <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Banhatos Pizza</h5>
-      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    <!-- 
+    <div class="offcanvas offcanvas-start inicio-sidebar" tabindex="-1" id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header titulo-topo">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Banhatos Pizza</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <!-- 
       Colocar o ícone da pizzaria ao lado do título
       Mudar as fontes 
 
     -->
-    
-    </div>
 
-    <div class="offcanvas-body corpo-sidebar">
-
-      <div>
-        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists,
-        etc.
       </div>
-   
 
-      <ul class="listas">
-        <!-- 
-          Colocar os ícones nas listas.
+      <div class="offcanvas-body corpo-sidebar">
+
+        <div>
+          <!-- COLOCAR QUALQUER CONTEÚDO-->
+        </div>
+
+
+        <ul class="listas">
+          <!-- 
           Colocar os links para as outras páginas.
-          Remover os marcadores.
           Colocar um ID ou um target_blank para levar o usuário para a aba desejada. 
-
-          ICONE USUÁRIOS -- <i class="bi bi-people"></i>
-          ICONE PRODUTOS -- <i class="bi bi-boxes"></i>
-          ICONE CATEGORIAS -- <i class="bi bi-list-nested"></i>
-        --> 
-        
-        <li> <i class="bi bi-people"></i> <a class="#" href="#"></a> Usuários</li>
-        <li> <i class="bi bi-list-nested"></i> <a class="#" href="#"></a> Categorias</li>
-        <li> <i class="bi bi-boxes"></i> <a class="#" href="#"></a> Produtos</li>
+          
+          CSS -> .corpo-sidebar ul {
+              background-color:;
+            }
 
 
-      </ul>
 
-      <div class="botao-logout1">
-        <button type="button" class="btn btn-outline-danger botao-logout2">Logout</button>
-        <!-- 
+        -->
+
+          <li> <i class="bi bi-people"></i> <a class="#" href="#"></a> Usuários</li>
+          <li> <i class="bi bi-list-nested"></i> <a class="#" href="#"></a> Categorias</li>
+          <li> <i class="bi bi-boxes"></i> <a class="#" href="#"></a> Produtos</li>
+
+
+        </ul>
+
+        <div class="botao-logout1">
+          <button type="button" class="btn btn-primary botao-logout2" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">
+            Logout
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Deseja mesmo sair ?</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Após clicar no botão "Sim", você será direcionado para a área de login. Deseja prosseguir com essa decisão ?
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                  <button type="button" class="btn btn-primary">Sim</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <!-- 
         Botão de logout.
         Criar um background somente para ele.
         Colocar o ícone para clicar e aparecer a opção de sair.
@@ -83,15 +106,15 @@
         COMO COLOCAR NA PARTE INFERIOR ESQUERDA ? 
 
       -->
+        </div>
+
       </div>
-    
-      </div>
-     
+
     </div>
   </div>
-</div>
-<!-- Dentro da sidebar-->
-  
+  </div>
+  <!-- Dentro da sidebar-->
+
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
