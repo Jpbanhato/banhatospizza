@@ -30,18 +30,19 @@
 
 
 .titulo-topo img {
-    width: 30%;
-    margin-left: -1rem;
+    width: 70px;
+    margin-left: 0rem;
 
 }
 
 
 .titulo-topo h5 {
-    float: inline-end;
+    
+    position: fixed;
     font-size: 1.5rem;
     font-family: "BakerieBold";
     src: url('../assets/fonts/BakerieBold.otf');
-    margin-left: 0rem;
+    margin-left: 73px;
     color:#ecd393;
     
 }
@@ -51,12 +52,14 @@
 
 
 .inicio-sidebar {
-    width: 17%;
+    width: 280px;
+    position: fixed;
     background-color: #301506;
 }
 
 .corpo-sidebar {
     background-color: #301506;
+
 }
 
 
@@ -65,13 +68,14 @@
 .listas {
     margin-top: 5%;
     margin-bottom: 5%;
+    width: 100%;
     
 }
 
 .listas li{
     font-size: 1.2rem;
     margin-bottom: 1rem;
-    margin-left: -2rem;
+    margin-left: -7px;
     color: #eff0ea;
     text-decoration: none;
     list-style: none;
@@ -86,6 +90,7 @@
     list-style: none;
     color: #eff0ea;
     text-decoration: none;
+    margin-left: 5%;
 }
 
 .listas a:hover {
@@ -98,6 +103,7 @@
 
 .botao-logout2 {
     width: auto;
+    margin-left: 25px;
     background-color: red;
     border: none;
     position: fixed;
@@ -110,99 +116,3 @@
 }
 
 
-
-
-@media (max-width: 800px) {
-
-    .flexbox_cont {
-        display: flex;
-        flex-direction: column;
-        
-        
-    }
-    
-    .titulo-topo img {
-        max-width: 25%;
-       
-    }
-
-    .titulo-topo h5 {
-        float: inline-end;
-        font-size: 1.5rem;
-        font-family: "BakerieBold";
-        src: url('../assets/fonts/BakerieBold.otf');
-        margin-left: 0rem;
-        color:#ecd393;
-        min-width: 40%;
-    
-        
-    }
-
-    .inicio-sidebar {
-        width: 80%;
-        background-color: #301506;
-    }
-    
-    .corpo-sidebar {
-        background-color: #301506;
-    }
-    
-    
-    
-    
-    .listas {
-        margin-top: 5%;
-        margin-bottom: 5%;
-        
-    }
-    
-    .listas li{
-        text-align: center;
-        min-width: 40%;
-        font-size: 150%;
-        margin-bottom: 1rem;
-        margin-left: -2rem;
-        color: #eff0ea;
-        text-decoration: none;
-        list-style: none;
-    }
-    
-    .listas li:hover {
-        color: #ecd393;
-    }
-    
-    .listas a {
-        text-align: center;
-        min-width: 40%;
-        list-style: none;
-        color: #eff0ea;
-        text-decoration: none;
-    }
-    
-    .listas a:hover {
-        color: #ecd393;
-    }
-    
-    
-    .botao-logout1 {
-        max-width: 40%;
-        background-color:  #301506;
-    }
-    .botao-logout2 {
-        background-color: red;
-        border: none;
- 
-        margin-left: 3rem;
-        max-width: 40%;
-    }
-    
-    .botao-logout1 :hover {
-        background-color: rgb(163, 0, 0);
-    }
-
-
-
-
-
-
-}

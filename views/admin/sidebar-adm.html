@@ -39,11 +39,6 @@
 
       <div class="offcanvas-body corpo-sidebar">
 
-        <div>
-          <!-- COLOCAR QUALQUER CONTEÚDO-->
-        </div>
-
-
         <ul class="listas">
 
           <li> <i class="bi bi-people"></i> <a class="usuarios-1" href="usuarios.html"> Usuários </a></li>
@@ -52,44 +47,151 @@
 
 
         </ul>
+<!--
 
-        <div class="botao-logout1">
+<div class="botao-logout1">
           <button type="button" class="btn btn-primary botao-logout2" data-bs-toggle="modal"
             data-bs-target="#exampleModal">
             Logout <i class="bi bi-box-arrow-right"></i>
           </button>
-      
-          <!-- Modal -->
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Deseja mesmo sair ?</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  Após clicar no botão "Sim", você será direcionado para a área de login. Deseja prosseguir com essa decisão ?
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                  <button type="button" class="btn btn-primary">Sim</button>
+
+-->
+        <div class="botao-logout1">
+          <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary botao-logout2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Logout <i class="bi bi-box-arrow-right"></i>
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="staticBackdropLabel">Sim Deseja mesmo sair ?</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Após clicar no botão "Sim", você será direcionado para a área de login. Deseja prosseguir com essa decisão ?
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                      <button type="button" class="btn btn-primary">Sim</button>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
+          
         </div>
 
     </div>
     </div>
   </div>
-  <!-- Dentro da sidebar-->
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
+  
 </body>
 
-
+ 
 </html>
+
+<!--
+
+CSS DO MEDIA
+
+  @media (max-width: 800px) {
+
+    .flexbox_cont {
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+    
+    .titulo-topo img {
+        max-width: 25%;
+       
+    }
+
+    .titulo-topo h5 {
+        float: inline-end;
+        font-size: 1.5rem;
+        font-family: "BakerieBold";
+        src: url('../assets/fonts/BakerieBold.otf');
+        margin-left: 0rem;
+        color:#ecd393;
+        min-width: 40%;
+    
+        
+    }
+
+    .inicio-sidebar {
+        width: 80%;
+        background-color: #301506;
+    }
+    
+    .corpo-sidebar {
+        background-color: #301506;
+    }
+    
+    
+    
+    
+    .listas {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        
+    }
+    
+    .listas li{
+        text-align: center;
+        min-width: 40%;
+        font-size: 150%;
+        margin-bottom: 1rem;
+        margin-left: -2rem;
+        color: #eff0ea;
+        text-decoration: none;
+        list-style: none;
+    }
+    
+    .listas li:hover {
+        color: #ecd393;
+    }
+    
+    .listas a {
+        text-align: center;
+        min-width: 40%;
+        list-style: none;
+        color: #eff0ea;
+        text-decoration: none;
+    }
+    
+    .listas a:hover {
+        color: #ecd393;
+    }
+    
+    
+    .botao-logout1 {
+        max-width: 40%;
+        background-color:  #301506;
+    }
+    .botao-logout2 {
+        background-color: red;
+        border: none;
+ 
+        margin-left: 3rem;
+        max-width: 40%;
+    }
+    
+    .botao-logout1 :hover {
+        background-color: rgb(163, 0, 0);
+    }
+
+
+
+
+
+
+}
+-->
