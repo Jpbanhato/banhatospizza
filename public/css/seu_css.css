@@ -3,6 +3,35 @@
     src: url('../assets/fonts/BakerieBold.otf');
 }
 
-h1 {
+body{
+    background-color: rgb(114, 108, 108);
+}
+
+h1{
     font-family: 'BakerieBold';
+    color:#ecd393;
+}
+
+.listagem{
+    width: 80vw;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8,1fr);
+    grid-row-gap: 1%;
+}
+
+.usuario{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background-color: #301506;
+    border-radius: 10px;
+}
+
+.botao{
+    background-color: #ecd393;
+    color: black;   
+    font-size: larger; 
 }
