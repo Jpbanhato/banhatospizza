@@ -1,0 +1,27 @@
+@font-face {
+    font-family: "BakerieBold";
+    src: url('../assets/fonts/BakerieBold.otf');
+}
+
+
+.titulo h1 {
+    text-align: center;
+    margin-top: 10%;
+    font-size: 2rem;
+    font-family: "BakerieBold";
+    src: url('../assets/fonts/BakerieBold.otf');
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 10% auto 20%;
+    grid-template-rows: 2;
+    grid-row-gap: 10px;
+    grid-column-gap: 5px;
+
+}
+
+.item {
+    background-color: black;
+    color: yellow;
+}
