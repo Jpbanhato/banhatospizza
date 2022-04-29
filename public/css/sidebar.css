@@ -3,13 +3,22 @@
     src: url('../assets/fonts/BakerieBold.otf');
 }
 
-
+.botao-primario1 {
+    color: #ecd393;
+}
 
 .botao-primario2 {
     background-color: #301506;
     color: #ecd393;
     border: none;
 }
+
+.botao-primario2:focus {
+    background-color: #301506;
+    color: #ecd393;
+
+}
+
 
 .botao-primario1 :hover {
     background-color: #ecd393;
@@ -110,6 +119,8 @@
     bottom: 0;
     
 }
+
+
 
 .botao-logout1 :hover {
     background-color: rgb(163, 0, 0);
