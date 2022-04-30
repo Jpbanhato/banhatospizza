@@ -1,8 +1,12 @@
+body{
+    height:100vh;
+    width:100vw;
+    background-color: var(--marfim);
+}
+
 .container{
-    height: 100vh;
-    width: 83vw;
-    position: absolute;
-    right: 0;
+    height:100vh;
+    width:100vw;
     background-color: var(--marfim);
 
     display: flex;
