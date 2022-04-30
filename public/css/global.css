@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  :root {
+    --marrom: #301506;
+    --amarelo: #ecd393;
+    --marfim: #eff0ea;
+  }
+  
+  @font-face {
+    font-family: "BakerieBold";
+    src: url('../assets/fonts/BakerieBold.otf');
+  }
+  
+  h1 {
+    font-family: 'BakerieBold';
+  }
+  
+  a, a:hover, a:visited {
+    text-decoration: none;
+    cursor: pointer;
+  }
