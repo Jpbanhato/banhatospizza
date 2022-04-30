@@ -4,18 +4,7 @@
 }
 
 
-.item-titulo h1 {
-    text-align: center;
-    margin-top: 10%;
-    font-size: 2rem;
-    font-family: "BakerieBold";
-    src: url('../assets/fonts/BakerieBold.otf');
-}
-
-
-
-
-.container border {
+.container-1 {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 150px;
@@ -37,9 +26,6 @@
     color: yellow;
 }
 
-
-
-
 .container-botoes{
     display: flex;
     justify-content: end;
@@ -57,9 +43,4 @@
 
 .botao-grupo3 {
     margin-right: 5px;
-}
-
-
-ol {
-    margin-left: 50px;
 }

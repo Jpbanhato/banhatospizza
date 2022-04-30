@@ -6,88 +6,186 @@
     <title>View administrativa categorias</title>
     <link rel="stylesheet" href="/public/css/adm-categorias.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 </head>
 
 
 
 <body>
 
-<!-- Header -->
-<div class="titulo"> 
-<h1> Categorias Banhato's Pizza</h1>
-
-</div>
-
-<div class="">
-
-
-</div>
-
-<!-- Corpo -->
-<div class="container">
-
-    <div class="item">Numeração (#)</div>
-    <div class="item">Nome da categoria</div>
-    <div class="item">Icons</div>
-
-    <div class="item">Numeração (#)</div>
-    <div class="item">Nome da categoria</div>
-    <div class="item">Icons</div>
-
-    <div class="item">Numeração (#)</div>
-    <div class="item">Nome da categoria</div>
-    <div class="item">Icons</div>
-
-    <div class="item">Numeração (#)</div>
-    <div class="item">Nome da categoria</div>
-    <div class="item">Icons</div>
-
-    <div class="item">Numeração (#)</div>
-    <div class="item">Nome da categoria</div>
-    <div class="item">Icons</div>
-
-    <div class="item">Numeração (#)</div>
-    <div class="item">Nome da categoria</div>
-    <div class="item">Icons</div>
-
-</div>
-        
     
+   <!-- Corpo -->
+
+   <div class="container border">
+
+    <div class="item">Numeração (#)</div>
+    <div class="item">Nome da categoria</div>
+    <div class="item">Icons</div>
+
+    <div class="item">Numeração (#)</div>
+    <div class="item">Nome da categoria</div>
+    <div class="item">Icons</div>
+
+    <div class="item">Numeração (#)</div>
+    <div class="item">Nome da categoria</div>
+    <div class="item">Icons</div>
+
+    <div class="item">Numeração (#)</div>
+    <div class="item">Nome da categoria</div>
+    <div class="item">Icons</div>
+
+    <div class="item">Numeração (#)</div>
+    <div class="item">Nome da categoria</div>
+    <div class="item">Icons</div>
+
+    <div class="item">Numeração (#)</div>
+    <div class="item">Nome da categoria</div>
+    <div class="item">Icons</div>
+
+</div>
+
+    
+
+    <!-- BOTÕES // TENTAR COLOCAR OS BOTÕES NA CLASSE ICONS-->
+<div class="container botoes">
+
+
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <i class="bi bi-pencil-square"></i>
+    </button>
+  
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Editar categoria</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            
+
+            <form class="formulario">
+                <label for="fname">Nome da categoria</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                
+            </form>
+
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary">Enviar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+    
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <i class="bi bi-eye"></i>
+    </button>
+  
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Visualizar categoria</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary">Enviar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+
+
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <i class="bi bi-trash"></i>
+    </button>
+  
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Excluir categoria</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            Excluir categoria 
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            <button type="button" class="btn btn-primary">Enviar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+
+
+
+
+</div>
+    
+
+ <!-- Corpo grid
+    <div class="container">
+
+        <div class="item item-titulo ">
+            <h1 class="titulo"> Categorias Banhato's Pizza </h1>
+
+        </div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+
+
+    </div>
+
+<ol id='list-categorias'>
+        <li class="list-cat">Nome da categoria</li>
+        <li class="list-cat">Nome da categoria</li>
+        <li class="list-cat">Nome da categoria</li>
+        <li class="list-cat">Nome da categoria</li>
+        <li class="list-cat">Nome da categoria</li>
+        <li class="animals">Nome da categoria</li>
+    </ol>
+
+
+
+    -->
+
+
+
 </body>
 
 
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
 </html>
 
 
 <!-- 
-    <div class="row">
-            <div class="col">
-                Numeração (#)
-            </div>
-            <div class="col-7">
-                Nome da categoria
-            </div>
-            <div class="col">
-                icons
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col">
-                Numeração (#)
-            </div>
-            <div class="col-7">
-                Nome da categoria
-            </div>
-            <div class="col">
-                icons
-            </div>
-        </div>
-        
-      </div>
+    
 
 
 
