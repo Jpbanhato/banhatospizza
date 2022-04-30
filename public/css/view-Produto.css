@@ -1,0 +1,26 @@
+.card {
+    background-color: #ecd393;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+.btn-card {
+    background-color: #301506;
+    color: white;
+    border-color: black;
+    border-width: 2px;
+}
+
+.btn-card:hover {
+    color: #ecd393;
+}
+
+ul {
+    text-decoration: none;
+}
+
+body {
+    align-content: center;
+}
