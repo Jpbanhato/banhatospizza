@@ -12,6 +12,8 @@ h1{
     color:#ecd393;
 }
 
+
+
 .listagem{
     width: 80vw;
     height: 90vh;
@@ -33,5 +35,12 @@ h1{
 .botao{
     background-color: #ecd393;
     color: black;   
-    font-size: larger; 
+    font-size: larger;
+    border-color: #301506; 
+}
+
+.cabecalho h1{
+    padding-left: 40%;
+    padding-top: 5%;
+    height: 10rem;
 }
