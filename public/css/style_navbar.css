@@ -1,0 +1,32 @@
+.navigation {
+    background-color: #301506;
+}
+
+.nav-link {
+    color: #eff0ea;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav-link:hover {
+    color: #ecd393;
+    text-decoration: none;
+}
+
+.nav-img {
+    margin-left: 20px;
+}
+
+.navbar-nav {
+    margin-left: auto;
+    margin-right: 100px;
+}
+
+.navbar-toggler {
+    border-color: #eff0ea;
+    opacity: 1.0;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(239,240,234, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
