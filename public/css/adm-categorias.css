@@ -1,65 +1,38 @@
-@font-face {
-    font-family: "BakerieBold";
-    src: url('../assets/fonts/BakerieBold.otf');
-}
+.container{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    right: 0;
+    background-color: var(--marfim);
 
-
-.item-titulo h1 {
-    text-align: center;
-    margin-top: 10%;
-    font-size: 2rem;
-    font-family: "BakerieBold";
-    src: url('../assets/fonts/BakerieBold.otf');
-}
-
-
-
-
-.container border {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 150px;
-    grid-row-gap: 10px;
-    background-color: orange;
-}
-
-.container {
-    display: grid;
-    grid-template-columns: 10% auto 20%;
-    grid-template-rows: 2;
-    grid-row-gap: 10px;
-    grid-column-gap: 10px;
-
-}
-
-.item {
-    background-color: black;
-    color: yellow;
-}
-
-
-
-
-.container-botoes{
     display: flex;
-    justify-content: end;
-    background-color: black;
-
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 5%;
 }
 
-.botao-grupo1 {
-    margin-right: 5px;
+.product-header {
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
-.botao-grupo2 {
-    margin-right: 5px;
+.navbar{
+    padding: 0;
+    margin-bottom: 2rem;
 }
 
-.botao-grupo3 {
-    margin-right: 5px;
+.navbar .container-fluid {
+    background-color: var(--marfim);
 }
 
+.btn-primary, .btn-secondary, .btn-success  {
+    background-color: var(--amarelo);
+    border-color: var(--amarelo);
+    color: var(--marrom);
+}
 
-ol {
-    margin-left: 50px;
+.btn-danger {
+    background-color: var(--marrom);
+    border-color: var(--marrom);
+    color: var(--marfim);
 }
