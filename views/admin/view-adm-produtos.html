@@ -38,22 +38,22 @@
 
                 <tbody>
                     <tr>
-                        <td scope="row justify-content-center align-items-center">[ID]</td>
+                        <td scope="row justify-content-center align-items-center">id</td>
                         <td class="justify-content-start name-itens-table">[NOME DO PRODUTO]</td>
                         <td class="d-flex justify-content-end colum-bottons-table">
                             <div class="d-grid gap-2 d-md-block">
                                 <!-- Button modal editar produto -->
-                                <button type="button" class="btn btn-primary bottom-options" data-bs-toggle="modal" data-bs-target="#EditarProd-[ID]">
+                                <button type="button" class="btn btn-primary bottom-options" data-bs-toggle="modal" data-bs-target="#EditarProd-id">
                                     &#128393;
                                 </button>
             
                                 <!-- Button modal visualizar produto -->
-                                <button type="button" class="btn btn-secondary bottom-options" data-bs-toggle="modal" data-bs-target="#VisualizarProd-[ID]">
+                                <button type="button" class="btn btn-secondary bottom-options" data-bs-toggle="modal" data-bs-target="#VisualizarProd-id">
                                     &#8981;
                                 </button>
             
                                 <!-- Button modal exclui produto-->
-                                <button type="button" class="btn btn-danger bottom-options" data-bs-toggle="modal" data-bs-target="#ExcluiProd-[ID]">
+                                <button type="button" class="btn btn-danger bottom-options" data-bs-toggle="modal" data-bs-target="#ExcluiProd-id">
                                     &#9852;
                                 </button>
                             </div>
@@ -111,7 +111,7 @@
   
   
         <!-- Modal Editar Produto -->
-        <div class="modal fade" id="EditarProd-[ID]" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal fade" id="EditarProd-id" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-xl">
                 <div class="modal-content">
                 <div class="modal-header">
@@ -122,7 +122,7 @@
     
                     <form action="produtos/update" method="post" class="row g-3">
                     <div class="col-md-8">
-                        <input type="hidden" name="id" value="[ID]">
+                        <input type="hidden" name="id" value="id">
                         <label for="inputNameEditProdut" class="form-label">Nome</label>
                         <input type="text" class="form-control" name="nome" id="inputNameEditProdut" value="[NOME]">
                     </div>
@@ -161,7 +161,7 @@
   
   
         <!-- Modal Visualizar Produto-->
-        <div class="modal fade" id="VisualizarProd-[ID]" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal fade" id="VisualizarProd-id" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl">
             <div class="modal-content">
             <div class="modal-header">
@@ -206,7 +206,7 @@
   
   
         <!-- Modal excluir produto-->
-        <div class="modal fade" id="ExcluiProd-[ID]" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal fade" id="ExcluiProd-id" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <div class="modal-header">
@@ -219,7 +219,7 @@
               <div class="modal-footer">
                 <button type="button" class="btn btn-principal bottom-add" data-bs-dismiss="modal">Cancelar</button>
                 <form action="produtos/delete" method="post">
-                  <input type="hidden" value="[ID]" name="id">
+                  <input type="hidden" value="id" name="id">
                   <button type="submit" class="btn btn-danger">Excluir</button>
                 </form>
               </div>
