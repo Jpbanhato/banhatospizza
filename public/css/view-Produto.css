@@ -1,0 +1,51 @@
+@font-face {
+    font-family: "BakerieBold";
+    src: url('../assets/fonts/BakerieBold.otf');
+}
+
+body {
+    background-color: #301506;
+}
+
+.card-container {
+    max-width: 100%;
+}
+
+.card {
+    background-color: #ecd393;
+    border-color: black;
+    border-width: 5px;
+    border-radius: 8px;
+    margin-top: 50px;
+    max-width: 722px;
+    flex-direction: row-reverse;
+}
+
+.card-title,
+h3 {
+    font-family: BakerieBold;
+    font-size: 40px;
+}
+
+hr {
+    border-top: 3px solid #eff0ea;
+}
+
+.btn-card {
+    background-color: #301506;
+    color: #eff0ea;
+    border-color: black;
+    border-width: 2px;
+}
+
+.btn-card:hover {
+    color: #ecd393;
+}
+
+.card-img-top {
+    max-width: 500px;
+}
+
+.info {
+    color: #eff0ea;
+}

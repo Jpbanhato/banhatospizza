@@ -1,0 +1,128 @@
+main {
+  background-color: var(--marrom);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 2rem 0;
+}
+
+.carousel-caption h5 {
+  font-size: 300%;
+  font-weight: bolder;
+}
+
+.latest-products {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 2rem;
+}
+
+.lp-title {
+  color: var(--amarelo);
+  font-size: 60px;
+}
+
+.lp-cards {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row !important;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+.card {
+  height: 50%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 15px;
+}
+
+.card img {
+  width: 90%;
+  border-radius: 15px;
+  transition: all 0.3s;
+}
+
+.card h3 {
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 35px;
+  font-family: 'Roboto';
+  color: var(--marrom) !important;
+}
+
+.card img:hover {
+  transform: scale(1.05);
+}
+
+.call-to-action {
+  margin: 10px 11%;
+}
+
+.cta-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 20px;
+  padding: 3%;
+}
+
+.quem-somos {
+  background-color: var(--amarelo);
+}
+
+.contato {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: var(--amarelo);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.image-cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-cta img{
+  height: 500px;
+  width: 500px;
+}
+
+.text-cta {
+  width: 50%;
+}
+
+.text-cta h1 {
+  font-family: 'BakerieBold';
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.text-cta p {
+  margin-bottom: 25px;
+  font-size: 30px;
+}
+
+.btn-cta {
+  background-color: var(--marrom);
+  color: white;
+  border-radius: 15px;
+  width: auto;
+  box-shadow: 2px 2px 30px rgba(72, 73, 2, 0.556);
+  font-size: 30px;
+
+}
