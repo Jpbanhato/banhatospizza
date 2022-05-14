@@ -17,7 +17,8 @@ body {
     border-width: 5px;
     border-radius: 8px;
     margin-top: 50px;
-    max-width: 500px;
+    max-width: 722px;
+    flex-direction: row-reverse;
 }
 
 .card-title,
