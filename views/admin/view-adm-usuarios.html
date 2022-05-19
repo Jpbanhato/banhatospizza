@@ -22,7 +22,7 @@
                 <button class="btn btn-primary bottom-search" type="submit">Pesquisar</button>
               </form>
                 
-              <button type="button" class="btn btn-success btn-add" data-bs-toggle="modal" data-bs-target="#AddProdut">Adicionar</button>
+              <button type="button" class="btn btn-success btn-add" data-bs-toggle="modal" data-bs-target="#AddUser">Adicionar</button>
             </div>
         </nav>
       
@@ -43,17 +43,17 @@
                         <td class="d-flex justify-content-end colum-bottons-table">
                             <div class="d-grid gap-2 d-md-block">
                                 <!-- Button modal editar produto -->
-                                <button type="button" class="btn btn-primary bottom-options" data-bs-toggle="modal" data-bs-target="#EditarProd-[ID]">
+                                <button type="button" class="btn btn-primary bottom-options" data-bs-toggle="modal" data-bs-target="#EditUser-id">
                                     &#128393;
                                 </button>
             
                                 <!-- Button modal visualizar produto -->
-                                <button type="button" class="btn btn-secondary bottom-options" data-bs-toggle="modal" data-bs-target="#VisualizarProd-[ID]">
+                                <button type="button" class="btn btn-secondary bottom-options" data-bs-toggle="modal" data-bs-target="#ViewUser-id">
                                     &#8981;
                                 </button>
             
                                 <!-- Button modal exclui produto-->
-                                <button type="button" class="btn btn-danger bottom-options" data-bs-toggle="modal" data-bs-target="#ExcluiProd-[ID]">
+                                <button type="button" class="btn btn-danger bottom-options" data-bs-toggle="modal" data-bs-target="#DeleteUser-id">
                                     &#9852;
                                 </button>
                             </div>
@@ -64,7 +64,7 @@
         </div>
 
         <!-- Modal Adicionar Usuario -->
-        <div class="modal fade" id="AddProdut" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal fade" id="AddUser" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
@@ -73,18 +73,18 @@
                 </div>
                 <div class="modal-body">
     
-                <form action="produtos/create" method="post" class="row g-3">
+                <form action="user/create" method="post" class="row g-3">
                     <div class="col-md-8">
-                        <label for="inputNameAddProdut" class="form-label">Nome</label>
-                        <input type="text" name="nome" class="form-control" id="inputNameAddProdut" placeholder="Insira o nome do usuário">
+                        <label for="inputNameAddUser" class="form-label">Nome</label>
+                        <input type="text" name="nome" class="form-control" id="inputNameAddUser" placeholder="Insira o nome do usuário">
                     </div>
                     <div class="col-md-4">
-                        <label for="inputPriceAddProdut" class="form-label">E-mail</label>
-                        <input type="text" name="preco" class="form-control" id="inputPriceAddProdut" placeholder="nome@dominio">
+                        <label for="inputEmailAddUser" class="form-label">E-mail</label>
+                        <input type="text" name="preco" class="form-control" id="inputEmailAddUser" placeholder="nome@dominio">
                     </div>
                     <div class="col-12">
-                        <label for="inputDescriptionAddProdut" class="form-label">Senha</label>
-                        <textarea class="form-control" name="descricao" id="inputDescriptionAddProdut" rows="1" placeholder="Senha..."></textarea>
+                        <label for="inputPasswordAddUser" class="form-label">Senha</label>
+                        <textarea class="form-control" name="descricao" id="inputPasswordAddUser" rows="1" placeholder="Senha..."></textarea>
                 </div>
                 <div class="modal-footer">
                 <button type="button" class="btn btn-danger " data-bs-dismiss="modal">Cancelar</button>
@@ -97,7 +97,7 @@
   
   
         <!-- Modal Editar Produto -->
-        <div class="modal fade" id="EditarUser-[ID]" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal fade" id="EditUser-id" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-xl">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -106,20 +106,20 @@
                     </div>
                     <div class="modal-body">
     
-                    <form action="produtos/update" method="post" class="row g-3">
+                    <form action="Users/update" method="post" class="row g-3">
                     <div class="col-md-8">
                         <input type="hidden" name="id" value="[ID]">
-                        <label for="inputNameEditProdut" class="form-label">Nome</label>
-                        <input type="text" class="form-control" name="nome" id="inputNameEditProdut" value="[NOME]">
+                        <label for="inputNameEditUser" class="form-label">Nome</label>
+                        <input type="text" class="form-control" name="nome" id="inputNameEditUser" value="[NOME]">
                     </div>
                     <div class="col-md-4">
-                        <label for="inputPriceEditProdut" class="form-label">E-mail</label>
-                        <input type="text" class="form-control" name="preco" id="inputPriceEditProdut" value="[PRECO]">
+                        <label for="inputPriceEditUser" class="form-label">E-mail</label>
+                        <input type="text" class="form-control" name="e-mail" id="inputPriceEditUser" value="[E-MAIL]">
                     </div>
                     <div class="col-12">
                         <div class="col-12">
-                            <label for="inputDescriptionEditProdut" class="form-label">Senha</label>
-                            <textarea class="form-control" name="descricao" id="inputDescriptionEditProdut" rows="1" placeholder="Ingredientes e porções">[DESCRICAO]</textarea>
+                            <label for="inputPassWordUser" class="form-label">Senha</label>
+                            <textarea class="form-control" name="senha" id="inputPassWordUser" value="[SENHA]"></textarea>
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -134,7 +134,7 @@
   
   
         <!-- Modal Visualizar Usuario-->
-        <div class="modal fade" id="VisualizarProd-[ID]" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal fade" id="ViewUser-id" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl">
             <div class="modal-content">
             <div class="modal-header">
@@ -146,16 +146,16 @@
                 <fieldset disabled>
                 <form class="row g-3">
                     <div class="col-md-8">
-                        <label for="ViewNameProduct" class="form-label">Nome</label>
-                        <input type="text" class="form-control" id="ViewNameProduct" placeholder="[NOME]" readonly>
+                        <label for="ViewNameUser" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="ViewNameUser" placeholder="[NOME]" readonly>
                     </div>
                     <div class="col-md-4">
-                        <label for="ViewPriceProduct" class="form-label">E-mail</label>
-                        <input type="text" class="form-control" id="ViewPriceProduct" placeholder="[IDENTIFICAÇÃO]" readonly>
+                        <label for="ViewEmailUser" class="form-label">E-mail</label>
+                        <input type="text" class="form-control" id="ViewEmailUser" placeholder="[E-mail]" readonly>
                     </div>
                     <div class="col-12">
-                        <label for="ViewDescriptionProduct" class="form-label">Senha</label>
-                        <textarea class="form-control" id="ViewDescriptionProduct" rows="1" placeholder="[SENHA]" readonly></textarea>
+                        <label for="ViewPasswordUser" class="form-label">Senha</label>
+                        <textarea class="form-control" id="ViewPasswordUser" rows="1" placeholder="[SENHA]" readonly></textarea>
                     </div>
                 </form>
                 </fieldset>
@@ -169,7 +169,7 @@
   
   
         <!-- Modal excluir produto-->
-        <div class="modal fade" id="ExcluiProd-[ID]" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal fade" id="DeleteUser-id" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <div class="modal-header">
@@ -181,7 +181,7 @@
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-principal bottom-add" data-bs-dismiss="modal">Cancelar</button>
-                <form action="produtos/delete" method="post">
+                <form action="User/delete" method="post">
                   <input type="hidden" value="[ID]" name="id">
                   <button type="submit" class="btn btn-danger">Excluir</button>
                 </form>
