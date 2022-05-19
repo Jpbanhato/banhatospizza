@@ -1,3 +1,5 @@
+<?php ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,9 +28,10 @@
             </div>
         </nav>
       
-        <div class="products-table">
+        <div class="user-table">
             <table class="table table-hover justify-content-center align-items-center">
-                <thead>
+
+            <thead>
                     <tr>
                     <th scope="col">#</th>
                     <th scope="col"><b>Nome do Usuário</b></th>
@@ -42,17 +45,17 @@
                         <td class="justify-content-start name-itens-table">[NOME DO USUARIO]</td>
                         <td class="d-flex justify-content-end colum-bottons-table">
                             <div class="d-grid gap-2 d-md-block">
-                                <!-- Button modal editar produto -->
+                                <!-- Button modal editar usuario -->
                                 <button type="button" class="btn btn-primary bottom-options" data-bs-toggle="modal" data-bs-target="#EditUser-id">
                                     &#128393;
                                 </button>
             
-                                <!-- Button modal visualizar produto -->
+                                <!-- Button modal visualizar usuario -->
                                 <button type="button" class="btn btn-secondary bottom-options" data-bs-toggle="modal" data-bs-target="#ViewUser-id">
                                     &#8981;
                                 </button>
             
-                                <!-- Button modal exclui produto-->
+                                <!-- Button modal exclui usuario-->
                                 <button type="button" class="btn btn-danger bottom-options" data-bs-toggle="modal" data-bs-target="#DeleteUser-id">
                                     &#9852;
                                 </button>
@@ -96,7 +99,7 @@
         </div>
   
   
-        <!-- Modal Editar Produto -->
+        <!-- Modal Editar Usuario -->
         <div class="modal fade" id="EditUser-id" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-xl">
                 <div class="modal-content">
@@ -106,7 +109,7 @@
                     </div>
                     <div class="modal-body">
     
-                    <form action="Users/update" method="post" class="row g-3">
+                    <form action="User/update" method="post" class="row g-3">
                     <div class="col-md-8">
                         <input type="hidden" name="id" value="[ID]">
                         <label for="inputNameEditUser" class="form-label">Nome</label>
@@ -151,7 +154,7 @@
                     </div>
                     <div class="col-md-4">
                         <label for="ViewEmailUser" class="form-label">E-mail</label>
-                        <input type="text" class="form-control" id="ViewEmailUser" placeholder="[E-mail]" readonly>
+                        <input type="text" class="form-control" id="ViewEmailUser" placeholder="[E-MAIL]" readonly>
                     </div>
                     <div class="col-12">
                         <label for="ViewPasswordUser" class="form-label">Senha</label>
@@ -168,7 +171,7 @@
         </div>
   
   
-        <!-- Modal excluir produto-->
+        <!-- Modal excluir Usuario-->
         <div class="modal fade" id="DeleteUser-id" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
