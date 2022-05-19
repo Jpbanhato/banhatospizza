@@ -63,7 +63,7 @@
             </table>
         </div>
 
-        <!-- Modal Adicionar Produto -->
+        <!-- Modal Adicionar Usuario -->
         <div class="modal fade" id="AddProdut" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-xl">
             <div class="modal-content">
@@ -79,34 +79,16 @@
                         <input type="text" name="nome" class="form-control" id="inputNameAddProdut" placeholder="Insira o nome do usuário">
                     </div>
                     <div class="col-md-4">
-                        <label for="inputPriceAddProdut" class="form-label">Identificação</label>
-                        <input type="text" name="preco" class="form-control" id="inputPriceAddProdut" placeholder="0000000001">
+                        <label for="inputPriceAddProdut" class="form-label">E-mail</label>
+                        <input type="text" name="preco" class="form-control" id="inputPriceAddProdut" placeholder="nome@dominio">
                     </div>
                     <div class="col-12">
-                        <label for="inputDescriptionAddProdut" class="form-label">Endereço</label>
-                        <textarea class="form-control" name="descricao" id="inputDescriptionAddProdut" rows="1" placeholder="Endereço..."></textarea>
-                    </div>
-                    <div class="col-12">
-                        <label for="inputDescriptionAddProdut" class="form-label">Telefone</label>
-                        <textarea class="form-control" name="descricao" id="inputDescriptionAddProdut" rows="1" placeholder="Telefone"></textarea>
-                    </div>
-                    <div class="col-md-12">
-                        <label for="inputCategoryAddProdut" class="form-label">Categoria</label>
-                        <select id="inputCategoryAddProdut" class="form-select" name="categoria">
-                            <option selected>Insira a categoria do usuário...</option>
-                            <option value="Pizza Salgada">Admnistração</option>
-                            <option value="Pizza Doce">Serviço</option>
-                            <option value="Esfirra">Cliente</option>
-                        </select>
-                    </div>
-                    <div class="col-12">
-                        <label for="inputImageAddProdut" class="form-label">Imagem </label>
-                        <input type="text" name="imagem" class="form-control" id="inputImageAddProdut" placeholder="Insira o nome da imagem do usuário">
-                    </div>
+                        <label for="inputDescriptionAddProdut" class="form-label">Senha</label>
+                        <textarea class="form-control" name="descricao" id="inputDescriptionAddProdut" rows="1" placeholder="Senha..."></textarea>
                 </div>
                 <div class="modal-footer">
                 <button type="button" class="btn btn-danger " data-bs-dismiss="modal">Cancelar</button>
-                <button type="submit" class="btn btn-principal">Adicionar</button>
+                <button type="submit" class="btn btn-principal btn-add" style="color: #301506; background-color: #ecd393;">Adicionar</button>
                 </div>
                 </form>
             </div>
@@ -115,14 +97,14 @@
   
   
         <!-- Modal Editar Produto -->
-        <div class="modal fade" id="EditarProd-[ID]" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal fade" id="EditarUser-[ID]" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-xl">
                 <div class="modal-content">
-                <div class="modal-header">
+                    <div class="modal-header">
                     <h5 class="modal-title" id="staticBackdropLabel">Editar Usuário</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
+                    </div>
+                    <div class="modal-body">
     
                     <form action="produtos/update" method="post" class="row g-3">
                     <div class="col-md-8">
@@ -131,33 +113,14 @@
                         <input type="text" class="form-control" name="nome" id="inputNameEditProdut" value="[NOME]">
                     </div>
                     <div class="col-md-4">
-                        <label for="inputPriceEditProdut" class="form-label">Identificação</label>
+                        <label for="inputPriceEditProdut" class="form-label">E-mail</label>
                         <input type="text" class="form-control" name="preco" id="inputPriceEditProdut" value="[PRECO]">
                     </div>
                     <div class="col-12">
                         <div class="col-12">
-                            <label for="inputDescriptionEditProdut" class="form-label">Telefone</label>
+                            <label for="inputDescriptionEditProdut" class="form-label">Senha</label>
                             <textarea class="form-control" name="descricao" id="inputDescriptionEditProdut" rows="1" placeholder="Ingredientes e porções">[DESCRICAO]</textarea>
                         </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="col-12">
-                            <label for="inputDescriptionEditProdut" class="form-label">Endereço</label>
-                            <textarea class="form-control" name="descricao" id="inputDescriptionEditProdut" rows="1" placeholder="Ingredientes e porções">[DESCRICAO]</textarea>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <label for="inputCategoryEditProdut" class="form-label">Categoria</label>
-                        <select id="inputCategoryEditProdut" class="form-select" name="categoria">
-                            <option selected>Insira a categoria do produto...</option>
-                            <option value="Pizza Salgada">Admnistração</option>
-                            <option value="Pizza Doce">Serviço</option>
-                            <option value="Esfirra">Cliente</option>
-                        </select>
-                    </div>
-                    <div class="col-12">
-                        <label for="inputImageEditProdut" class="form-label">Imagem </label>
-                        <input type="text" class="form-control" name="imagem" id="inputImageEditProdut" value=[IMAGEM]>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
@@ -170,7 +133,7 @@
         </div>
   
   
-        <!-- Modal Visualizar Produto-->
+        <!-- Modal Visualizar Usuario-->
         <div class="modal fade" id="VisualizarProd-[ID]" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl">
             <div class="modal-content">
@@ -183,28 +146,16 @@
                 <fieldset disabled>
                 <form class="row g-3">
                     <div class="col-md-8">
-                    <label for="ViewNameProduct" class="form-label">Nome</label>
-                    <input type="text" class="form-control" id="ViewNameProduct" placeholder="[NOME]" readonly>
+                        <label for="ViewNameProduct" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="ViewNameProduct" placeholder="[NOME]" readonly>
                     </div>
                     <div class="col-md-4">
-                    <label for="ViewPriceProduct" class="form-label">Identificação</label>
-                    <input type="text" class="form-control" id="ViewPriceProduct" placeholder="[IDENTIFICAÇÃO]" readonly>
+                        <label for="ViewPriceProduct" class="form-label">E-mail</label>
+                        <input type="text" class="form-control" id="ViewPriceProduct" placeholder="[IDENTIFICAÇÃO]" readonly>
                     </div>
                     <div class="col-12">
-                    <label for="ViewDescriptionProduct" class="form-label">Endereço</label>
-                    <textarea class="form-control" id="ViewDescriptionProduct" rows="1" placeholder="[ENDEREÇO]" readonly></textarea>
-                    <label for="ViewDescriptionProduct" class="form-label">Telefone</label>
-                    <textarea class="form-control" id="ViewDescriptionProduct" rows="1" placeholder="[TELEFONE]" readonly></textarea>
-                    </div>
-                    <div class="col-md-12">
-                        <label for="ViewCategoryProduct" class="form-label">Categoria</label>
-                        <select id="ViewCategoryProduct" class="form-select">
-                            <option selected>[CATEGORIA]</option>
-                        </select>
-                    </div>
-                    <div class="col-12">
-                    <label for="ViewImageProduct" class="form-label">Imagem</label>
-                    <input type="text" class="form-control" id="ViewImageProduct" placeholder="[IMAGEM]" readonly>
+                        <label for="ViewDescriptionProduct" class="form-label">Senha</label>
+                        <textarea class="form-control" id="ViewDescriptionProduct" rows="1" placeholder="[SENHA]" readonly></textarea>
                     </div>
                 </form>
                 </fieldset>
