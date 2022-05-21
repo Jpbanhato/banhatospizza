@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 19-Maio-2022 às 00:53
+-- Tempo de geração: 21-Maio-2022 às 17:00
 -- Versão do servidor: 10.4.24-MariaDB
 -- versão do PHP: 8.1.6
 
@@ -20,8 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Banco de dados: `banhatospizza`
 --
-CREATE DATABASE IF NOT EXISTS `banhatospizza` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-USE `banhatospizza`;
 
 -- --------------------------------------------------------
 
@@ -33,6 +31,13 @@ CREATE TABLE `categoria` (
   `id` int(255) NOT NULL,
   `nome` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Extraindo dados da tabela `categoria`
+--
+
+INSERT INTO `categoria` (`id`, `nome`) VALUES
+(1, 'pizza salgada');
 
 -- --------------------------------------------------------
 
@@ -50,6 +55,13 @@ CREATE TABLE `produto` (
   `informacoesUteis` text DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Extraindo dados da tabela `produto`
+--
+
+INSERT INTO `produto` (`id`, `nome`, `preco`, `idCategoria`, `imagem`, `descricao`, `informacoesUteis`) VALUES
+(1, 'pizza mussarela', '39', 1, 'pizza', 'descrição do produto', 'contém glúten');
+
 -- --------------------------------------------------------
 
 --
@@ -57,11 +69,18 @@ CREATE TABLE `produto` (
 --
 
 CREATE TABLE `usuario` (
-  `id` int(255) NOT NULL,
+  `id` int(11) NOT NULL,
   `nome` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `senha` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Extraindo dados da tabela `usuario`
+--
+
+INSERT INTO `usuario` (`id`, `nome`, `email`, `senha`) VALUES
+(1, 'root', 'root@root.com', 'root');
 
 --
 -- Índices para tabelas despejadas
@@ -97,19 +116,19 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT de tabela `categoria`
 --
 ALTER TABLE `categoria`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de tabela `produto`
 --
 ALTER TABLE `produto`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de tabela `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Restrições para despejos de tabelas
