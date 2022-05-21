@@ -8,8 +8,8 @@
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
 
-    <link href="../../public/css/global.css" rel="stylesheet">
-    <link href="../../public/css/home.css" rel="stylesheet">
+    <link href="../../../public/css/global.css" rel="stylesheet">
+    <link href="../../../public/css/home.css" rel="stylesheet">
     
     <title>Banhato's Pizza</title>
   </head>
@@ -25,19 +25,19 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item ">
-            <img src="../../public/assets/em-casa.jpg" class="d-block" alt="...">
+            <img src="../../../public/assets/em-casa.jpg" class="d-block" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>Peça pelo iFood</h5>
             </div>
           </div>
           <div class="carousel-item active">
-            <img src="../../public/assets/ingredientes.jpg" class="d-block" alt="...">
+            <img src="../../../public/assets/ingredientes.jpg" class="d-block" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>Ingredientes Selecionados</h5>
             </div>
           </div>
           <div class="carousel-item ">
-            <img src="../../public/assets/pizza-artesanal.jpg" class="d-block" alt="...">
+            <img src="../../../public/assets/pizza-artesanal.jpg" class="d-block" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>Pizzas artesanais</h5>
             </div>
@@ -58,15 +58,15 @@
         <h1 class="lp-title">Escolha. Peça. Saboreie!</h1>
         <div class="lp-cards">
           <div class="card col-sm-3">
-            <img src="../../public/assets/pizza-salgada-nova-min.webp" alt="pizzas salgadas"/>
+            <img src="../../../public/assets/pizza-salgada-nova-min.webp" alt="pizzas salgadas"/>
             <h3>Pizzas Salgadas</h3>
           </div>
           <div class="card col-sm-3">
-            <img src="../../public/assets/pizzas-doces-min.webp" alt="pizzas salgadas"/>
+            <img src="../../../public/assets/pizzas-doces-min.webp" alt="pizzas salgadas"/>
             <h3>Pizzas Doces</h3>
           </div>
           <div class="card col-sm-3">
-            <img src="../../public/assets/Esfihas-novas-min.webp" alt="pizzas salgadas"/>
+            <img src="../../../public/assets/Esfihas-novas-min.webp" alt="pizzas salgadas"/>
             <h3>Esfihas</h3>
           </div>
         </div>
@@ -75,7 +75,7 @@
       <div class="call-to-action">
         <section class="cta-container quem-somos">
           <div class="image-cta">
-              <img src="../../public/assets/Icone Marrom Circular sem Fundo.png" alt="Quem somos">
+              <img src="../../../public/assets/Icone Marrom Circular sem Fundo.png" alt="Quem somos">
           </div>
           <div class="text-cta">
               <h1>Quem somos?</h1>
@@ -99,7 +99,7 @@
               <a href="/contato"><button class="btn btn-cta">Entre em contato</button></a>
           </div>
           <div class="image-cta image-quem-somos">
-              <img src="../../public/assets/Icone Marrom Circular sem Fundo.png" alt="contato">
+              <img src="../../../public/assets/Icone Marrom Circular sem Fundo.png" alt="contato">
           </div>
       </section>
       </div>
