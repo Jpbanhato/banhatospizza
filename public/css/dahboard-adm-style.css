@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "BakerieBold";
+    src: url('../assets/fonts/BakerieBold.otf');
+}
+
+body {
+    background-color: #fdf5e6;
+}
+
+.card {
+    background-color: #ecd393;
+    border-color: black;
+    border-width: 7px;
+    border-radius: 15px;
+    margin-top: 40px;
+    box-shadow: 10px 5px 5px black;
+}
+
+.card-title {
+    font-family: BakerieBold;
+    font-size: 30px;
+}
+
+.jumbotron {
+    color: #301506;
+    font-family: BakerieBold;
+}
+
+.btn-card {
+    background-color: #301506;
+    color: white;
+    border-color: black;
+    border-width: 2px;
+}
+
+.btn-card:hover {
+    color: #ecd393;
+}
+
+.logout {
+    background-color: red;
+}
+
+.fa-solid {
+    margin-top: 10px;
+    font-size: 100px;
+    color: black;
+}

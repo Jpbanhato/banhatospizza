@@ -1,0 +1,32 @@
+footer {
+    background-color: #301506;
+    color: #eff0ea;
+}
+
+.fa {
+    text-align: center;
+    text-decoration: none;
+    border-radius: 100%;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #eff0ea;
+}
+
+.footer-link:hover {
+    color: #ecd393;
+    text-decoration: none;
+}
+
+.footer-btn:hover {
+    border-color: #ecd393;
+    background-color: #ecd393;
+    color: #eff0ea;
+}
+
+.footer-icon:hover {
+    border-color: #ecd393;
+    color: #ecd393;
+    background-color: #301506;
+}

@@ -1,0 +1,38 @@
+.container{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    right: 0;
+    background-color: var(--marfim);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 5%;
+}
+
+.user-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.navbar{
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.navbar .container-fluid {
+    background-color: var(--marfim);
+}
+
+.btn-primary, .btn-secondary, .btn-success  {
+    background-color: var(--amarelo);
+    border-color: var(--amarelo);
+    color: var(--marrom);
+}
+
+.btn-danger {
+    background-color: var(--marrom);
+    border-color: var(--marrom);
+    color: var(--marfim);
+}
