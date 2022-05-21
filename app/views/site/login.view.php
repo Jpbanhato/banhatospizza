@@ -7,8 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic" rel="stylesheet" />
-    <link rel="stylesheet" href="../../public/css/global.css">
-    <link rel="stylesheet" href="../../public/css/login.css">
+    <link rel="stylesheet" href="../../../public/css/global.css">
+    <link rel="stylesheet" href="../../../public/css/login.css">
   <title>Login</title>
 </head>
 <body>
@@ -16,7 +16,7 @@
 
     <div class="left-container">
       <div class="logo">
-        <img src="../../public/assets/Icone Marrom Circular sem Fundo.png" alt="logo banhato's pizza">
+        <img src="../../../public/assets/Icone Marrom Circular sem Fundo.png" alt="logo banhato's pizza">
       </div>
 
       <h1 class="login-title">Todo dia é dia de pizza 🍕</h1>
@@ -37,7 +37,7 @@
     </div>
 
     <div class="right-container">
-      <img src="../../public/assets/Icone Redondo sem Fundo.png" alt="logo banhato's pizza">
+      <img src="../../../public/assets/Icone Redondo sem Fundo.png" alt="logo banhato's pizza">
     </div>
   </div>
 
