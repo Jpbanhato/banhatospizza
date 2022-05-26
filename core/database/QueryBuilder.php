@@ -18,35 +18,7 @@ class QueryBuilder
     /**
      * Métodos:
      */
-    public function selectAll()
-    {
-      
-    }
 
-    public function select()
-    {
-
-    }
-
-    public function insert()
-    {
-      
-    }
-
-    public function edit()
-    {
-         
-    }
-
-    public function delete()
-    {
-      
-    }
-
-    public function read()
-    {
-      
-    }
 
     /**
      * Categorias:
@@ -59,6 +31,63 @@ class QueryBuilder
     /**
      * Usuários:
      */
+    public function selectAll()
+    {
+      
+    }
+
+    public function select()
+    {
+
+    }
+
+    public function insert($table,$parameters)
+    {
+        $sql = sprintf(
+            'INSERT INTO %s (%s) VALUES (%s)',
+            $table,implode(', ',array_keys($parameters)),
+            ':'.implode(', :',array_keys($parameters))
+        );
+
+        try{
+            $stmt = $this->pdo->prepare($sql);
+
+            $stmt->execute($parameters);
+
+        } catch (Exeption $e){
+            die($e->getMessage());
+        }
+      
+    }
+
+    public function edit($table,$id,$parameters)
+    {
+         
+    }
+
+    public function delete($table,$id)
+    {
+      $sql=sprintf(
+        'DELETE FROM %s WHERE %s',
+        $table,
+        'id - :id'
+      );
+
+      try{
+        $stmt = $this->pdo->prepare($sql);
+
+        $stmt->execute(compact('id'));
+
+    } catch (Exeption $e){
+        die($e->getMessage());
+    }
+        
+    }
+
+    public function view()
+    {
+      
+    }
 
     /**
      * Outros:
