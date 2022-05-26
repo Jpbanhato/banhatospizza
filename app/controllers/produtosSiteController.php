@@ -5,14 +5,15 @@ namespace App\Controllers;
 use App\Core\App;
 use Exception;
 
-class ExampleController
+class produtosSiteController
 {
     /**
      * Listar todos os registros
      */
     public function index()
     {
-
+        $result = App::get('database')->selectAll('produto');
+        return view('site/produtos', compact('result'));
     }
 
     /**
@@ -20,7 +21,8 @@ class ExampleController
      */
     public function show()
     {
-
+       // $id = filter_input(INPUT_POST,'id')
+     
     }
 
     /**

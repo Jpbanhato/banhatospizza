@@ -26,7 +26,9 @@
              <a href="#">
                <img src="../../../public/img/batata-frita.jpg">
                <div class="produto_txt">
-               <h1>Batatas Fritas</h1>
+               <?php foreach($result as $row): ?>
+               <h1><?= $row->nome ?></h1>
+              <input type="hidden" value="<?= $row->id ?>" name="id">
               </a>
               <a href="#">
                 <div class="botao entrada" >
@@ -34,11 +36,12 @@
                 </div>
               </a>
               <div class="desc">   
-                <p>Descrição, ingredientes, preparo</p>
+                <p><?= $row->descricao ?></p>
                 <p>Preço/delivery</p>
               </div>
             </div> 
           </div>
+          <?php endforeach; ?>
             <div class="produto p2">
               <a href="#">
                 <img src="../../../public/img/bruschetta-burrata.jpg">
