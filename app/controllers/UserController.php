@@ -42,7 +42,15 @@ class ExampleController
      */
     public function update()
     {
-        
+        $parameters = [
+            'nome' => $_POST['nome'],
+            'email' => $_POST['email'],
+            'senha' => $_POST['senha']
+        ];
+
+        App::get['database'] ->update('usuarios',$_POST['id'],$parameters);
+
+        header('Location: /admin');   
     }
 
     /**

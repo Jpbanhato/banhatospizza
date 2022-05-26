@@ -31,15 +31,6 @@ class QueryBuilder
     /**
      * Usuários:
      */
-    public function selectAll()
-    {
-      
-    }
-
-    public function select()
-    {
-
-    }
 
     public function insert($table,$parameters)
     {
@@ -60,9 +51,28 @@ class QueryBuilder
       
     }
 
-    public function edit($table,$id,$parameters)
+    public function update($table,$id,$parameters)
     {
-         
+        $sql = sprintf(
+            'UPDATE %s SET %s WHERE %S',
+            $table,implode(', ', array_map(function($parameters){
+                return "{$parameters} = :{parameters}";
+            }, array_keys($parameters))),
+            'id = :id'
+        );
+
+        $parameters['id'] = $id;
+
+        try{
+            $stmt = $this->pdo->prepare($sql);
+    
+            $stmt->execute($parameters);
+    
+        } catch (Exeption $e){
+            die($e->getMessage());
+        }    
+
+        header('Location: /admin');
     }
 
     public function delete($table,$id)
