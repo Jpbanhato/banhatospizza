@@ -18,9 +18,16 @@ class QueryBuilder
     /**
      * Métodos:
      */
-    public function selectAll()
+    public function selectAll($table)
     {
-      
+      $query = "select * from {$table}";
+        try {
+            $stmt = $this->pdo->prepare($query);
+            $stmt->execute();
+            return $stmt->fetchAll(PDO::FETCH_CLASS);
+        } catch (Exception $error) {
+            die($error->getMessage());
+        }
     }
 
     public function select()
@@ -38,9 +45,16 @@ class QueryBuilder
          
     }
 
-    public function delete()
+    public function delete($table, $id)
     {
-      
+        $sql = "DELETE FROM `{$table}` WHERE id = {$id}";
+        try {
+            $stmt = $this->pdo->prepare($sql);
+
+            $stmt->execute();
+        } catch (Exception $error) {
+            die($error->getMessage());
+        }
     }
 
     public function read()
@@ -48,10 +62,45 @@ class QueryBuilder
       
     }
 
+    public function selectPesquisa($table, $pesquisa)
+    {
+        $query = "SELECT * FROM {$table} WHERE nome LIKE '%{$pesquisa}%'";
+
+        try {
+            $stmt = $this->pdo->prepare($query);
+            $stmt->execute();
+
+            return $stmt->fetchAll(PDO::FETCH_CLASS);
+        } catch (Exception $error) {
+            die($error->getMessage());
+        }
+    }
+
     /**
      * Categorias:
      */
+    public function insertCategoria($table, $dados)
+    {
+        $query = "insert into {$table} (nome) values ('{$dados['nome']}')";
+        try {
+            $stmt = $this->pdo->prepare($query);
+            $stmt->execute();
+        } catch (Exception $error) {
+            die($error->getMessage());
+        }
+    }
 
+    public function updateCategoria($table, $id, $dados)
+    {
+        $query = "update {$table} set nome = '{$dados['nome']}' where id= {$id}";
+        try {
+            $stmt = $this->pdo->prepare($query);
+            $stmt->execute();
+        } catch (Exception $error) {
+            die($error->getMessage());
+        }
+    }  
+    
     /**
      * Produtos:
      */

@@ -15,7 +15,7 @@ class CategoriasController
        $categorias = App::get('database')->selectAll('categorias');
        $table = ["categorias" => $categorias];
        
-       return viewAdm('categorias', $table);
+       return view('admin/categorias', $table);
     }
 
     /**
@@ -27,7 +27,7 @@ class CategoriasController
         $result = App::get('database')->selectPesquisa("categorias", $pesquisa);
         $tabela = ["categorias" => $result];
 
-        return viewAdm("categorias", $tabela);
+        return view("admin/categorias", $tabela);
     }
 
     /**
