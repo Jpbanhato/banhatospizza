@@ -45,7 +45,7 @@ class QueryBuilder
 
             $stmt->execute($parameters);
 
-        } catch (Exeption $e){
+        } catch (Exception $e){
             die($e->getMessage());
         }
       
@@ -68,7 +68,7 @@ class QueryBuilder
     
             $stmt->execute($parameters);
     
-        } catch (Exeption $e){
+        } catch (Exception $e){
             die($e->getMessage());
         }    
 
@@ -88,7 +88,7 @@ class QueryBuilder
 
         $stmt->execute(compact('id'));
 
-    } catch (Exeption $e){
+    } catch (Exception $e){
         die($e->getMessage());
     }
         
@@ -97,6 +97,18 @@ class QueryBuilder
     public function view()
     {
       
+    }
+
+    public function selectAll($table)
+    {
+      $query = "select * from {$table}";
+        try {
+            $stmt = $this->pdo->prepare($query);
+            $stmt->execute();
+            return $stmt->fetchAll(PDO::FETCH_CLASS);
+        } catch (Exception $error) {
+            die($error->getMessage());
+        }
     }
 
     /**

@@ -11,13 +11,13 @@
  * Usuários:
  */
 
- $router->get('admin','UserController@view');
+ $router->get('usuarios','UserController@view');
 
- $router->post('admin/create','UserController@create');
+ $router->post('usuarios/create','UserController@create');
 
- $router->post('admin/update','UserController@update');
+ $router->post('usuarios/update','UserController@update');
 
- $router->post('admin/delete','UserController@delete');
+ $router->post('usuarios/delete','UserController@delete');
 
 /**
  * Outros:

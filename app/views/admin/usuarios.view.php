@@ -43,31 +43,33 @@
                 </thead>
 
                 <tbody>
+                    <?php foreach ($usuarios as $usuario):?>
                     <tr>
-                        <td scope="row justify-content-center align-items-center">[ID]</td>
-                        <td class="justify-content-start name-itens-table">[NOME DO USUARIO]</td>
+                        <td scope="row justify-content-center align-items-center"><?=$usuario->id?></td>
+                        <td class="justify-content-start name-itens-table"><?=$usuario->nome?></td>
                         <td class="d-flex justify-content-end colum-bottons-table">
                             <div class="d-grid gap-2 d-md-block">
                                 <!-- Button modal editar usuario -->
                                 <button type="button" class="btn btn-primary bottom-options" data-bs-toggle="modal"
-                                    data-bs-target="#EditUserId">
+                                    data-bs-target="#EditUser<?=$usuario->id?>">
                                     &#128393;
                                 </button>
 
                                 <!-- Button modal visualizar usuario -->
                                 <button type="button" class="btn btn-secondary bottom-options" data-bs-toggle="modal"
-                                    data-bs-target="#ViewUser-id">
+                                    data-bs-target="#ViewUser<?=$usuario->id?>">
                                     &#8981;
                                 </button>
 
                                 <!-- Button modal exclui usuario-->
                                 <button type="button" class="btn btn-danger bottom-options" data-bs-toggle="modal"
-                                    data-bs-target="#DeleteUser-id">
+                                    data-bs-target="#DeleteUser<?=$usuario->id?>">
                                     &#9852;
                                 </button>
                             </div>
                         </td>
                     </tr>
+                    <?php endforeach;?>
                 </tbody>
             </table>
         </div>
@@ -110,42 +112,44 @@
             </div>
         </div>
         <!-- Modal Editar Usuario -->
-        <div class="modal fade" id="EditUserId" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-            aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel">Editar Usuário</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
+        <?php foreach ($usuarios as $usuario):?>
+            <div class="modal fade" id="EditUser<?=$usuario->id?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Editar Usuário</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
 
-                        <form action="user/update" method="post" class="row g-3">
-                            <div class="col-md-8">
-                                <input type="hidden" name="id" value="[ID]">
-                                <label for="inputNameEditUser" class="form-label">Nome</label>
-                                <input type="text" class="form-control" name="nome" id="inputNameEditUser"
-                                    value="[NOME]">
-                            </div>
-                            <div class="col-md-4">
-                                <label for="inputEmailEditUser" class="form-label">E-mail</label>
-                                <input type="text" class="form-control" name="e-mail" id="inputEmailEditUser"
-                                    value="[E-MAIL]">
-                            </div>
-                            <div class="col-12">
-                                <label for="inputPasswordEditUser" class="form-label">Senha</label>
-                                <textarea class="form-control" name="senha" id="inputPasswordEditUser"
-                                    value="[SENHA]"></textarea>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
-                                <button type="submit" class="btn btn-principal">Editar</button>
-                            </div>
-                        </form>
+                            <form action="user/update" method="post" class="row g-3">
+                                <div class="col-md-8">
+                                    <input type="hidden" name="id" value="<?=$usuario->id?>">
+                                    <label for="inputNameEditUser" class="form-label">Nome</label>
+                                    <input type="text" class="form-control" name="nome" id="inputNameEditUser"
+                                        value="<?=$usuario->nome?>">
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="inputEmailEditUser" class="form-label">E-mail</label>
+                                    <input type="text" class="form-control" name="e-mail" id="inputEmailEditUser"
+                                        value="<?=$usuario->email?>">
+                                </div>
+                                <div class="col-12">
+                                    <label for="inputPasswordEditUser" class="form-label">Senha</label>
+                                    <textarea class="form-control" name="senha" id="inputPasswordEditUser"
+                                        value="<?=$usuario->senha?>"></textarea>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                                    <button type="submit" class="btn btn-principal">Editar</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        <?php endforeach;?>    
 
         <!-- Modal Visualizar Usuario-->
         <div class="modal fade" id="ViewUser-id" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"

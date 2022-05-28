@@ -5,19 +5,21 @@ namespace App\Controllers;
 use App\Core\App;
 use Exception;
 
-class ExampleController
+class UserController
 {
     /**
      * Renderizar página para exibir um registro
      */
     public function view()
     {
-        $usuarios -> App::get('database') -> selectAll('usuarios');
-        $tables = [
+        $usuarios = App::get('database') -> selectAll('usuario');
+        /**$tables = [
             'usuarios' => $usuarios
         ];
-
-        return view('adm/usuarios',$tables);
+        */
+        $tables = compact('usuarios');
+        
+        return view('admin/usuarios',$tables);
     }
 
     /**
@@ -31,7 +33,7 @@ class ExampleController
             'senha' => $_POST['senha']
         ];
 
-        app::get['database'] ->insert('usuarios',$parameters);
+        App::get('database') ->insert('usuarios',$parameters);
 
         header('Location: /admin');
 
@@ -48,7 +50,7 @@ class ExampleController
             'senha' => $_POST['senha']
         ];
 
-        App::get['database'] ->update('usuarios',$_POST['id'],$parameters);
+        App::get('database') ->update('usuarios',$_POST['id'],$parameters);
 
         header('Location: /admin');   
     }
@@ -62,7 +64,7 @@ class ExampleController
 
         App::get('database')-> delete('usuarios',$id);
 
-        header['Location: /admin'];
+        header('Location: /admin');
  
     }
 }
