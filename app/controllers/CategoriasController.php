@@ -5,7 +5,7 @@ namespace App\Controllers;
 use App\Core\App;
 use Exception;
 
-class ExampleController
+class CategoriasController
 {
     /**
      * Listar todos os registros
