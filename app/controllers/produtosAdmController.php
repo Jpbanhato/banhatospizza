@@ -8,20 +8,34 @@ use Exception;
 class produtosAdmController
 {
     /**
-     * Listar todos os registros
+     * Listar todos os registros 
      */
     public function index()
     {
-        $result = App::get('database')->selectAll('produto');
-        return view('admin/produtos', compact('result'));
-    }
+        $resultProduto = App::get('database')->selectAllProdutos('produto');
+        $resultCategoria = App::get('database')->selectAllCategorias('categoria');
+        $resultGeral = array();
+        $resultGeral = [
+            'produtos' => $resultProduto,
+            'categorias' => $resultCategoria,
+        ];
+        return view('admin/produtos', compact('resultGeral'));
 
+    }
+   /* public function showCategorias()
+    {
+       
+        return view('admin/produtos', compact('resultCategoria'));
+    }*/
     /**
      * Renderizar página para exibir um registro
      */
     public function show()
     {
-       // $id = filter_input(INPUT_POST,'id')
+        $resultShow = App::get('database')->showProdutos('produto',  $_POST['id']);
+        return view('admin/produtos', $resultShow);
+        header('Location: /adm/produtos-adm');
+            
     }
 
     /**
@@ -33,11 +47,10 @@ class produtosAdmController
             'nome' => $_POST['nome'],
             'preco' => $_POST['preco'],
             'descricao' => $_POST['descricao'],
+            'idCategoria' => $_POST['categoria'],
+            'informacoesUteis' => $_POST['informacoesUteis'],
 
         ];
-    
-        var_dump($_POST['nome']);
-        exit();
         App::get('database')->insertProdutos('produto', $parameters);
         header('Location: /adm/produtos-adm');
 
@@ -64,7 +77,14 @@ class produtosAdmController
      */
     public function update()
     {
-        
+        $parameters = [
+            'nome' => $_POST['nome'],
+            'preco' => $_POST['preco'],
+            'descricao' => $_POST['descricao'],
+
+        ];
+        App::get('database')->updateProdutos('produto', $parameters, $_POST['id']);
+        header('Location: /adm/produtos-adm');
     }
 
     /**
@@ -72,8 +92,7 @@ class produtosAdmController
      */
     public function delete()
     {
-        $parameters = $_POST['id'];
-        App::get('database')->deleteProdutos('produto', $parameters);
+        App::get('database')->deleteProdutos('produto',  $_POST['id']);
         header('Location: /adm/produtos-adm');
     }
 }

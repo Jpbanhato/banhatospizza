@@ -12,6 +12,9 @@ $router->get('site/view-produtos','produtosSiteController@index');
 $router->get('adm/produtos-adm','produtosAdmController@index');
 $router->post('produtos/create','produtosAdmController@create');
 $router->post('produtos/delete','produtosAdmController@delete');
+$router->post('produtos/update','produtosAdmController@update');
+
+
 /**
  * Usuários:
  */

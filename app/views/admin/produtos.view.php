@@ -1,3 +1,6 @@
+<?php 
+// var_dump($resultCategoria);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -41,8 +44,10 @@
                     </tr>
                 </thead>
 
+                
                 <tbody>
-                    <?php foreach($result as $row): ?>
+ <!-- frontend bugando e só mostrando 2 registros -->
+                    <?php foreach($resultGeral['produtos'] as $row): ?>
                     <tr>
                         <td scope="row justify-content-center align-items-center"><?= $row->id ?></td>
                         <td class="justify-content-start name-itens-table"><?= $row->nome ?></td>
@@ -50,13 +55,13 @@
                             <div class="d-grid gap-2 d-md-block">
                                 <!-- Button modal editar produto -->
                                 <button type="button" class="btn btn-primary bottom-options" data-bs-toggle="modal"
-                                    data-bs-target="#EditarProd-id">
+                                    data-bs-target="#EditarProd-id<?= $row->id ?>">
                                     &#128393;
                                 </button>
 
                                 <!-- Button modal visualizar produto -->
                                 <button type="button" class="btn btn-secondary bottom-options" data-bs-toggle="modal"
-                                    data-bs-target="#VisualizarProd-id">
+                                    data-bs-target="#VisualizarProd-id<?= $row->id ?>">
                                     &#8981;
                                 </button>
                                 <!-- Button modal exclui produto-->
@@ -67,10 +72,11 @@
                             </div>
                         </td>
                     </tr>
+                    <?php endforeach;  ?>
                 </tbody>
             </table>
         </div>
-        <?php endforeach;  ?>
+        
         <!-- Modal Adicionar Produto -->
 
         <div class="modal fade" id="AddProdut" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
@@ -82,7 +88,6 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-
                         <form action="/produtos/create" method="POST" class="row g-3">
                             <div class="col-md-8">
                                 <label for="inputNameAddProdut" class="form-label">Nome</label>
@@ -91,23 +96,27 @@
                             </div>
                             <div class="col-md-4">
                                 <label for="inputPriceAddProdut" class="form-label">Preço</label>
-                                <input type="text" name="preco" class="form-control"
-                                    id="inputPriceAddProdut" placeholder="R$99,99">
+                                <input type="text" name="preco" class="form-control" id="inputPriceAddProdut"
+                                    placeholder="R$99,99">
                             </div>
                             <div class="col-12">
                                 <label for="inputDescriptionAddProdut" class="form-label">Descrição do Produto</label>
-                                <textarea class="form-control" name="descricao"
-                                    id="inputDescriptionAddProdut" rows="3"
+                                <textarea class="form-control" name="descricao" id="inputDescriptionAddProdut" rows="3"
                                     placeholder="Ingredientes e porções"></textarea>
                             </div>
                             <div class="col-md-12">
                                 <label for="inputCategoryAddProdut" class="form-label">Categoria</label>
                                 <select id="inputCategoryAddProdut" class="form-select" name="categoria">
                                     <option selected>Insira a categoria do produto...</option>
-                                    <option value="Pizza Salgada">Pizza Salgada</option>
-                                    <option value="Pizza Doce">Pizza Doce</option>
-                                    <option value="Esfirra">Esfirra</option>
+                                    <?php foreach($resultGeral['categorias'] as $row):    ?>    
+                                    <option value="<?= $row->idCategoria ?> "><?=  $row->nomeCategoria ?></option>
+                                    <?php endforeach; ?>
                                 </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="inputDescriptionAddProdut" class="form-label">Informações Úteis</label>
+                                <textarea class="form-control" name="informacoesUteis" id="inputDescriptionAddProdut" rows="3"
+                                    placeholder="Contém gluten, Vegan friendly, etc.."></textarea>
                             </div>
                             <div class="col-12">
                                 <label for="inputImageAddProdut" class="form-label">Imagem </label>
@@ -119,6 +128,7 @@
                         <button type="button" class="btn btn-danger " data-bs-dismiss="modal">Cancelar</button>
                         <button type="submit" class="btn btn-principal">Adicionar</button>
                     </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -127,10 +137,10 @@
         <!-- Modal Editar Produto -->
         <?php 
         
-            foreach ($result as $row):
+            foreach ($resultGeral['produtos'] as $row):
 
           ?>
-        <div class="modal fade" id="EditarProd-id" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        <div class="modal fade" id="EditarProd-id<?= $row->id ?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
             aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-xl">
                 <div class="modal-content">
@@ -139,39 +149,37 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-
                         <form action="/produtos/update" method="post" class="row g-3">
                             <div class="col-md-8">
-                                <input type="hidden" name="id" value="id">
                                 <label for="inputNameEditProdut" class="form-label">Nome</label>
-                                <input type="text" class="form-control" name="nome" id="inputNameEditProdut">
+                                <input type="text" class="form-control" value="<?= $row->nome?>" name="nome" id="inputNameEditProdut">
                             </div>
                             <div class="col-md-4">
                                 <label for="inputPriceEditProdut" class="form-label">Preço</label>
-                                <input type="text" class="form-control" name="preco" id="inputPriceEditProdut"
-    >
+                                <input type="text" class="form-control" value="<?= $row->preco?>" name="preco" id="inputPriceEditProdut">
                             </div>
                             <div class="col-12">
                                 <div class="col-12">
                                     <label for="inputDescriptionEditProdut" class="form-label">Descrição do
                                         Produto</label>
-                                    <textarea class="form-control" name="descricao" id="inputDescriptionEditProdut"
-                                        rows="3" placeholder="Ingredientes e porções">[DESCRICAO]</textarea>
+                                    <textarea class="form-control"  name="descricao" id="inputDescriptionEditProdut"
+                                        rows="3" placeholder="Ingredientes e porções"><?= $row->descricao ?></textarea>
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <label for="inputCategoryEditProdut" class="form-label">Categoria</label>
                                 <select id="inputCategoryEditProdut" class="form-select" name="categoria">
                                     <option selected>Insira a categoria do produto...</option>
-                                    <option value="Pizza Salgada">Pizza Salgada</option>
-                                    <option value="Pizza Doce">Pizza Doce</option>
-                                    <option value="Esfirra">Esfirra</option>
+                                    <?php foreach($resultGeral['categorias'] as $row):    ?>    
+                                    <option value="<?= $row->idCategoria ?> "><?=  $row->nomeCategoria ?></option>
+                                    <?php endforeach; ?>
                                 </select>
                             </div>
                             <div class="col-12">
                                 <label for="inputImageEditProdut" class="form-label">Imagem </label>
                                 <input type="text" class="form-control" name="imagem" id="inputImageEditProdut">
                             </div>
+                            <input type="hidden" value="<?= $row->id ?>" name="id">
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
                                 <button type="submit" class="btn btn-principal">Editar</button>
@@ -182,9 +190,15 @@
             </div>
         </div>
 
+        <?php endforeach; ?>
 
-        <!-- Modal Visualizar Produto-->
-        <div class="modal fade" id="VisualizarProd-id" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        <?php 
+        
+        foreach ($resultGeral['produtos'] as $row):
+
+      ?>
+        <!-- Modal Visualizar Produto--> <!-- Arrumar um jeito de botar no value o resultado da query. Talvez usar um foreach aqui  -->
+        <div class="modal fade" id="VisualizarProd-id<?= $row->id ?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
             aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-xl">
                 <div class="modal-content">
@@ -198,23 +212,25 @@
                             <form class="row g-3">
                                 <div class="col-md-8">
                                     <label for="ViewNameProduct" class="form-label">Nome</label>
-                                    <input type="text" class="form-control" id="ViewNameProduct" placeholder="[NOME]"
+                                    <input type="text" class="form-control" id="ViewNameProduct" value="<?= $row->nome ?>" placeholder="[NOME]"
                                         readonly>
                                 </div>
                                 <div class="col-md-4">
                                     <label for="ViewPriceProduct" class="form-label">Preço</label>
-                                    <input type="text" class="form-control" id="ViewPriceProduct" placeholder="[PRECO]"
+                                    <input type="text" class="form-control" id="ViewPriceProduct" value= "<?= $row->nome ?>" placeholder="[PRECO]"
                                         readonly>
                                 </div>
                                 <div class="col-12">
                                     <label for="ViewDescriptionProduct" class="form-label">Descrição do Produto</label>
                                     <textarea class="form-control" id="ViewDescriptionProduct" rows="3"
-                                        placeholder="[DESCRICAO]" readonly></textarea>
+                                        placeholder="[DESCRICAO]" readonly> <?= $row->descricao ?>"</textarea>
                                 </div>
                                 <div class="col-md-12">
                                     <label for="ViewCategoryProduct" class="form-label">Categoria</label>
                                     <select id="ViewCategoryProduct" class="form-select">
-                                        <option selected>[CATEGORIA]</option>
+                                    <?php foreach($resultGeral['categorias'] as $row):    ?>    
+                                    <option value="<?= $row->idCategoria ?> " selected><?=  $row->nomeCategoria ?></option>
+                                    <?php endforeach; ?>
                                     </select>
                                 </div>
                                 <div class="col-12">
@@ -231,9 +247,14 @@
                 </div>
             </div>
         </div>
-
+        <?php endforeach; ?>   
 
         <!-- Modal excluir produto-->
+        <?php 
+        
+        foreach ($resultGeral['produtos'] as $row):
+
+      ?>
 
         <div class="modal fade" id="ExcluiProd-id<?= $row->id ?>" data-bs-backdrop="static" data-bs-keyboard="false"
             tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
