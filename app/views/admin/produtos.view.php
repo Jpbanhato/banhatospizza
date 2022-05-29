@@ -224,14 +224,14 @@
                                 <div class="col-12">
                                     <label for="ViewDescriptionProduct" class="form-label">Descrição do Produto</label>
                                     <textarea class="form-control" id="ViewDescriptionProduct" rows="3"
-                                        placeholder="[DESCRICAO]" readonly> <?= $row->descricao ?>"</textarea>
+                                        placeholder="[DESCRICAO]" readonly> <?= $row->descricao ?></textarea>
                                 </div>
                                 <div class="col-md-12">
                                     <label for="ViewCategoryProduct" class="form-label">Categoria</label>
                                     <select id="ViewCategoryProduct" class="form-select">
-                                    <?php foreach($resultGeral['categorias'] as $row):    ?>    
+                                
                                     <option value="<?= $row->idCategoria ?> " selected><?=  $row->nomeCategoria ?></option>
-                                    <?php endforeach; ?>
+                                
                                     </select>
                                 </div>
                                 <div class="col-12">

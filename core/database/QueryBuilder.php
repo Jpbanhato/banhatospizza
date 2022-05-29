@@ -48,7 +48,7 @@ class QueryBuilder
 
     public function selectAllProdutos($table)
     {
-      $sql = "SELECT * FROM {$table} INNER JOIN categoria ON categoria.idCategoria  = {$table}.idCategoria ";
+      $sql = "SELECT * FROM {$table} JOIN categoria ON categoria.idCategoria  = {$table}.idCategoria ";
       $stmt = $this->pdo->prepare($sql);
       try{
         $stmt->execute();
