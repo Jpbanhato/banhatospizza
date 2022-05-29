@@ -30,12 +30,12 @@ class UserController
         $parameters = [
             'nome' => $_POST['nome'],
             'email' => $_POST['email'],
-            'senha' => $_POST['senha']
+            'senha' => $_POST['senha'],
         ];
 
-        App::get('database') ->insert('usuarios',$parameters);
+        App::get('database') ->insertUsuario('usuario',$parameters);
 
-        header('Location: /admin');
+        header('Location:/usuarios');
 
     }
 
@@ -50,9 +50,9 @@ class UserController
             'senha' => $_POST['senha']
         ];
 
-        App::get('database') ->update('usuarios',$_POST['id'],$parameters);
+        App::get('database') ->updateUsuario('usuario',$_POST['id'],$parameters);
 
-        header('Location: /admin');   
+        header('Location: /usuarios');   
     }
 
     /**
@@ -62,9 +62,22 @@ class UserController
     {
         $id = $_POST['id'];
 
-        App::get('database')-> delete('usuarios',$id);
+        App::get('database')-> delete('usuario',$id);
 
-        header('Location: /admin');
+        header('Location: /usuarios');
  
+    }
+
+    public function select(){
+        
+    }
+
+    public function search(){
+
+        $search = htmlspecialchars($_GET['q']);
+
+        App::get('database')-> searchPesquisa ('usuario',$search);
+
+        
     }
 }

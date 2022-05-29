@@ -32,76 +32,70 @@ class QueryBuilder
      * Usuários:
      */
 
-    public function insert($table,$parameters)
+    public function insertUsuario($table, $parameters)
     {
         $sql = sprintf(
             'INSERT INTO %s (%s) VALUES (%s)',
-            $table,implode(', ',array_keys($parameters)),
-            ':'.implode(', :',array_keys($parameters))
+            $table,
+            implode(', ', array_keys($parameters)),
+            ':' . implode(', :', array_keys($parameters))
         );
 
-        try{
+        try {
             $stmt = $this->pdo->prepare($sql);
 
             $stmt->execute($parameters);
-
-        } catch (Exception $e){
+        } catch (Exception $e) {
             die($e->getMessage());
         }
-      
     }
 
-    public function update($table,$id,$parameters)
+    public function updateUsuario($table, $id, $parameters)
     {
+
+
         $sql = sprintf(
-            'UPDATE %s SET %s WHERE %S',
-            $table,implode(', ', array_map(function($parameters){
-                return "{$parameters} = :{parameters}";
+            'UPDATE  %s SET %s WHERE %s',
+            $table,
+            implode(',  ', array_map(function ($parameters) {
+                return "{$parameters} = :{$parameters}";
             }, array_keys($parameters))),
             'id = :id'
         );
 
         $parameters['id'] = $id;
 
-        try{
+        try {
             $stmt = $this->pdo->prepare($sql);
-    
+
             $stmt->execute($parameters);
-    
-        } catch (Exception $e){
+        } catch (Exception $e) {
             die($e->getMessage());
-        }    
+        }
 
         header('Location: /admin');
     }
 
-    public function delete($table,$id)
+    public function delete($table, $id)
     {
-      $sql=sprintf(
-        'DELETE FROM %s WHERE %s',
-        $table,
-        'id - :id'
-      );
+        $sql = "DELETE FROM `{$table}` WHERE id = {$id}";
+        try {
+            $stmt = $this->pdo->prepare($sql);
 
-      try{
-        $stmt = $this->pdo->prepare($sql);
-
-        $stmt->execute(compact('id'));
-
-    } catch (Exception $e){
-        die($e->getMessage());
+            $stmt->execute();
+        } catch (Exception $error) {
+            die($error->getMessage());
+        }
     }
-        
-    }
+
 
     public function view()
     {
-      
     }
 
     public function selectAll($table)
     {
-      $query = "select * from {$table}";
+        $query = "select * from {$table}";
         try {
             $stmt = $this->pdo->prepare($query);
             $stmt->execute();
@@ -111,8 +105,21 @@ class QueryBuilder
         }
     }
 
+    public function selectPesquisa($table, $pesquisa)
+    {
+        $query = "SELECT * FROM {$table} WHERE nome LIKE '%{$pesquisa}%'";
+
+        try {
+            $stmt = $this->pdo->prepare($query);
+            $stmt->execute();
+
+            return $stmt->fetchAll(PDO::FETCH_CLASS);
+        } catch (Exception $error) {
+            die($error->getMessage());
+        }
+    }
+
     /**
      * Outros:
      */
-
 }

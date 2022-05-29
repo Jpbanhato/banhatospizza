@@ -20,7 +20,7 @@
 
         <nav class="navbar navbar-light bg-light nav-search">
             <div class="container-fluid bottom-add d-flex">
-                <form class="d-flex justify-content-end bar-search">
+                <form class="d-flex justify-content-end bar-search" action="/user/search" method="get">
                     <input class="form-control me-2" type="search" placeholder="Pesquisar..." aria-label="Search"
                         name="search">
                     <button class="btn btn-primary bottom-search" type="submit">Pesquisar</button>
@@ -51,19 +51,19 @@
                             <div class="d-grid gap-2 d-md-block">
                                 <!-- Button modal editar usuario -->
                                 <button type="button" class="btn btn-primary bottom-options" data-bs-toggle="modal"
-                                    data-bs-target="#EditUser<?=$usuario->id?>">
+                                    data-bs-target="#EditUser-<?=$usuario->id?>">
                                     &#128393;
                                 </button>
 
                                 <!-- Button modal visualizar usuario -->
                                 <button type="button" class="btn btn-secondary bottom-options" data-bs-toggle="modal"
-                                    data-bs-target="#ViewUser<?=$usuario->id?>">
+                                    data-bs-target="#ViewUser-<?=$usuario->id?>">
                                     &#8981;
                                 </button>
 
                                 <!-- Button modal exclui usuario-->
                                 <button type="button" class="btn btn-danger bottom-options" data-bs-toggle="modal"
-                                    data-bs-target="#DeleteUser<?=$usuario->id?>">
+                                    data-bs-target="#DeleteUser-<?=$usuario->id?>">
                                     &#9852;
                                 </button>
                             </div>
@@ -85,7 +85,7 @@
                     </div>
                     <div class="modal-body">
 
-                        <form action="user/create" method="post" class="row g-3">
+                        <form action="/user/create" method="post" class="row g-3">
                             <div class="col-md-8">
                                 <label for="inputNameAddUser" class="form-label">Nome</label>
                                 <input type="text" name="nome" class="form-control" id="inputNameAddUser"
@@ -93,13 +93,13 @@
                             </div>
                             <div class="col-md-4">
                                 <label for="inputEmailAddUser" class="form-label">E-mail</label>
-                                <input type="text" name="preco" class="form-control" id="inputEmailAddUser"
+                                <input type="text" name="email" class="form-control" id="inputEmailAddUser"
                                     placeholder="nome@dominio">
                             </div>
                             <div class="col-12">
                                 <label for="inputPasswordAddUser" class="form-label">Senha</label>
-                                <textarea class="form-control" name="descricao" id="inputPasswordAddUser" rows="1"
-                                    placeholder="Senha..."></textarea>
+                                <input class="form-control" name="senha" id="inputPasswordAddUser" 
+                                    placeholder="Senha...">
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-danger " data-bs-dismiss="modal">Cancelar</button>
@@ -113,7 +113,7 @@
         </div>
         <!-- Modal Editar Usuario -->
         <?php foreach ($usuarios as $usuario):?>
-            <div class="modal fade" id="EditUser<?=$usuario->id?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            <div class="modal fade" id="EditUser-<?=$usuario->id?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
                 aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-xl">
                     <div class="modal-content">
@@ -123,7 +123,7 @@
                         </div>
                         <div class="modal-body">
 
-                            <form action="user/update" method="post" class="row g-3">
+                            <form action="/user/update" method="post" class="row g-3">
                                 <div class="col-md-8">
                                     <input type="hidden" name="id" value="<?=$usuario->id?>">
                                     <label for="inputNameEditUser" class="form-label">Nome</label>
@@ -132,13 +132,13 @@
                                 </div>
                                 <div class="col-md-4">
                                     <label for="inputEmailEditUser" class="form-label">E-mail</label>
-                                    <input type="text" class="form-control" name="e-mail" id="inputEmailEditUser"
+                                    <input type="text" class="form-control" name="email" id="inputEmailEditUser"
                                         value="<?=$usuario->email?>">
                                 </div>
                                 <div class="col-12">
                                     <label for="inputPasswordEditUser" class="form-label">Senha</label>
-                                    <textarea class="form-control" name="senha" id="inputPasswordEditUser"
-                                        value="<?=$usuario->senha?>"></textarea>
+                                    <input class="form-control" name="senha" id="inputPasswordEditUser"
+                                        value="<?=$usuario->senha?>">
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
@@ -152,7 +152,8 @@
         <?php endforeach;?>    
 
         <!-- Modal Visualizar Usuario-->
-        <div class="modal fade" id="ViewUser-id" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        <?php foreach ($usuarios as $usuario):?>
+        <div class="modal fade" id="ViewUser-<?=$usuario->id?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
             aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-xl">
                 <div class="modal-content">
@@ -166,18 +167,18 @@
                             <form class="row g-3">
                                 <div class="col-md-8">
                                     <label for="ViewNameUser" class="form-label">Nome</label>
-                                    <input type="text" class="form-control" id="ViewNameUser" placeholder="[NOME]"
+                                    <input type="text" class="form-control" id="ViewNameUser" placeholder="<?=$usuario->nome?>"
                                         readonly>
                                 </div>
                                 <div class="col-md-4">
                                     <label for="ViewEmailUser" class="form-label">E-mail</label>
-                                    <input type="text" class="form-control" id="ViewEmailUser" placeholder="[E-MAIL]"
+                                    <input type="text" class="form-control" id="ViewEmailUser" placeholder="<?=$usuario->email?>"
                                         readonly>
                                 </div>
                                 <div class="col-12">
                                     <label for="ViewPasswordUser" class="form-label">Senha</label>
-                                    <textarea class="form-control" id="ViewPasswordUser" rows="1" placeholder="[SENHA]"
-                                        readonly></textarea>
+                                    <input class="form-control" id="ViewPasswordUser" placeholder="<?=$usuario->senha?>"
+                                        readonly>
                                 </div>
                             </form>
                         </fieldset>
@@ -188,31 +189,33 @@
                 </div>
             </div>
         </div>
-    </div>
+        <?php endforeach;?>
 
 
-    <!-- Modal excluir Usuario-->
-    <div class="modal fade" id="DeleteUser-id" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">Excluir Usuario</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p class="text-center">Deseja mesmo excluir esse usuário?</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-principal bottom-add" data-bs-dismiss="modal">Cancelar</button>
-                    <form action="user/delete" method="post">
-                        <input type="hidden" value="[ID]" name="id">
-                        <button type="submit" class="btn btn-danger">Excluir</button>
-                    </form>
+        <!-- Modal excluir Usuario-->
+        <?php foreach ($usuarios as $usuario):?>
+        <div class="modal fade" id="DeleteUser-<?=$usuario->id?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Excluir Usuario</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="text-center">Deseja mesmo excluir esse usuário?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-principal bottom-add" data-bs-dismiss="modal">Cancelar</button>
+                        <form action="/user/delete" method="post">
+                            <input type="hidden" value="<?=$usuario->id?>" name="id">
+                            <button type="submit" class="btn btn-danger">Excluir</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+        <?php endforeach;?>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

@@ -13,11 +13,15 @@
 
  $router->get('usuarios','UserController@view');
 
- $router->post('usuarios/create','UserController@create');
+ $router->post('user/create','UserController@create');
 
- $router->post('usuarios/update','UserController@update');
+ $router->post('user/update','UserController@update');
 
- $router->post('usuarios/delete','UserController@delete');
+ $router->post('user/delete','UserController@delete');
+
+ $router->post('user/select','UserController@select');
+
+ $router->post('user/search','UserController@search');
 
 /**
  * Outros:
