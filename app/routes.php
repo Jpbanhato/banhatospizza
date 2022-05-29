@@ -9,11 +9,15 @@
  */
 
 /**
- * Usuários:
+ * Contato:
  */
+$router ->get('contato','ContatoController@view');
 
 /**
- * Outros:
- */
+ * Login:
+*/
+$router ->get('login','LoginController@view');
+
+ 
 
 ?>
