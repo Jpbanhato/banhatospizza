@@ -3,14 +3,14 @@
 /**
  * Categorias:
  */
-  $router->post("categorias/create", "CategoriasController@create");
+  $router->post("admin/categorias/create", "CategoriasController@create");
 
-  $router->get("categorias", "CategoriasController@index");
-  $router->get("categorias/result", "CategoriasController@show");
+  $router->get("admin/categorias", "CategoriasController@index");
+  $router->get("admin/categorias/result", "CategoriasController@show");
 
-  $router->post("categorias/update", "CategoriasController@update");
+  $router->post("admin/categorias/update", "CategoriasController@update");
   
-  $router->post("categorias/delete", "CategoriasController@delete");
+  $router->post("admin/categorias/delete", "CategoriasController@delete");
 /**
  * Produtos:
  */

@@ -12,7 +12,7 @@ class CategoriasController
      */
     public function index()
     {
-       $categorias = App::get('database')->selectAll('categorias');
+       $categorias = App::get('database')->selectAll('categoria');
        $table = ["categorias" => $categorias];
        
        return view('admin/categorias', $table);
@@ -24,7 +24,7 @@ class CategoriasController
     public function show()
     {
         $pesquisa = $_GET["pesquisa"];
-        $result = App::get('database')->selectPesquisa("categorias", $pesquisa);
+        $result = App::get('database')->selectPesquisa("categoria", $pesquisa);
         $tabela = ["categorias" => $result];
 
         return view("admin/categorias", $tabela);
@@ -36,8 +36,8 @@ class CategoriasController
     public function create()
     {
         $dados = ["nome" => $_POST['nome']];
-        App::get('database')->insertCategoria('categorias',$dados);
-        header('Location:/categorias');
+        App::get('database')->insertCategoria('categoria',$dados);
+        header('Location:/admin/categorias');
     }
 
     /**
@@ -61,10 +61,10 @@ class CategoriasController
      */
     public function update()
     {
-        $dados = ["nome" => $_POST['nome']];
-        $id = $_POST['id'];
-        App::get('database')->updateCategoria('categorias', $id, $dados);
-        header('Location:/categorias');
+        $dados = ["nome" => $_POST["nome"]];
+        $id = $_POST["id"];
+        App::get("database")->updateCategoria("categoria", $id, $dados);
+        header('Location:/admin/categorias');
     }
 
     /**
@@ -73,7 +73,7 @@ class CategoriasController
     public function delete()
     {
         $id = $_POST['id'];
-        App::get('database')->delete('categorias', $id);
-        header('Location:/categorias');
+        App::get('database')->delete('categoria', $id);
+        header('Location:/admin/categorias');
     }
 }

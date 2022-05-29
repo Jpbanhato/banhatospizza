@@ -19,8 +19,8 @@
 
       <nav class="navbar navbar-light bg-light nav-search">
         <div class="container-fluid bottom-add d-flex">
-          <form class="d-flex justify-content-end bar-search">
-            <input class="form-control me-2" type="search" placeholder="Pesquisar..." aria-label="Search" name="search">
+          <form class="d-flex justify-content-end bar-search" method="get" action="categorias/result">
+            <input class="form-control me-2" type="search" placeholder="Pesquisar..." aria-label="Search" name="pesquisa">
             <button class="btn btn-primary bottom-search" type="submit">Pesquisar</button>
           </form>
 
@@ -39,6 +39,7 @@
           </thead>
 
           <tbody>
+            <?php foreach ($categorias as $categoria) : ?>
             <tr>
               <td scope="row justify-content-center align-items-center"><?= $categoria->id ?></td>
               <td class="justify-content-start name-itens-table"><?= $categoria->nome ?></td>
@@ -62,6 +63,7 @@
                 </div>
               </td>
             </tr>
+            <?php endforeach; ?>
           </tbody>
         </table>
       </div>
@@ -102,7 +104,7 @@
             </div>
             <div class="modal-body">
 
-              <form action="Categorias/update" method="post" class="row g-3">
+              <form action="categorias/update" method="post" class="row g-3">
                 <div class="col-md-8">
                   <input type="hidden" name="id" value="<?= $categoria->id ?>">
                   <label for="inputNameEditCategory" class="form-label">Nome</label>
@@ -166,7 +168,7 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-principal bottom-add" data-bs-dismiss="modal">Cancelar</button>
-              <form action="categoria/delete" method="post">
+              <form action="categorias/delete" method="post">
                 <input type="hidden" value="<?= $categoria->id ?>" name="id">
                 <button type="submit" class="btn btn-danger">Excluir</button>
               </form>
