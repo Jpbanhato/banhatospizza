@@ -100,19 +100,6 @@ class QueryBuilder
 
     }
 
-    public function showProdutos($table,$id)
-    {
-      $sql = "SELECT * FROM {$table} INNER JOIN categoria ON categoria.idCategoria  = {$table}.idCategoria ";
-      try{
-        $stmt = $this->pdo->prepare($sql);
-        $stmt->execute();
-        return $stmt->fetchAll(PDO::FETCH_CLASS);
-      } catch (Exception $e){
-        die($e->getMessage());
-      }  
-    }
-
-
     public function updateProdutos($table, $parameters, $id)
     {
       $sql = sprintf('UPDATE  %s SET %s WHERE %s', $table,  

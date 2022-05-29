@@ -81,9 +81,11 @@ class produtosAdmController
             'nome' => $_POST['nome'],
             'preco' => $_POST['preco'],
             'descricao' => $_POST['descricao'],
+            'idCategoria' => $_POST['categoria'],
 
         ];
         App::get('database')->updateProdutos('produto', $parameters, $_POST['id']);
+       
         header('Location: /adm/produtos-adm');
     }
 

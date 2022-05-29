@@ -55,18 +55,18 @@
                             <div class="d-grid gap-2 d-md-block">
                                 <!-- Button modal editar produto -->
                                 <button type="button" class="btn btn-primary bottom-options" data-bs-toggle="modal"
-                                    data-bs-target="#EditarProd-id<?= $row->id ?>">
+                                    data-bs-target="#EditarProd-<?= $row->id ?>">
                                     &#128393;
                                 </button>
 
                                 <!-- Button modal visualizar produto -->
                                 <button type="button" class="btn btn-secondary bottom-options" data-bs-toggle="modal"
-                                    data-bs-target="#VisualizarProd-id<?= $row->id ?>">
+                                    data-bs-target="#VisualizarProd-<?= $row->id ?>">
                                     &#8981;
                                 </button>
                                 <!-- Button modal exclui produto-->
                                 <button type="button" class="btn btn-danger bottom-options" data-bs-toggle="modal"
-                                    data-bs-target="#ExcluiProd-id<?= $row->id ?>">
+                                    data-bs-target="#ExcluiProd-<?= $row->id ?>">
                                     &#9852;
                                 </button>
                             </div>
@@ -140,7 +140,7 @@
             foreach ($resultGeral['produtos'] as $row):
 
           ?>
-        <div class="modal fade" id="EditarProd-id<?= $row->id ?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        <div class="modal fade" id="EditarProd-<?= $row->id ?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
             aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-xl">
                 <div class="modal-content">
@@ -150,6 +150,7 @@
                     </div>
                     <div class="modal-body">
                         <form action="/produtos/update" method="post" class="row g-3">
+                            <input type="hidden" value="<?=$row->id?>" name="id">
                             <div class="col-md-8">
                                 <label for="inputNameEditProdut" class="form-label">Nome</label>
                                 <input type="text" class="form-control" value="<?= $row->nome?>" name="nome" id="inputNameEditProdut">
@@ -179,7 +180,7 @@
                                 <label for="inputImageEditProdut" class="form-label">Imagem </label>
                                 <input type="text" class="form-control" name="imagem" id="inputImageEditProdut">
                             </div>
-                            <input type="hidden" value="<?= $row->id ?>" name="id">
+                            
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
                                 <button type="submit" class="btn btn-principal">Editar</button>
@@ -198,7 +199,7 @@
 
       ?>
         <!-- Modal Visualizar Produto--> <!-- Arrumar um jeito de botar no value o resultado da query. Talvez usar um foreach aqui  -->
-        <div class="modal fade" id="VisualizarProd-id<?= $row->id ?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        <div class="modal fade" id="VisualizarProd-<?= $row->id ?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
             aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-xl">
                 <div class="modal-content">
@@ -256,7 +257,7 @@
 
       ?>
 
-        <div class="modal fade" id="ExcluiProd-id<?= $row->id ?>" data-bs-backdrop="static" data-bs-keyboard="false"
+        <div class="modal fade" id="ExcluiProd-<?= $row->id ?>" data-bs-backdrop="static" data-bs-keyboard="false"
             tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -279,10 +280,10 @@
                 </div>
             </div>
         </div>
-    </div>
-    <?php endforeach;
+        <?php endforeach;
         
-    ?>
+        ?>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
