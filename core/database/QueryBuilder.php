@@ -48,6 +48,20 @@ class QueryBuilder
       
     }
 
+    public function selectPesquisa($table, $pesquisa)
+    {
+        $query = "SELECT * FROM {$table} WHERE nome LIKE '%{$pesquisa}%'";
+
+        try {
+            $stmt = $this->pdo->prepare($query);
+            $stmt->execute();
+
+            return $stmt->fetchAll(PDO::FETCH_CLASS);
+        } catch (Exception $error) {
+            die($error->getMessage());
+        }
+    }
+    
     /**
      * Categorias:
      */

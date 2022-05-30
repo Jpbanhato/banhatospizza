@@ -7,6 +7,8 @@
 /**
  * Produtos:
  */
+$router->post('pesquisaProdutos', 'ProdutosAdmController@search');
+
 
 /**
  * Contato:

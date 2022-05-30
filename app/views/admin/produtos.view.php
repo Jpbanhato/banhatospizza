@@ -17,8 +17,8 @@
 
         <nav class="navbar navbar-light bg-light nav-search">
             <div class="container-fluid bottom-add d-flex">
-              <form class="d-flex justify-content-end bar-search">
-                <input class="form-control me-2" type="search" placeholder="Pesquisar..." aria-label="Search" name="search">
+              <form action='/pesquisaProdutos' method='POST'class="d-flex justify-content-end bar-search">
+                <input class="form-control me-2" type="search" placeholder="Pesquisar..." aria-label="Search" name="pesquisa">
                 <button class="btn btn-primary bottom-search" type="submit">Pesquisar</button>
               </form>
                 
