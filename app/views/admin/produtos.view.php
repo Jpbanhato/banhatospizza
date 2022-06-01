@@ -46,7 +46,6 @@
 
                 
                 <tbody>
- <!-- frontend bugando e só mostrando 2 registros -->
                     <?php foreach($resultGeral['produtos'] as $row): ?>
                     <tr>
                         <td scope="row justify-content-center align-items-center"><?= $row->id ?></td>
@@ -218,7 +217,7 @@
                                 </div>
                                 <div class="col-md-4">
                                     <label for="ViewPriceProduct" class="form-label">Preço</label>
-                                    <input type="text" class="form-control" id="ViewPriceProduct" value= "<?= $row->nome ?>" placeholder="[PRECO]"
+                                    <input type="text" class="form-control" id="ViewPriceProduct" value= "<?= $row->preco ?>" placeholder="[PRECO]"
                                         readonly>
                                 </div>
                                 <div class="col-12">
