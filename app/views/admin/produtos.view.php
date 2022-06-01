@@ -169,9 +169,9 @@
                             <div class="col-md-12">
                                 <label for="inputCategoryEditProdut" class="form-label">Categoria</label>
                                 <select id="inputCategoryEditProdut" class="form-select" name="categoria">
-                                    <option selected>Insira a categoria do produto...</option>
+                                    <option >Insira a categoria do produto...</option>
                                     <?php foreach($resultGeral['categorias'] as $row):    ?>    
-                                    <option value="<?= $row->idCategoria ?> "><?=  $row->nomeCategoria ?></option>
+                                    <option value="<?= $row->idCategoria ?> " selected><?=  $row->nomeCategoria ?></option>
                                     <?php endforeach; ?>
                                 </select>
                             </div>
