@@ -6,7 +6,7 @@ use App\Core\App;
 use Exception;
 session_start();
 
-class loginController
+class LoginController
 {
     public function show(){
 
@@ -28,6 +28,13 @@ class loginController
         }else{
             return view('site/login', compact('errorMessage'));
         }
+
+    }
+    public function logout(){
+        session_start();
+        session_destroy();
+        header('Location: /site/login');
+
 
     }
 }

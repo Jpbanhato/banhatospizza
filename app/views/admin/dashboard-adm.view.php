@@ -55,8 +55,10 @@
                     <div class="card text-center">
                         <i class="fa-solid fa-right-from-bracket"></i>
                         <div class="card-body">
-                            <h5 class="card-title">Encerrar sessão</h5>
-                            <a href="#" class="btn btn-card logout">Sair</a>
+                            <form action="/logout" method="post">
+                                <h5 class="card-title">Encerrar sessão</h5>
+                                <button type="submit" class="btn btn-card logout">Sair</button>
+                            </form>
                         </div>
                     </div>
                 </div>

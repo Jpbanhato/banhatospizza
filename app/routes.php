@@ -22,12 +22,13 @@
 /**
  * Outros:
  */
-$router->get('','homeController@show');
-$router->get('site/quem-somos','quemSomosController@show');
-$router->get('site/produto','produtoController@show');
-$router->get('site/contato','contatoController@show');
-$router->get('site/login','loginController@show');
-$router->post('login','loginController@login');
+$router->get('','HomeController@show');
+$router->get('site/quem-somos','QuemSomosController@show');
+$router->get('site/produto','ProdutoController@show');
+$router->get('site/contato','ContatoController@show');
+$router->get('site/login','LoginController@show');
+$router->post('login','LoginController@login');
+$router->post('logout','LoginController@logout');
 $router->get('admin/dashboard','DashboardController@show');
 
 
