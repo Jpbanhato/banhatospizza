@@ -35,7 +35,7 @@ class UserController
 
         App::get('database') ->insertUsuario('usuario',$parameters);
 
-        header('Location:/usuarios');
+        header('Location: /admin/usuarios');
 
     }
 
@@ -52,7 +52,7 @@ class UserController
 
         App::get('database') ->updateUsuario('usuario',$_POST['id'],$parameters);
 
-        header('Location: /usuarios');   
+        header('Location: /admin/usuarios');   
     }
 
     /**
@@ -64,20 +64,7 @@ class UserController
 
         App::get('database')-> delete('usuario',$id);
 
-        header('Location: /usuarios');
+        header('Location: /admin/usuarios');
  
-    }
-
-    public function select(){
-        
-    }
-
-    public function search(){
-
-        $search = htmlspecialchars($_GET['q']);
-
-        App::get('database')-> searchPesquisa ('usuario',$search);
-
-        
     }
 }

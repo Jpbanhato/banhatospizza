@@ -20,7 +20,7 @@
 
         <nav class="navbar navbar-light bg-light nav-search">
             <div class="container-fluid bottom-add d-flex">
-                <form class="d-flex justify-content-end bar-search" action="/user/search" method="get">
+                <form class="d-flex justify-content-end bar-search" action="/admin/usuarios/search" method="get">
                     <input class="form-control me-2" type="search" placeholder="Pesquisar..." aria-label="Search"
                         name="search">
                     <button class="btn btn-primary bottom-search" type="submit">Pesquisar</button>
@@ -85,7 +85,7 @@
                     </div>
                     <div class="modal-body">
 
-                        <form action="/user/create" method="post" class="row g-3">
+                        <form action="/admin/usuarios/create" method="post" class="row g-3">
                             <div class="col-md-8">
                                 <label for="inputNameAddUser" class="form-label">Nome</label>
                                 <input type="text" name="nome" class="form-control" id="inputNameAddUser"
@@ -123,7 +123,7 @@
                         </div>
                         <div class="modal-body">
 
-                            <form action="/user/update" method="post" class="row g-3">
+                            <form action="/admin/usuarios/update" method="post" class="row g-3">
                                 <div class="col-md-8">
                                     <input type="hidden" name="id" value="<?=$usuario->id?>">
                                     <label for="inputNameEditUser" class="form-label">Nome</label>
@@ -207,7 +207,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-principal bottom-add" data-bs-dismiss="modal">Cancelar</button>
-                        <form action="/user/delete" method="post">
+                        <form action="/admin/usuarios/delete" method="post">
                             <input type="hidden" value="<?=$usuario->id?>" name="id">
                             <button type="submit" class="btn btn-danger">Excluir</button>
                         </form>

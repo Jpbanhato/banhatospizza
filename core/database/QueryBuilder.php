@@ -72,8 +72,6 @@ class QueryBuilder
         } catch (Exception $e) {
             die($e->getMessage());
         }
-
-        header('Location: /admin');
     }
 
     public function delete($table, $id)
@@ -95,7 +93,7 @@ class QueryBuilder
 
     public function selectAll($table)
     {
-        $query = "select * from {$table}";
+      $query = "select * from {$table}";
         try {
             $stmt = $this->pdo->prepare($query);
             $stmt->execute();
