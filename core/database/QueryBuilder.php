@@ -112,5 +112,19 @@ class QueryBuilder
     /**
      * Outros:
      */
+    public function selectLogin($table, $parameters)
+    {
+        $sql = sprintf(
+            "SELECT * FROM %s WHERE email = '%s' AND senha = '%s'", $table, 
+            $parameters['email'], $parameters['senha']
+          );
+          try{  
+                $stmt = $this->pdo->prepare($sql);
+                $stmt->execute();
+                return $stmt->rowCount();
+          } catch (Exception $error) {
+              die($error->getMessage());
+          }
+    }
 
 }

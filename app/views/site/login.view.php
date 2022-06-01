@@ -22,17 +22,23 @@
       <h1 class="login-title">Todo dia é dia de pizza 🍕</h1>
       <p class="login-subtitle">Faça seu login:</p>
 
-      <form action="login">
+      <form action="/login" method="POST">
         <div class="email-login labeled-input">
           <label for="email">E-mail:</label>
-          <input id="email" type="text" placeholder="exemplo@email.com">
+          <input id="email" type="text" name="email" placeholder="exemplo@email.com" require>
         </div>
         <div class="password-login labeled-input">
           <label for="password">Senha:</label>
-          <input id="password" type="password" placeholder="Senha">
+          <input id="password" type="password" name="senha" placeholder="Senha" require>
         </div>
+        <?php
+        if(isset($errorMessage)){
+          echo $errorMessage;
+        } 
+        ?>
+        <button type="submit" id="login-btn" >entrar</button>
       </form>
-      <button id="login-btn" disable>entrar</button>
+     
             
     </div>
 

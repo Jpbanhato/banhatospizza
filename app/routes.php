@@ -22,5 +22,13 @@
 /**
  * Outros:
  */
+$router->get('','homeController@show');
+$router->get('site/quem-somos','quemSomosController@show');
+$router->get('site/produto','produtoController@show');
+$router->get('site/contato','contatoController@show');
+$router->get('site/login','loginController@show');
+$router->post('login','loginController@login');
+$router->get('admin/dashboard','DashboardController@show');
+
 
 ?>
