@@ -5,7 +5,7 @@ namespace App\Controllers;
 use App\Core\App;
 use Exception;
 
-class quemSomosController
+class QuemSomosController
 {
     public function show(){
 

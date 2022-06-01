@@ -5,7 +5,7 @@ namespace App\Controllers;
 use App\Core\App;
 use Exception;
 
-class contatoController
+class ContatoController
 {
     public function show(){
 

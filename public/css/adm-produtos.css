@@ -1,12 +1,14 @@
-body{
+/*body{
     height:100vh;
     width:100vw;
     background-color: var(--marfim);
-}
+} */
 
 .container{
-    height:100vh;
-    width:100vw;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    right: 0;
     background-color: var(--marfim);
 
     display: flex;
@@ -15,7 +17,7 @@ body{
     padding: 5%;
 }
 
-.product-header {
+.user-header {
     text-align: center;
     margin-bottom: 2rem;
 }
@@ -39,4 +41,4 @@ body{
     background-color: var(--marrom);
     border-color: var(--marrom);
     color: var(--marfim);
-}
+}   

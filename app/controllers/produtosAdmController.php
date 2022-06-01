@@ -5,7 +5,7 @@ namespace App\Controllers;
 use App\Core\App;
 use Exception;
 
-class produtosAdmController
+class ProdutosAdmController
 {
     /**
      * Listar todos os registros 

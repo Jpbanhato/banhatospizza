@@ -7,11 +7,11 @@
 /**
  * Produtos:
  */
-$router->get('site/produtos','produtosSiteController@index');
-$router->get('admin/produtos','produtosAdmController@index');
-$router->post('admin/produtos/create','produtosAdmController@create');
-$router->post('admin/produtos/delete','produtosAdmController@delete');
-$router->post('admin/produtos/update','produtosAdmController@update');
+$router->get('site/produtos','ProdutosSiteController@index');
+$router->get('admin/produtos','ProdutosAdmController@index');
+$router->post('admin/produtos/create','ProdutosAdmController@create');
+$router->post('admin/produtos/delete','ProdutosAdmController@delete');
+$router->post('admin/produtos/update','ProdutosAdmController@update');
 
 
 /**
@@ -22,10 +22,10 @@ $router->post('admin/produtos/update','produtosAdmController@update');
  * Outros:
  */
 $router->get('','homeController@show');
-$router->get('site/quem-somos','quemSomosController@show');
-$router->get('site/produto','produtoController@show');
-$router->get('site/contato','contatoController@show');
-$router->get('site/login','loginController@show');
+$router->get('site/quem-somos','QuemSomosController@show');
+$router->get('site/produto','ProdutoController@show');
+$router->get('site/contato','ContatoController@show');
+$router->get('site/login','LoginController@show');
 
 
 ?>
