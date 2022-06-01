@@ -87,7 +87,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form action="/produtos/create" method="POST" class="row g-3">
+                        <form action="/admin/produtos/create" method="POST" class="row g-3">
                             <div class="col-md-8">
                                 <label for="inputNameAddProdut" class="form-label">Nome</label>
                                 <input type="text" name="nome" class="form-control" id="inputNameAddProdut"
@@ -148,7 +148,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form action="/produtos/update" method="post" class="row g-3">
+                        <form action="/admin/produtos/update" method="post" class="row g-3">
                             <input type="hidden" value="<?=$row->id?>" name="id">
                             <div class="col-md-8">
                                 <label for="inputNameEditProdut" class="form-label">Nome</label>
@@ -270,7 +270,7 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-principal bottom-add"
                             data-bs-dismiss="modal">Cancelar</button>
-                        <form action="/produtos/delete" method="post">
+                        <form action="/admin/produtos/delete" method="post">
                             <input type="hidden" value="<?= $row->id ?>" name="id">
 
                             <button type="submit" class="btn btn-danger">Excluir</button>

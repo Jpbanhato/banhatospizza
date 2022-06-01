@@ -34,7 +34,7 @@ class produtosAdmController
     {
         $resultShow = App::get('database')->showProdutos('produto',  $_POST['id']);
         return view('admin/produtos', $resultShow);
-        header('Location: /adm/produtos-adm');
+        header('Location: /admin/produtos');
             
     }
 
@@ -52,7 +52,7 @@ class produtosAdmController
 
         ];
         App::get('database')->insertProdutos('produto', $parameters);
-        header('Location: /adm/produtos-adm');
+        header('Location: /admin/produtos');
 
     }
 
@@ -86,7 +86,7 @@ class produtosAdmController
         ];
         App::get('database')->updateProdutos('produto', $parameters, $_POST['id']);
        
-        header('Location: /adm/produtos-adm');
+        header('Location: /admin/produtos');
     }
 
     /**
@@ -95,6 +95,6 @@ class produtosAdmController
     public function delete()
     {
         App::get('database')->deleteProdutos('produto',  $_POST['id']);
-        header('Location: /adm/produtos-adm');
+        header('Location: /admin/produtos');
     }
 }

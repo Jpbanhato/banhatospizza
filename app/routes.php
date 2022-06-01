@@ -7,12 +7,11 @@
 /**
  * Produtos:
  */
-$router->get('site/view-produtos','produtosSiteController@index');
-//$router->get('site/insert-produtos','produtosAdmController@insert');
-$router->get('adm/produtos-adm','produtosAdmController@index');
-$router->post('produtos/create','produtosAdmController@create');
-$router->post('produtos/delete','produtosAdmController@delete');
-$router->post('produtos/update','produtosAdmController@update');
+$router->get('site/produtos','produtosSiteController@index');
+$router->get('admin/produtos','produtosAdmController@index');
+$router->post('admin/produtos/create','produtosAdmController@create');
+$router->post('admin/produtos/delete','produtosAdmController@delete');
+$router->post('admin/produtos/update','produtosAdmController@update');
 
 
 /**
