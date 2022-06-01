@@ -23,11 +23,11 @@
  * Outros:
  */
 $router->get('','HomeController@show');
-$router->get('site/quem-somos','QuemSomosController@show');
-$router->get('site/produto','ProdutoController@show');
-$router->get('site/contato','ContatoController@show');
-$router->get('site/login','LoginController@show');
-$router->post('login','LoginController@login');
+$router->get('quem-somos','QuemSomosController@show');
+$router->get('produto','ProdutoController@show');
+$router->get('contato','ContatoController@show');
+$router->get('login','LoginController@show');
+$router->post('loginBack','LoginController@login');
 $router->post('logout','LoginController@logout');
 $router->get('admin/dashboard','DashboardController@show');
 

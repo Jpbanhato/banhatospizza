@@ -22,7 +22,7 @@
       <h1 class="login-title">Todo dia é dia de pizza 🍕</h1>
       <p class="login-subtitle">Faça seu login:</p>
 
-      <form action="/login" method="POST">
+      <form action="/loginBack" method="POST">
         <div class="email-login labeled-input">
           <label for="email">E-mail:</label>
           <input id="email" type="text" name="email" placeholder="exemplo@email.com" require>
