@@ -28,7 +28,7 @@
 
  $router->post('admin/usuarios/select','UserController@select');
 
- $router->post('admin/usuarios/search','UserController@search');
+ $router->get('admin/usuarios/search','UserController@search');
 
 /**
  * Outros:

@@ -67,4 +67,13 @@ class UserController
         header('Location: /admin/usuarios');
  
     }
+
+    public function search()
+    {
+        $pesquisa = $_GET["search"];
+        $result = App::get('database')->selectPesquisa("usuario", $pesquisa);
+        $tabela = ["usuarios" => $result];
+
+        return view("admin/usuarios", $tabela);
+    }
 }
