@@ -18,6 +18,19 @@ class QueryBuilder
     /**
      * Métodos:
      */
+    public function selectPesquisaProdutos($table, $pesquisa)
+    {
+        $query = "SELECT * FROM {$table} JOIN categoria ON categoria.idCategoria = produto.idCategoria WHERE nome LIKE '%{$pesquisa}%'";
+
+        try {
+            $stmt = $this->pdo->prepare($query);
+            $stmt->execute();
+
+            return $stmt->fetchAll(PDO::FETCH_CLASS);
+        } catch (Exception $error) {
+            die($error->getMessage());
+        }
+    }
 
 
     public function select()
@@ -126,5 +139,7 @@ class QueryBuilder
     /**
      * Outros:
      */
+
+
 
 }

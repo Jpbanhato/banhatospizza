@@ -97,4 +97,16 @@ class ProdutosAdmController
         App::get('database')->deleteProdutos('produto',  $_POST['id']);
         header('Location: /admin/produtos');
     }
+    public function search()
+    {
+        $pesquisa = $_GET["search"];
+        $resultProdutos = App::get('database')->selectPesquisaProdutos("produto", $pesquisa);
+        $resultCategorias = App::get('database')->selectAllCategorias("categoria");
+        $resultGeral = [
+            "produtos" => $resultProdutos,
+            "categorias" => $resultCategorias,
+    ];
+
+        return view("admin/produtos", compact('resultGeral'));
+    }
 }
