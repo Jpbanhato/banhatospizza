@@ -11,7 +11,7 @@
     <link href="../../../public/css/global.css" rel="stylesheet">
     <link href="../../../public/css/home.css" rel="stylesheet">
     
-    <title>Banhato's Pizza</title>
+    <title>Banhato's Pizza - Os sabores que todos buscam </title>
   </head>
   <body>
     <!-- Navbar -->
@@ -23,7 +23,7 @@
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-        <div class="carousel-inner">
+        <div class="carousel-inner interior-carrossel">
           <div class="carousel-item ">
             <img src="../../../public/assets/em-casa.jpg" class="d-block" alt="...">
             <div class="carousel-caption d-none d-md-block">
@@ -31,13 +31,13 @@
             </div>
           </div>
           <div class="carousel-item active">
-            <img src="../../../public/assets/ingredientes.jpg" class="d-block" alt="...">
+            <img src="../../../public/assets/ingredientes-2.jpg" class="d-block" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>Ingredientes Selecionados</h5>
             </div>
           </div>
           <div class="carousel-item ">
-            <img src="../../../public/assets/pizza-artesanal.jpg" class="d-block" alt="...">
+            <img src="../../../public/assets/pizza-artesanal-1.jpg" class="d-block" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>Pizzas artesanais</h5>
             </div>
@@ -75,7 +75,7 @@
       <div class="call-to-action">
         <section class="cta-container quem-somos">
           <div class="image-cta">
-              <img src="../../../public/assets/Icone Marrom Circular sem Fundo.png" alt="Quem somos">
+              <img src="../../../public/img/Pizza Maker-bro.png" alt="Quem somos">
           </div>
           <div class="text-cta">
               <h1>Quem somos?</h1>
@@ -99,7 +99,7 @@
               <a href="/contato"><button class="btn btn-cta">Entre em contato</button></a>
           </div>
           <div class="image-cta image-quem-somos">
-              <img src="../../../public/assets/Icone Marrom Circular sem Fundo.png" alt="contato">
+              <img src="../../../public/img/Pizza sharing-amico.png" alt="contato">
           </div>
       </section>
       </div>

@@ -1,5 +1,5 @@
 main {
-  background-color: var(--marrom);
+  background-color: #1d0505;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -43,6 +43,8 @@ main {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  background-color: #301506;
+  border-radius: 1rem;
 
   padding: 15px;
 }
@@ -56,9 +58,9 @@ main {
 .card h3 {
   margin-top: 20px;
   font-weight: 700;
-  font-size: 35px;
-  font-family: 'Roboto';
-  color: var(--marrom) !important;
+  font-size: 40px;
+  color: #ecd393;
+  font-family: "BakerieBold";
 }
 
 .card img:hover {
@@ -125,4 +127,16 @@ main {
   box-shadow: 2px 2px 30px rgba(72, 73, 2, 0.556);
   font-size: 30px;
 
+}
+
+.interior-carrossel{
+  height: 700px;
+  width: 1700px;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.interior-carrossel img{
+  width: 100%;
+  height: 100%;
 }

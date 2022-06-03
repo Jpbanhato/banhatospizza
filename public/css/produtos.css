@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: rgb(83, 78, 78);
+    background-color: #1d0505;
 }
 
 a{
@@ -26,13 +26,12 @@ h1 {
 
 .indicacao h1{
     width: 10rem;
-    font-size: 3.2rem;
-    padding-top: 1%;
+    font-size: 60px;
 }
 
 .filter{
     display: flex;
-    background-color: rgb(83,78,78);
+    background-color: #1d0505;
     padding-left: 10%;
 }
 

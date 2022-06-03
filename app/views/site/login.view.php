@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic" rel="stylesheet" />
     <link rel="stylesheet" href="../../../public/css/global.css">
     <link rel="stylesheet" href="../../../public/css/login.css">
-  <title>Login</title>
+  <title>Banhato's Pizza - Login</title>
 </head>
 <body>
   <div class="login-container">
