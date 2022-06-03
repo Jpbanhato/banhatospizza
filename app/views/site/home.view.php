@@ -78,24 +78,25 @@
               <img src="../../../public/assets/Icone Marrom Circular sem Fundo.png" alt="Quem somos">
           </div>
           <div class="text-cta">
-              <h1>Quem somos?</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas massa risus, sagittis sed est
-                  vulputate, tincidunt auctor sapien. Nam et quam vitae nunc scelerisque dapibus. Vestibulum suscipit
-                  metus odio, eget tempus sem maximus et. Sed quis placerat velit, vitae ullamcorper lectus. Nulla
-                  suscipit eros a orci consectetur, vel feugiat ipsum posuere. Praesent consectetur varius
-                  consectetur. Quisque</p>
+              <h1>Quem somos ?</h1>
+              <p> Fundada no ano de 2001 por alunos de gastronomia da UFJF, a pizzaria Banhato's Pizza surgiu com a ideia
+                de revolucionar a forma com que o seu cliente consome, pede e interage com a pizzaria. Fornecendo uma experiência
+                melhor para seus funcionários e clientes. Inspirada em grandes pizzarias como Pizza Planet e Domino's, viemos trazer
+                qualidade e um ótimo ambiente para você e sua fámilia.</p>
               <a href="/quemsomos"><button class="btn btn-cta">Conheça-nos</button></a>
           </div>
       </section>
   
       <section class="cta-container contato">
           <div class="text-cta">
-              <h1>Como entrar em contato?</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas massa risus, sagittis sed est
-                  vulputate, tincidunt auctor sapien. Nam et quam vitae nunc scelerisque dapibus. Vestibulum suscipit
-                  metus odio, eget tempus sem maximus et. Sed quis placerat velit, vitae ullamcorper lectus. Nulla
-                  suscipit eros a orci consectetur, vel feugiat ipsum posuere. Praesent consectetur varius
-                  consectetur. Quisque</p>
+              <h1>Como entrar em contato ?</h1>
+              <p> Para entrar em contato e realizar o seu pedido recomendamos que envie uma mensagem para o nosso
+                WhatsApp (32) 9999-9999 ou ligue para o nosso telefone 4002-8922.
+                
+                Para fins comercias e feedbacks envie um e-mail para nós. Você encontrará todas as informações na página de contato. 
+
+
+              </p>
               <a href="/contato"><button class="btn btn-cta">Entre em contato</button></a>
           </div>
           <div class="image-cta image-quem-somos">

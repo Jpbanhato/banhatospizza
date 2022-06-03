@@ -29,11 +29,15 @@ body {
 }
 
 .cart_1 {
-    background-color: #301506;
+   
     display: inline-block;
+    border-radius: 47px;
+    background: linear-gradient(225deg, #2b1305, #331606);
+    box-shadow:  -8px 8px 0px #1b0c03,
+                 8px -8px 0px #451e09;
     margin: 1%;
     margin-bottom: 3%;
-    box-shadow: 0 0 1rem black;
+
 
     
 }
