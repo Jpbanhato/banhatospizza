@@ -18,6 +18,7 @@
  * Contato:
  */
 $router ->get('contato','ContatoController@view');
+$router ->post('contato/sendEmail', 'ContatoController@sendEmail');
 
  $router->get('admin/usuarios','UserController@view');
 
