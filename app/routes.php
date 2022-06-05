@@ -15,8 +15,10 @@
  * Produtos:
  */
 /**
- * Usuários:
+ * Contato:
  */
+$router ->get('contato','ContatoController@view');
+$router ->post('contato/sendEmail', 'ContatoController@sendEmail');
 
  $router->get('admin/usuarios','UserController@view');
 
@@ -30,8 +32,30 @@
 
  $router->get('admin/usuarios/search','UserController@search');
 
+$router->get('admin/produtos','ProdutosAdmController@index');
+$router->post('admin/produtos/create','ProdutosAdmController@create');
+$router->post('admin/produtos/delete','ProdutosAdmController@delete');
+$router->post('admin/produtos/update','ProdutosAdmController@update');
+$router->get('admin/produtos/search','ProdutosAdmController@search');
+
+
+/**
+ * Login:
+*/
+$router ->get('login','LoginController@view');
+
 /**
  * Outros:
  */
+$router->get('','HomeController@show');
+$router->get('quem-somos','QuemSomosController@show');
+$router->get('produto','ProdutoController@show');
+$router->get('contato','ContatoController@show');
+$router->get('login','LoginController@show');
+$router->post('loginBack','LoginController@login');
+$router->post('logout','LoginController@logout');
+$router->get('admin/dashboard','DashboardController@show');
+$router->get('produtos','ProdutosSiteController@index');
+
 
 ?>

@@ -10,6 +10,7 @@ class Router
      *
      * @var array
      */
+
     public $routes = [
         'GET' => [],
         'POST' => []

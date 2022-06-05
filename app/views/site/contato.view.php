@@ -69,34 +69,34 @@
       <h1>Formulário de mensagem</h1>
     </div>
 
-
-    <div class="mb-3 form_1">
+    <form action="/contato/sendEmail" method="post">
+      <div class="mb-3 form_1">
         <label for="exampleFormControlInput1" class="form-label form_2">Digite o seu nome</label>
-        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="EX: Brenner Costa">
-    </div>
-
-
-      <div class="mb-3 form_1">
-        <label for="exampleFormControlInput1" class="form-label form_2">Digite o seu E-mail</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        <input type="text" class="form-control" name="nome" id="exampleFormControlInput1" placeholder="EX: Brenner Costa">
       </div>
 
 
-      <div class="mb-3 form_1">
-        <label for="exampleFormControlTextarea1" class="form-label form_2">Assunto</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      </div>
+        <div class="mb-3 form_1">
+          <label for="exampleFormControlInput1" class="form-label form_2">Digite o seu E-mail</label>
+          <input type="email" class="form-control" name="email" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
 
 
-      <div class="mb-3 form_1">
-        <label for="exampleFormControlTextarea1" class="form-label form_2">Digite sua mensagem</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      </div>
+        <div class="mb-3 form_1">
+          <label for="exampleFormControlTextarea1" class="form-label form_2">Assunto</label>
+          <textarea class="form-control" name="assunto" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
 
-      <div class="d-grid gap-2 col-6 mx-auto botao_2">
-        <button class="btn btn-primary botao_1" type="button">Enviar</button>
-      </div>
 
+        <div class="mb-3 form_1">
+          <label for="exampleFormControlTextarea1" class="form-label form_2">Digite sua mensagem</label>
+          <textarea class="form-control" name="msg" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+
+        <div class="d-grid gap-2 col-6 mx-auto botao_2">
+          <button class="btn btn-primary botao_1" type="submit">Enviar</button>
+        </div>
+      </form>
 
 
             <div class="maps">
