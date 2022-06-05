@@ -1,30 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <title>Sidebar</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="../../../public/css/sidebar.css">
-
-  <!-- ICONS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-
-</head>
-
-
-<body>
 
   <div class="botao-primario1">
     <a class="btn btn-primary botao-primario2" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
       aria-controls="offcanvasExample"> <i class="bi bi-list"></i> </a>
   </div>
-  <!-- 
-  COLOCAR UM FLEXBOX PARA CONSEGUIR COLOCAR TODOS OS ELEMENTOS NO LUGAR CERTO.
-  -->
+
 
   <div class="container flexbox_cont">
 
@@ -47,15 +26,7 @@
 
 
         </ul>
-<!--
 
-<div class="botao-logout1">
-          <button type="button" class="btn btn-primary botao-logout2" data-bs-toggle="modal"
-            data-bs-target="#exampleModal">
-            Logout <i class="bi bi-box-arrow-right"></i>
-          </button>
-
--->
         <div class="botao-logout1">
           <!-- Button trigger modal -->
               <button type="button" class="btn btn-primary botao-logout2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
@@ -91,8 +62,4 @@
 
 
   
-</body>
-
- 
-</html>
 
