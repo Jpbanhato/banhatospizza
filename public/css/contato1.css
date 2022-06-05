@@ -4,7 +4,7 @@ body {
     padding: 0;
     margin-left: 5%;
     margin-right: 5%;
-    background-color: #301506;
+    background-color: #1d0505;
     
 }
 
@@ -19,7 +19,7 @@ body {
     margin-top: 5%;
     margin-bottom: 3%;
     color: #ecd393;
-
+    font-size: 60px;
 }
 
 .flx_cont{
@@ -37,14 +37,14 @@ body {
                  8px -8px 0px #451e09;
     margin: 1%;
     margin-bottom: 3%;
-
-
     
 }
 
+
 .cart_1 h5 {
     color: #ecd393;
-
+    font-size: 35px;
+    font-family: "Bakeriebold";;
 }
 
 .cart_1 h6 {
@@ -167,7 +167,10 @@ body {
         display: inline-block;
         margin: 3%;
         margin-bottom: 3%;
-        box-shadow: 0 0 1rem black;
+        border-radius: 47px;
+        background: linear-gradient(225deg, #2b1305, #331606);
+        box-shadow:  -8px 8px 0px #1b0c03,
+                     8px -8px 0px #451e09;
         max-width: 70%;
         max-height: 70%;
 
