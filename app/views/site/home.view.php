@@ -37,7 +37,7 @@
             </div>
           </div>
           <div class="carousel-item ">
-            <img src="../../../public/assets/pizza-artesanal-1.jpg" class="d-block" alt="...">
+            <img src="../../../public/assets/pizza-artesanal.jpg" class="d-block" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>Pizzas artesanais</h5>
             </div>
