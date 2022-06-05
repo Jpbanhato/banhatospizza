@@ -24,40 +24,20 @@ class ContatoController
         $nome = $_POST['nome'];
 
         $mail = new PHPMailer();
-/*
-        $mail->isSMTP();
-        $mail->Host = 'smtp.gmail.com';
-        $mail->SMTPAuth = true;
-        $mail->SMTPSecure = 'tls';
-        $mail->Username = 'throwaway20030128@gmail.com';
-        $mail->Password = 'bernardo1234.';
-        $mail->Port = 587;
-        $mail->setFrom('throwaway20030128@gmail.com');
-        $mail->addReplyTo('no-reply@email.com.br');
-        $mail->addAddress($emailDestinatario, $nome);
-        $mail->isHTML(true);
-        $mail->Subject = $assunto;
-        $mail->Body    = $msg;
-        if(!$mail->send()) {
-            echo 'Não foi possível enviar a mensagem.<br>';
-            echo 'Erro: ' . $mail->ErrorInfo;
-        } else {
-            header('Location: /contato');
-        }*/
         try {
             //Server settings
-            $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
-            $mail->isSMTP();                                            //Send using SMTP
+            $mail->isSMTP();  //Send using SMTP
+            $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug outp
             $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
-            $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
+            $mail->SMTPAuth   = true;            
+            $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;                       //Enable SMTP authentication
             $mail->Username   = 'throwaway20030128@gmail.com';                     //SMTP username
-            $mail->Password   = 'bernardo1234.';                               //SMTP password
-            $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
-            $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+            $mail->Password   = 'ssetrreuylyxzdrz';                               //SMTP password
+            $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
         
             //Recipients
-            $mail->setFrom('throwaway20030128@gmail.com', 'banhatospizza');
-            $mail->addAddress($emailDestinatario);     //Add a recipient
+            $mail->setFrom($emailDestinatario);
+            $mail->addAddress('throwaway20030128@gmail.com', 'banhatospizza');     //Add a recipient
             $mail->addReplyTo('no-reply@gmail.com', 'No reply');
         
         
@@ -65,8 +45,12 @@ class ContatoController
             $mail->isHTML(true);                                  //Set email format to HTML
             $mail->Subject = $assunto;
             $mail->Body    = $msg;
-            $mail->send();
-            echo 'Message has been sent';
+            if(!$mail->send()) {
+                echo 'Não foi possível enviar a mensagem. ';
+                echo 'Erro: ' . $mail->ErrorInfo;
+            } else {
+                header('Location: /contato');
+            }
         } catch (Exception $e) {
             echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
         }
