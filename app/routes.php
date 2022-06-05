@@ -14,10 +14,34 @@
 /**
  * Produtos:
  */
+/**
+ * Contato:
+ */
+$router ->get('contato','ContatoController@view');
+
+ $router->get('admin/usuarios','UserController@view');
+
+ $router->post('admin/usuarios/create','UserController@create');
+
+ $router->post('admin/usuarios/update','UserController@update');
+
+ $router->post('admin/usuarios/delete','UserController@delete');
+
+ $router->post('admin/usuarios/select','UserController@select');
+
+ $router->get('admin/usuarios/search','UserController@search');
+
+$router->get('admin/produtos','ProdutosAdmController@index');
+$router->post('admin/produtos/create','ProdutosAdmController@create');
+$router->post('admin/produtos/delete','ProdutosAdmController@delete');
+$router->post('admin/produtos/update','ProdutosAdmController@update');
+$router->get('admin/produtos/search','ProdutosAdmController@search');
+
 
 /**
- * Usuários:
- */
+ * Login:
+*/
+$router ->get('login','LoginController@view');
 
 /**
  * Outros:
@@ -30,6 +54,7 @@ $router->get('login','LoginController@show');
 $router->post('loginBack','LoginController@login');
 $router->post('logout','LoginController@logout');
 $router->get('admin/dashboard','DashboardController@show');
+$router->get('produtos','ProdutosSiteController@index');
 
 
 ?>
