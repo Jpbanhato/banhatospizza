@@ -56,6 +56,20 @@ class QueryBuilder
         }
     }
 
+    public function ultimosAdicionados($table)
+    {
+        $query = "SELECT * FROM {$table} ORDER BY id DESC LIMIT 3";
+
+        try {
+            $stmt = $this->pdo->prepare($query);
+            $stmt->execute();
+
+            return $stmt->fetchAll(PDO::FETCH_CLASS);
+        } catch (Exception $error) {
+            die($error->getMessage());
+        }
+    }
+
     /**
      * Categorias:
      */

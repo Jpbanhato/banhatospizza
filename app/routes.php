@@ -33,5 +33,6 @@
 /**
  * Outros:
  */
+ $router->get('','HomeController@show');
 
 ?>

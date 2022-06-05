@@ -37,7 +37,7 @@
             </div>
           </div>
           <div class="carousel-item ">
-            <img src="../../../public/assets/pizza-artesanal.jpg" class="d-block" alt="...">
+            <img src="../../../public/assets/pizza-forno.jpg" class="d-block" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>Pizzas artesanais</h5>
             </div>
@@ -57,48 +57,40 @@
       <div class="latest-products">
         <h1 class="lp-title">Escolha. Peça. Saboreie!</h1>
         <div class="lp-cards">
+        <?php foreach($ultimos as $ultimo): ?>
           <div class="card col-sm-3">
-            <img src="../../../public/assets/pizza-salgada-nova-min.webp" alt="pizzas salgadas"/>
-            <h3>Pizzas Salgadas</h3>
+            <img src="../../../public/assets/<?=$ultimo->imagem?>.webp" alt="pizzas salgadas"/>
+            <h3><?=$ultimo->nome?></h3>
           </div>
-          <div class="card col-sm-3">
-            <img src="../../../public/assets/pizzas-doces-min.webp" alt="pizzas salgadas"/>
-            <h3>Pizzas Doces</h3>
-          </div>
-          <div class="card col-sm-3">
-            <img src="../../../public/assets/Esfihas-novas-min.webp" alt="pizzas salgadas"/>
-            <h3>Esfihas</h3>
-          </div>
+        <?php endforeach;?> 
         </div>
       </div> 
       
       <div class="call-to-action">
         <section class="cta-container quem-somos">
-          <div class="image-cta">
+          <div class="image-cta imagem-home">
               <img src="../../../public/img/Pizza Maker-bro.png" alt="Quem somos">
           </div>
           <div class="text-cta">
               <h1>Quem somos?</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas massa risus, sagittis sed est
-                  vulputate, tincidunt auctor sapien. Nam et quam vitae nunc scelerisque dapibus. Vestibulum suscipit
-                  metus odio, eget tempus sem maximus et. Sed quis placerat velit, vitae ullamcorper lectus. Nulla
-                  suscipit eros a orci consectetur, vel feugiat ipsum posuere. Praesent consectetur varius
-                  consectetur. Quisque</p>
-              <a href="/quemsomos"><button class="btn btn-cta">Conheça-nos</button></a>
+              <p>Fundada no ano de 2001 por alunos de gastronomia da UFJF, a pizzaria Banhato's Pizza 
+                surgiu com a ideia de revolucionar a forma com que o seu cliente consome, pede e interage 
+                com a pizzaria. Fornecendo uma experiência melhor para seus funcionários e clientes. 
+                Inspirada em grandes pizzarias como Pizza Planet e Domino's, viemos trazer qualidade e um 
+                ótimo ambiente para você e sua fámilia.</p>
+              <a href="/quem-somos"><button class="btn btn-cta">Conheça-nos</button></a>
           </div>
       </section>
   
       <section class="cta-container contato">
           <div class="text-cta">
               <h1>Como entrar em contato?</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas massa risus, sagittis sed est
-                  vulputate, tincidunt auctor sapien. Nam et quam vitae nunc scelerisque dapibus. Vestibulum suscipit
-                  metus odio, eget tempus sem maximus et. Sed quis placerat velit, vitae ullamcorper lectus. Nulla
-                  suscipit eros a orci consectetur, vel feugiat ipsum posuere. Praesent consectetur varius
-                  consectetur. Quisque</p>
+              <p>Para entrar em contato e realizar o seu pedido recomendamos que envie uma mensagem 
+                para o nosso WhatsApp (32) 9999-9999 ou ligue para o nosso telefone 4002-8922. Para fins comercias 
+                e feedbacks envie um e-mail para nós. Você encontrará todas as informações na página de contato.</p>
               <a href="/contato"><button class="btn btn-cta">Entre em contato</button></a>
           </div>
-          <div class="image-cta image-quem-somos">
+          <div class="image-cta image-quem-somos imagem-home">
               <img src="../../../public/img/Pizza sharing-amico.png" alt="contato">
           </div>
       </section>
