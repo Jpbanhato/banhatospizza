@@ -43,8 +43,10 @@ main {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: #301506;
-  border-radius: 1rem;
+  border-radius: 70px;
+  background: #301506;
+  box-shadow:  -8px 8px 0px #130802,
+               8px -8px 0px #4d220a;
 
   padding: 15px;
 }

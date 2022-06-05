@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md fixed-top navigation">
+   <!-- <nav class="navbar navbar-expand-md fixed-top navigation">
         <div class="container-fluid">
             <a clasrs="navbar-brand m" hef="#">
                 <img src="../../../public/img/Icone Marrom Circular sem Fundo.png" alt="" width="110" height="110" class="nav-img">
@@ -46,7 +46,7 @@
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav> -->
     <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
     <!-- Footer -->
     <div class="container-fluid">
@@ -79,19 +79,19 @@
 
                                 <ul class="list-unstyled mb-0">
                                     <li>
-                                        <a href="#!" class="footer-link">Home</a>
+                                        <a href="home.view.php" class="footer-link">Home</a>
                                     </li>
                                     <li>
-                                        <a href="#!" class="footer-link">Produtos</a>
+                                        <a href="produtos.view.php" class="footer-link">Produtos</a>
                                     </li>
                                     <li>
-                                        <a href="#!" class="footer-link">Quem Somos</a>
+                                        <a href="quem-somos.view.php" class="footer-link">Quem Somos</a>
                                     </li>
                                     <li>
-                                        <a href="#!" class="footer-link">Contato</a>
+                                        <a href="contato.view.php" class="footer-link">Contato</a>
                                     </li>
                                     <li>
-                                        <a href="#!" class="footer-link">Login</a>
+                                        <a href="login.view.php" class="footer-link">Login</a>
                                     </li>
                                 </ul>
                             </div>

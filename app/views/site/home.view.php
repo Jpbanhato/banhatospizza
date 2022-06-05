@@ -84,10 +84,14 @@
   
       <section class="cta-container contato">
           <div class="text-cta">
-              <h1>Como entrar em contato?</h1>
-              <p>Para entrar em contato e realizar o seu pedido recomendamos que envie uma mensagem 
-                para o nosso WhatsApp (32) 9999-9999 ou ligue para o nosso telefone 4002-8922. Para fins comercias 
-                e feedbacks envie um e-mail para nós. Você encontrará todas as informações na página de contato.</p>
+              <h1>Como entrar em contato ?</h1>
+              <p> Para entrar em contato e realizar o seu pedido recomendamos que envie uma mensagem para o nosso
+                WhatsApp (32) 9999-9999 ou ligue para o nosso telefone 4002-8922.
+                
+                Para fins comercias e feedbacks envie um e-mail para nós. Você encontrará todas as informações na página de contato. 
+
+
+              </p>
               <a href="/contato"><button class="btn btn-cta">Entre em contato</button></a>
           </div>
           <div class="image-cta image-quem-somos imagem-home">
