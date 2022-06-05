@@ -32,9 +32,14 @@
           <input id="password" type="password" name="senha" placeholder="Senha" require>
         </div>
         <?php
-        if(isset($errorMessage)){
-          echo $errorMessage;
-        } 
+        if (isset($_SESSION['nao_autenticado'])) :
+        ?>
+        <div class='alert alert-danger' role='alert'>
+          Email ou senha Incorretos
+        </div>
+        <?php
+            unset($_SESSION['nao_autenticado']);
+        endif;
         ?>
         <button type="submit" id="login-btn" >entrar</button>
       </form>
