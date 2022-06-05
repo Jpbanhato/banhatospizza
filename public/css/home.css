@@ -130,13 +130,12 @@ main {
 }
 
 .interior-carrossel{
-  height: 700px;
-  width: 1700px;
-  padding-left: 2%;
-  padding-right: 2%;
+  height: 50vh;
+  width: 90vw;
+  justify-content: center;
 }
 
 .interior-carrossel img{
-  width: 100%;
-  height: 100%;
+  max-width: max-content;
+  height: fit-content;
 }
