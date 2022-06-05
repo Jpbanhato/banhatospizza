@@ -52,6 +52,9 @@ $router->get('quem-somos','QuemSomosController@show');
 $router->get('produto','ProdutoController@show');
 $router->get('contato','ContatoController@show');
 $router->get('login','LoginController@show');
+$router->post('loginBack','LoginController@login');
+$router->post('logout','LoginController@logout');
+$router->get('admin/dashboard','DashboardController@show');
 $router->get('produtos','ProdutosSiteController@index');
 
 
