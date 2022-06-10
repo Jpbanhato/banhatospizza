@@ -126,6 +126,19 @@ class QueryBuilder
       }  
 
     }
+
+    public function selectAllProdutosSite($table)
+    {
+      $sql = "SELECT * FROM {$table}";
+      $stmt = $this->pdo->prepare($sql);
+      try{
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_CLASS);
+      }catch (Exception $e){
+        die($e->getMessage());
+      }  
+
+    }
     
     public function selectAllCategorias($table)
     {
@@ -250,5 +263,4 @@ class QueryBuilder
               die($error->getMessage());
           }
     }
-
 }

@@ -35,80 +35,22 @@
       </nav>
     </div>
     <div class="container">
-      <div class="row row-cols-3 row-cols-md-4 g-4">
-        <div class="col card">
-          <div class="card h-100 produto">
-            <img src="../../../public\img\batata-frita.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <div class="botao" style="background-color: rgb(158, 148, 62);">
-                <a href="#">Porções</a>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <?php foreach ($produtos as $produto): ?>
+        <a href="/produto?id=<?=$produto->id?>">
+          <div class="col">
+            <div class="card prod">
+              <img src="../../../public\img\<?=$produto->imagem?>.webp" class="card-img-top" alt="...">
+              <div class="card-body prod-body">
+                <!--<div class="botao <?=$produto->nome?>">
+                  <a href="#">Porções</a>
+                </div>-->
+                <h1 class="card-title"><?=$produto->nome?></h1>
+                <p class="card-text">R$<?=$produto->preco?>,00</p>
               </div>
-              <h1 class="card-title">Batata Frita</h1>
-              <p class="card-text">Preco</p>
             </div>
           </div>
-        </div>
-        <div class="col card">
-          <div class="card h-100 produto">
-            <img src="../../../public\img\bruschetta-burrata.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <div class="botao" style="background-color: #8f0e0e;">
-                <a href="#">Entradas</a>
-              </div>
-              <h1 class="card-title">Bruschetta com Burrata</h1>
-              <p class="card-text">Preco</p>
-            </div>
-          </div>
-        </div>
-        <div class="col card">
-          <div class="card h-100 produto">
-            <img src="../../../public\img\pizza.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <div class="botao " style="background-color: #cf6a18b7;">
-                <a href="#">Pizzas</a>
-              </div>
-              <h1 class="card-title">Pizza de Calabresa</h1>
-              <p class="card-text">Preco</p>
-            </div>
-          </div>
-        </div>
-        <div class="col card">
-        <div class="card h-100 produto">
-            <img src="../../../public\img\calzone-pizza.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <div class="botao " style="background-color: #755000;">
-                <a href="#">Calzones</a>
-              </div>
-              <h1 class="card-title">Calzone de Queijo</h1>
-              <p class="card-text">Preco</p>
-            </div>
-          </div>
-        </div>
-        <div class="col card">
-          <div class="card h-100 produto">
-            <img src="../../../public\img\panna-cotta.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <div class="botao " style="background-color: rgb(201, 85, 104);">
-                <a href="#">Sobremesas</a>
-              </div>
-              <h1 class="card-title">Panna Cotta</h1>
-              <p class="card-text">Preco</p>
-            </div>
-          </div>
-        </div>
-        <div class="col card">
-          <div class="card h-100 produto">
-            <img src="../../../public\img\vinho.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <div class="botao " style="background-color: rgb(68, 5, 65);">
-                <a href="#">Vinhos</a>
-              </div>
-              <h1 class="card-title">Vinho</h1>
-              <p class="card-text">Preco</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <?php endforeach; ?>  
     </div>
     <nav aria-label="Page navigation example">
       <ul class="pagination pagina">
