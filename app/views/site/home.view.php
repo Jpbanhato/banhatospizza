@@ -59,7 +59,7 @@
         <div class="lp-cards">
         <?php foreach($ultimos as $ultimo): ?>
           <div class="card col-sm-3">
-            <img src="../../../public/assets/<?=$ultimo->imagem?>.webp" alt="pizzas salgadas"/>
+            <img src="../../../public/img/<?=$ultimo->imagem?>.webp" alt="pizzas salgadas"/>
             <h3><?=$ultimo->nome?></h3>
           </div>
         <?php endforeach;?> 
