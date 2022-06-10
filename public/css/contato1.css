@@ -2,7 +2,7 @@ body {
 
     text-align: center;
     padding: 0;
-    background-color: #1d0505;
+    background-color: #ecd393;
     
 }
 
@@ -89,7 +89,7 @@ body {
 
 .titulo_form {
     margin-top: 3%;
-    color: #ecd393;
+    color: #301506;
     font-family: "Bakeriebold" ;
     src: url('../assets/fonts/Bakeriebold.otf');
     margin-bottom: 2%;
@@ -97,14 +97,14 @@ body {
 
 
 .form_1{
-    
+    background-color: #301506;
+
     box-shadow: 0 0 1rem black;
     margin-left: 15%;
     margin-right: 15%;
 
     backdrop-filter: blur(19px) saturate(169%);
     -webkit-backdrop-filter: blur(19px) saturate(169%);
-    background-color: rgba(48, 21, 6, 0.84);
     border-radius: 12px;
     border: 1px solid rgba(209, 213, 219, 0.3);
 
@@ -112,7 +112,7 @@ body {
 
 
 .form_2 {
-    color: #eff0ea;
+    color: #ecd393;
     font-size: 26px;
     font-family: "Bakeriebold" ;
     src: url('../assets/fonts/Bakeriebold.otf');
@@ -142,7 +142,7 @@ body {
     margin-top: 3%;
     font-family: "Bakeriebold" ;
     src: url('../assets/fonts/Bakeriebold.otf');
-    color: #ecd393;
+    color: #301506;
 }
 
 .maps iframe {

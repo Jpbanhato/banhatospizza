@@ -22,7 +22,7 @@
 
 <body>
 
-<?php include 'app/views/includes/navbar.php';?>
+  <?php include 'app/views/includes/navbar.php';?>
 
   <div class="titulo"> 
         

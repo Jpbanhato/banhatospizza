@@ -12,19 +12,19 @@
             <div class="collapse navbar-collapse justify-content-between" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="home.view.php">Home</a>
+                        <a class="nav-link" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="produtos.view.php">Produtos</a>
+                        <a class="nav-link" href="/produtos">Produtos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="quem-somos.view.php">Quem somos</a>
+                        <a class="nav-link" href="/quem-somos">Quem somos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contato.view.php">Contato</a>
+                        <a class="nav-link" href="/contato">Contato</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="login.view.php">Login</a>
+                        <a class="nav-link" href="/login">Login</a>
                     </li>
                 </ul>
             </div>

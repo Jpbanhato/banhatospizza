@@ -30,19 +30,19 @@
 
                                 <ul class="list-unstyled mb-0">
                                     <li>
-                                        <a href="home.view.php" class="footer-link">Home</a>
+                                        <a href="/" class="footer-link">Home</a>
                                     </li>
                                     <li>
-                                        <a href="produtos.view.php" class="footer-link">Produtos</a>
+                                        <a href="app/views/site/produtos.view.php" class="footer-link">Produtos</a>
                                     </li>
                                     <li>
-                                        <a href="quem-somos.view.php" class="footer-link">Quem Somos</a>
+                                        <a href="/quem-somos" class="footer-link">Quem Somos</a>
                                     </li>
                                     <li>
-                                        <a href="contato.view.php" class="footer-link">Contato</a>
+                                        <a href="/contato" class="footer-link">Contato</a>
                                     </li>
                                     <li>
-                                        <a href="login.view.php" class="footer-link">Login</a>
+                                        <a href="/login" class="footer-link">Login</a>
                                     </li>
                                 </ul>
                             </div>
