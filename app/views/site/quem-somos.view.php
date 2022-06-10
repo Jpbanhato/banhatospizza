@@ -34,10 +34,10 @@
         <div style="background-image: url(../../public/img/PizzaForno2.jpg);" class="imagem-fundo">
           <div class="blackbox">
             <div class="texto-institucional">
-              <p>A Banhato's Pizza vem produzindo as melhores pizzas desde 2001, sempre trazendo excelente qualidade, inesquecíveis sabores e um ótimo atendimento. Foi assim que conquistamos os nossos fiéis clientes e nos tornamos uma das pizzarias de referência em Juiz de Fora.
+              <p><b>A Banhato's Pizza vem produzindo as melhores pizzas desde 2001, sempre trazendo excelente qualidade, inesquecíveis sabores e um ótimo atendimento. Foi assim que conquistamos os nossos fiéis clientes e nos tornamos uma das pizzarias de referência em Juiz de Fora.
                 Conseguimos mesclar a tradição que adquirimos ao longo dos mais de 20 anos de experiencia com a modernidade do mundo, acompanhando e nos adaptando a evolução dele. Um exemplo disso é a nossa utilização de dois fornos, um à lenha e um forno ecológico, que é mais prático e menos poluente ao meio ambiente.
                 Com a intenção de sempre entregar o melhor aos nossos clientes, reformulamos a identidade visual de nossa empresa, assim deixando-a mais sofisticada e moderna.
-                E pensando na praticidade de entrega, possuímos a entrega delivery e estamos no IFOOD! Agora você pode pedir a sua deliciosa pizza da Banhatos's Pizza e recebê-la em sua casa sem nenhum esforço.
+                E pensando na praticidade de entrega, possuímos a entrega delivery e estamos no IFOOD! Agora você pode pedir a sua deliciosa pizza da Banhatos's Pizza e recebê-la em sua casa sem nenhum esforço.</b>
               </p>
             </div>
           </div>  
