@@ -31,6 +31,7 @@ body {
 
     display: inline-block;
     border: double #000000 ;
+    transition: 0.8s;
     border-radius: 47px;
     background: linear-gradient(225deg, #2b1305, #331606);
     box-shadow:  -8px 8px 0px #1b0c03,
@@ -38,6 +39,13 @@ body {
     margin: 1%;
     margin-bottom: 3%;
     
+}
+
+.cart_1:hover {
+
+    border: groove #000000 3px;
+    box-shadow: 0 0 2em black;
+    transition: 0.5s;
 }
 
 
