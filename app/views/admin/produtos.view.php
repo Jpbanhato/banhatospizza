@@ -108,7 +108,7 @@
                                 <select id="inputCategoryAddProdut" class="form-select" name="categoria">
                                     <option selected>Insira a categoria do produto...</option>
                                     <?php foreach($resultGeral['categorias'] as $row):    ?>    
-                                    <option value="<?= $row->idCategoria ?> "><?=  $row->nomeCategoria ?></option>
+                                    <option value="<?= $row->id ?> "><?=  $row->nome ?></option>
                                     <?php endforeach; ?>
                                 </select>
                             </div>
@@ -170,8 +170,8 @@
                                 <label for="inputCategoryEditProdut" class="form-label">Categoria</label>
                                 <select id="inputCategoryEditProdut" class="form-select" name="categoria">
                                     <option >Insira a categoria do produto...</option>
-                                    <?php foreach($resultGeral['categorias'] as $row):    ?>    
-                                    <option value="<?= $row->idCategoria ?> " selected><?=  $row->nomeCategoria ?></option>
+                                    <?php foreach($resultGeral['categorias'] as $row2):   ?>    
+                                    <option value="<?= $row2->idCategoria ?> " <?= $row2->id == $row->idCategoria ? "selected" : ""  ?>><?=  $row2->nome ?></option>
                                     <?php endforeach; ?>
                                 </select>
                             </div>
@@ -282,6 +282,7 @@
         <?php endforeach;
         
         ?>
+        <?php require 'app/views/include/pagination.php' ?>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">

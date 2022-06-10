@@ -70,6 +70,19 @@ class QueryBuilder
         }
     }
 
+    public function countAll($table)
+    {
+        $sql = "SELECT * FROM {$table}";
+
+        try {
+          $stmt = $this->pdo->prepare($sql);
+          $stmt->execute();
+          return $stmt->rowCount();
+        } catch (Exception $e) {
+            die("An error occurred when trying to count from database: {$e->getMessage()}");
+        }
+    }
+
     /**
      * Categorias:
      */
@@ -100,9 +113,13 @@ class QueryBuilder
      */
 
 
-    public function selectAllProdutos($table)
+    public function selectAllProdutos($table, $start_limit, $rows_amount)
     {
       $sql = "SELECT * FROM {$table} JOIN categoria ON categoria.idCategoria  = {$table}.idCategoria ";
+      if  ($start_limit >= 0 && $rows_amount > 0)
+      {
+          $sql .= " LIMIT {$start_limit}, {$rows_amount}";
+      }
       $stmt = $this->pdo->prepare($sql);
       try{
         $stmt->execute();

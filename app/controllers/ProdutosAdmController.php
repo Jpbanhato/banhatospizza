@@ -12,14 +12,37 @@ class ProdutosAdmController
      */
     public function index()
     {
-        $resultProduto = App::get('database')->selectAllProdutos('produto');
+        $page = 1;
+
+        if (isset($_GET['pagina']) && !empty($_GET['pagina']))
+        {
+            $page = intval($_GET['pagina']);
+
+            if ($page <= 0)
+            {
+                return redirect('admin/produtos');
+            }
+        }
+
+        $items_per_page = 10;
+        $start_limit = $items_per_page * $page - $items_per_page;
+        $rows_count = App::get('database')->countAll('produto');
+        
+        if ($start_limit > $rows_count) {
+            return redirect('admin/produtos');
+        }
+
+        $total_pages = ceil($rows_count / $items_per_page);
+        $resultProduto = App::get('database')->selectAllProdutos('produto', $start_limit, $items_per_page);
         $resultCategoria = App::get('database')->selectAllCategorias('categoria');  
         $resultGeral = array();
         $resultGeral = [
             'produtos' => $resultProduto,
             'categorias' => $resultCategoria,
         ];
-        return view('admin/produtos', compact('resultGeral'));
+
+        return view('admin/produtos', compact('resultGeral', 'page', 'total_pages'));
+    
 
     }
    /* public function showCategorias()
