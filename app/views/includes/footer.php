@@ -33,7 +33,7 @@
                                         <a href="/" class="footer-link">Home</a>
                                     </li>
                                     <li>
-                                        <a href="app/views/site/produtos.view.php" class="footer-link">Produtos</a>
+                                        <a href="/produtos" class="footer-link">Produtos</a>
                                     </li>
                                     <li>
                                         <a href="/quem-somos" class="footer-link">Quem Somos</a>
