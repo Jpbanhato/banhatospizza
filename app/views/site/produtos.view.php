@@ -35,66 +35,6 @@
             </div>
           </div>
         </div>
-        <div class="col card">
-          <div class="card h-100 produto">
-            <img src="../../../public\img\bruschetta-burrata.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <div class="botao" style="background-color: #8f0e0e;">
-                <a href="#">Entradas</a>
-              </div>
-              <h1 class="card-title">Bruschetta com Burrata</h1>
-              <p class="card-text">Preco</p>
-            </div>
-          </div>
-        </div>
-        <div class="col card">
-          <div class="card h-100 produto">
-            <img src="../../../public\img\pizza.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <div class="botao " style="background-color: #cf6a18b7;">
-                <a href="#">Pizzas</a>
-              </div>
-              <h1 class="card-title">Pizza de Calabresa</h1>
-              <p class="card-text">Preco</p>
-            </div>
-          </div>
-        </div>
-        <div class="col card">
-        <div class="card h-100 produto">
-            <img src="../../../public\img\calzone-pizza.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <div class="botao " style="background-color: #755000;">
-                <a href="#">Calzones</a>
-              </div>
-              <h1 class="card-title">Calzone de Queijo</h1>
-              <p class="card-text">Preco</p>
-            </div>
-          </div>
-        </div>
-        <div class="col card">
-          <div class="card h-100 produto">
-            <img src="../../../public\img\panna-cotta.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <div class="botao " style="background-color: rgb(201, 85, 104);">
-                <a href="#">Sobremesas</a>
-              </div>
-              <h1 class="card-title">Panna Cotta</h1>
-              <p class="card-text">Preco</p>
-            </div>
-          </div>
-        </div>
-        <div class="col card">
-          <div class="card h-100 produto">
-            <img src="../../../public\img\vinho.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <div class="botao " style="background-color: rgb(68, 5, 65);">
-                <a href="#">Vinhos</a>
-              </div>
-              <h1 class="card-title">Vinho</h1>
-              <p class="card-text">Preco</p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
     <nav aria-label="Page navigation example">
