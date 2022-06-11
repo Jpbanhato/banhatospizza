@@ -117,7 +117,7 @@
                                 <select id="inputCategoryAddProdut" class="form-select" name="categoria">
                                     <option selected>Insira a categoria do produto...</option>
                                     <?php foreach($resultGeral['categorias'] as $row):    ?>    
-                                    <option value="<?= $row->idCategoria ?> "><?=  $row->nomeCategoria ?></option>
+                                    <option value="<?= $row->id ?> "><?=  $row->nome ?></option>
                                     <?php endforeach; ?>
                                 </select>
                             </div>
@@ -179,8 +179,8 @@
                                 <label for="inputCategoryEditProdut" class="form-label">Categoria</label>
                                 <select id="inputCategoryEditProdut" class="form-select" name="categoria">
                                     <option >Insira a categoria do produto...</option>
-                                    <?php foreach($resultGeral['categorias'] as $row):    ?>    
-                                    <option value="<?= $row->idCategoria ?> " selected><?=  $row->nomeCategoria ?></option>
+                                    <?php foreach($resultGeral['categorias'] as $row2):   ?>    
+                                    <option value="<?= $row2->idCategoria ?> " <?= $row2->id == $row->idCategoria ? "selected" : ""  ?>><?=  $row2->nome ?></option>
                                     <?php endforeach; ?>
                                 </select>
                             </div>
