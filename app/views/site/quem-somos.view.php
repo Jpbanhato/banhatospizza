@@ -7,9 +7,20 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../../../public/css/quem-somos.css">
     <script type="text/javascript" src="../../../public/js/script.js"></script>
+
+      <!-- NAVBAR E FOOTER -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../../../public/css/style_navbar.css" type="text/css">
+
+      <link rel="stylesheet" href="../../../public/css/style_footer.css" type="text/css">
+
     <title>Banhato's Pizza - Quem somos</title>
 </head>
 <body>
+
+<?php include 'app/views/includes/navbar.php';?>
+
     <div class="main">
         <div class="barra-titulo">
             <h1>Quem Somos</h1>
@@ -23,10 +34,10 @@
         <div style="background-image: url(../../public/img/PizzaForno2.jpg);" class="imagem-fundo">
           <div class="blackbox">
             <div class="texto-institucional">
-              <p>A Banhato's Pizza vem produzindo as melhores pizzas desde 2001, sempre trazendo excelente qualidade, inesquecíveis sabores e um ótimo atendimento. Foi assim que conquistamos os nossos fiéis clientes e nos tornamos uma das pizzarias de referência em Juiz de Fora.
+              <p><b>A Banhato's Pizza vem produzindo as melhores pizzas desde 2001, sempre trazendo excelente qualidade, inesquecíveis sabores e um ótimo atendimento. Foi assim que conquistamos os nossos fiéis clientes e nos tornamos uma das pizzarias de referência em Juiz de Fora.
                 Conseguimos mesclar a tradição que adquirimos ao longo dos mais de 20 anos de experiencia com a modernidade do mundo, acompanhando e nos adaptando a evolução dele. Um exemplo disso é a nossa utilização de dois fornos, um à lenha e um forno ecológico, que é mais prático e menos poluente ao meio ambiente.
                 Com a intenção de sempre entregar o melhor aos nossos clientes, reformulamos a identidade visual de nossa empresa, assim deixando-a mais sofisticada e moderna.
-                E pensando na praticidade de entrega, possuímos a entrega delivery e estamos no IFOOD! Agora você pode pedir a sua deliciosa pizza da Banhatos's Pizza e recebê-la em sua casa sem nenhum esforço.
+                E pensando na praticidade de entrega, possuímos a entrega delivery e estamos no IFOOD! Agora você pode pedir a sua deliciosa pizza da Banhatos's Pizza e recebê-la em sua casa sem nenhum esforço.</b>
               </p>
             </div>
           </div>  
@@ -72,6 +83,8 @@
             </button>
           </div>
     </div>
+
+      <?php include 'app/views/includes/footer.php';?>
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>   
 </body>
 </html>

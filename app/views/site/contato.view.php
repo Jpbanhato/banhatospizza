@@ -2,35 +2,33 @@
 <html>
 
 <head>
-
     <meta charset="UTF-8">
-    <title>Banhato's Pizza - Contate-nos </title>
-    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../../../public/css/contato1.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+        <!-- NAVBAR E FOOTER -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../../../public/css/style_navbar.css" type="text/css">
 
-    <!-- NAVBAR -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../../../public/css/style_navbar.css" type="text/css">
-
-     <link rel="stylesheet" href="../../../public/css/style_footer.css" type="text/css">
-
+        <link rel="stylesheet" href="../../../public/css/style_footer.css" type="text/css">
+    
+    <title>Banhato's Pizza - Contate-nos </title>
 </head>
 
 
 <body>
 
-<?php include 'app/views/includes/navbar.php';?>
+  <?php include 'app/views/includes/navbar.php';?>
 
   <div class="titulo"> 
         
     <h1> Contato </h1>
 
-</div>
+  </div>
     
 <div class="flex-container flx_cont">
   
@@ -58,7 +56,7 @@
       <h5 class="card-title">Telefone</h5>
       <h6 class="card-subtitle mb-2 text-muted">Ligue e faça o seu pedido</h6>
       <p class="card-text"> Realizamos pedidos pelo WhatsApp (clique no link abaixo) e também por telefone .<br> <u> Tel: (32) 4002-8922</u>  </p>
-      <a href="https://web.whatsapp.com/" target="_blank" class="card-link cart_link1"><b>Enviar mensagem no WhatsApp</b></a>
+      <a href="https://web.whatsapp.com/" target="_blank" class="card-link cart_link1"><i class="bi bi-whatsapp"></i></a>
     </div>
   </div>
 
@@ -66,7 +64,7 @@
 
 
     <div class="titulo_form">
-      <h1>Formulário de mensagem</h1>
+      <h1><b>Formulário de Mensagem</b></h1>
     </div>
 
     <form action="/contato/sendEmail" method="post">
@@ -101,8 +99,8 @@
 
             <div class="maps">
 
-                <h1> Nossa localização </h1>
-
+                <h1> Veja a nossa localização</h1>
+                
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d118602.28761902434!2d-43.38252099999999!3d-21.7290588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1649796212119!5m2!1spt-BR!2sbr" width="" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
             </div>

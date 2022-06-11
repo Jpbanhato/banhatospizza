@@ -10,10 +10,19 @@
 
     <link href="../../../public/css/global.css" rel="stylesheet">
     <link href="../../../public/css/home.css" rel="stylesheet">
+
+      <!-- NAVBAR E FOOTER -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../../public/css/style_navbar.css" type="text/css">
+
+     <link rel="stylesheet" href="../../../public/css/style_footer.css" type="text/css">
     
     <title>Banhato's Pizza - Os sabores que todos buscam </title>
   </head>
+
   <body>
+    <?php include 'app/views/includes/navbar.php';?>
     <!-- Navbar -->
     <main>
         
@@ -101,7 +110,7 @@
       </div>
     </main>
     <!-- Footer -->
-    
+    <?php include 'app/views/includes/footer.php';?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
 </html>
