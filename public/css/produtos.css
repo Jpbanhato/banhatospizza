@@ -101,6 +101,10 @@ h1 {
     color:#eff0ea;
 }
 
+.botao a{
+    all:unset;
+}
+
 .botao h4{
     color: #eff0ea;
     font-size: 1.5rem;
@@ -110,15 +114,15 @@ h1 {
     background-color: rgb(158, 148, 62);
 }
 
-.cafe{
+.esfiha{
     background-color: black;
 }
 
-.digestivos{
+.doce{
     background-color: limegreen;
 }
 
-.queijos-frutas{
+.salgada{
     background-color: rgba(141, 141, 6, 0.514);
 }
 
