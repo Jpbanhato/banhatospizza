@@ -197,7 +197,7 @@
         foreach ($resultGeral['produtos'] as $row):
 
       ?>
-        <!-- Modal Visualizar Produto--> <!-- Arrumar um jeito de botar no value o resultado da query. Talvez usar um foreach aqui  -->
+        <!-- Modal Visualizar Produto-->
         <div class="modal fade" id="VisualizarProd-<?= $row->id ?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
             aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-xl">
