@@ -35,21 +35,22 @@
       </nav>
     </div>
     <div class="container">
-    <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="row row-cols-1 row-cols-md-2 g-4">
       <?php foreach ($produtos as $produto): ?>
-        <a href="/produto?id=<?=$produto->id?>">
-          <div class="col">
-            <div class="card prod">
+        <div class="col">
+            <a href="/produto?id=<?=$produto->id?>">
+              <div class="card prod">
               <img src="../../../public\img\<?=$produto->imagem?>.webp" class="card-img-top" alt="...">
               <div class="card-body prod-body">
-                <!--<div class="botao <?=$produto->nome?>">
-                  <a href="#">Porções</a>
-                </div>-->
+                <div class="botao <?=$produto->nomeCategoria?>">
+                  <a href="#"><?=$produto->nomeCategoria?></a>
+                </div>
                 <h1 class="card-title"><?=$produto->nome?></h1>
                 <p class="card-text">R$<?=$produto->preco?>,00</p>
               </div>
             </div>
-          </div>
+          </a>  
+        </div>
       <?php endforeach; ?>  
     </div>
     <nav aria-label="Page navigation example">

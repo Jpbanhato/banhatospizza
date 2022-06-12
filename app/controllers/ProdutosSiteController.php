@@ -12,7 +12,7 @@ class ProdutosSiteController
      */
     public function index()
     {
-        $produtos = App::get('database')->selectAllProdutosSite('produto');
+        $produtos = App::get('database')->selectAllProdutos('produto');
 
         return view('site/produtos', compact('produtos'));
     }

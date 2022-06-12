@@ -116,20 +116,7 @@ class QueryBuilder
 
     public function selectAllProdutos($table)
     {
-      $sql = "SELECT * FROM {$table} JOIN categoria ON categoria.idCategoria  = {$table}.idCategoria ";
-      $stmt = $this->pdo->prepare($sql);
-      try{
-        $stmt->execute();
-        return $stmt->fetchAll(PDO::FETCH_CLASS);
-      }catch (Exception $e){
-        die($e->getMessage());
-      }  
-
-    }
-
-    public function selectAllProdutosSite($table)
-    {
-      $sql = "SELECT * FROM {$table}";
+      $sql = "SELECT {$table}.*, categoria.nome AS nomeCategoria FROM {$table} JOIN categoria ON categoria.id  = {$table}.idCategoria ";
       $stmt = $this->pdo->prepare($sql);
       try{
         $stmt->execute();
