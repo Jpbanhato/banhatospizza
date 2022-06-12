@@ -87,7 +87,7 @@
                 com a pizzaria. Fornecendo uma experiência melhor para seus funcionários e clientes. 
                 Inspirada em grandes pizzarias como Pizza Planet e Domino's, viemos trazer qualidade e um 
                 ótimo ambiente para você e sua fámilia.</p>
-              <a href="/quem-somos"><button class="btn btn-cta">Conheça-nos</button></a>
+              <a href="/quem-somos"><button class="btn btn-cta"><b>Conheça-nos</b></button></a>
           </div>
       </section>
   
@@ -101,7 +101,7 @@
 
 
               </p>
-              <a href="/contato"><button class="btn btn-cta">Entre em contato</button></a>
+              <a href="/contato"><button class="btn btn-cta"><b>Entre em contato</b></button></a>
           </div>
           <div class="image-cta image-quem-somos imagem-home">
               <img src="../../../public/img/Pizza sharing-amico.png" alt="contato">

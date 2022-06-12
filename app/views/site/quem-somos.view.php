@@ -24,12 +24,6 @@
     <div class="main">
         <div class="barra-titulo">
             <h1>Quem Somos</h1>
-            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-                <ol class="breadcrumb ">
-                <li class="breadcrumb-item"><a href="home.html">Banhato's Pizzaria</a></li>
-                <li class="breadcrumb-item active crumb" aria-current="page">Quem somos</li>
-                </ol>
-            </nav>
         </div>
         <div style="background-image: url(../../public/img/PizzaForno2.jpg);" class="imagem-fundo">
           <div class="blackbox">

@@ -1,14 +1,16 @@
 main {
-  background-color: #1d0505;
+  
+  background-color: var(--amarelo);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  padding: 2rem 0;
+  padding-top: 170px;
 }
 
 .carousel-caption h5 {
+  
   font-size: 300%;
   font-weight: bolder;
 }
@@ -23,7 +25,7 @@ main {
 }
 
 .lp-title {
-  color: var(--amarelo);
+  color: var(--marrom);
   font-size: 60px;
 }
 
@@ -79,13 +81,13 @@ main {
 }
 
 .quem-somos {
-  background-color: var(--amarelo);
+  background-color: var(--marrom);
 }
 
 .contato {
   margin-top: 30px;
   margin-bottom: 30px;
-  background-color: var(--amarelo);
+  background-color: var(--marrom);
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -110,20 +112,33 @@ main {
   font-family: 'BakerieBold';
   font-size: 40px;
   margin-bottom: 20px;
+  color: var(--amarelo);
 }
 
 .text-cta p {
+  
+  color: #eff0ea;
   margin-bottom: 25px;
   font-size: 30px;
 }
 
 .btn-cta {
-  background-color: var(--marrom);
-  color: white;
-  border-radius: 15px;
+  background-color: var(--amarelo);
+  color: var(--marrom);
   width: auto;
-  box-shadow: 2px 2px 30px rgba(72, 73, 2, 0.556);
+  box-shadow: 2px 2px 30px black;
   font-size: 30px;
+
+
+  border-radius: 15px;
+  background: linear-gradient(225deg, #d4be84, #fde29d);
+  box-shadow:  -5px 5px 0px #5e543b,
+               5px -5px 0px #ffffeb;
+
+}
+
+.btn-cta:hover {
+  background-color: #eff0ea;
 
 }
 

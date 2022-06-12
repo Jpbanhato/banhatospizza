@@ -1,5 +1,12 @@
+.navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
 .navigation {
     background-color: #301506;
+    height: 100px;
+
 }
 
 .nav-link {
