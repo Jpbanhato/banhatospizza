@@ -10,19 +10,19 @@
     <div class="offcanvas offcanvas-start inicio-sidebar" tabindex="-1" id="offcanvasExample"
       aria-labelledby="offcanvasExampleLabel">
       <div class="offcanvas-header titulo-topo">
-        <img src="/public/assets/Icone Redondo sem Fundo.png">
-        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Banhatos Pizza</h5>
-        <button type="button" class="btn-close text-reset botao-fechar" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-
-      </div>
-
+        <a href="/admin/dashboard">
+          <img src="/public/assets/Icone Redondo sem Fundo.png">
+        </a>
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Banhatos Pizza</h5>
+          <button type="button" class="btn-close text-reset botao-fechar" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
       <div class="offcanvas-body corpo-sidebar">
 
         <ul class="listas">
 
-          <li> <i class="bi bi-people"></i> <a class="usuarios-1" href="usuarios.html"> Usuários </a></li>
-          <li> <i class="bi bi-list-nested"></i> <a class="categorias-1" href="categorias.html"> Categorias </a></li>
-          <li> <i class="bi bi-boxes"></i> <a class="produtos-1" href="produtos.html"> Produtos </a></li>
+          <li> <i class="bi bi-people"></i> <a class="usuarios-1" href="/admin/usuarios"> Usuários </a></li>
+          <li> <i class="bi bi-list-nested"></i> <a class="categorias-1" href="/admin/categorias"> Categorias </a></li>
+          <li> <i class="bi bi-boxes"></i> <a class="produtos-1" href="/admin/produtos"> Produtos </a></li>
 
 
         </ul>

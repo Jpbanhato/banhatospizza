@@ -33,11 +33,6 @@
 
 }
 
-
-
-
-
-
 .titulo-topo img {
     width: 70px;
     margin-left: 0rem;
@@ -70,8 +65,6 @@
     background-color: #301506;
 
 }
-
-
 
 
 .listas {
@@ -127,3 +120,6 @@
 }
 
 
+.linkdashboard{
+    all:unset;
+}
