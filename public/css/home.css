@@ -137,3 +137,7 @@ main {
   max-width: fit-content;
   height: fit-content;
 }
+
+.cart img{
+  height: 25vh;
+}

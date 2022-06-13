@@ -250,4 +250,17 @@ class QueryBuilder
               die($error->getMessage());
           }
     }
+
+    public function selectAllProdutosSite($table)
+    {
+      $sql = "SELECT {$table}.*, categoria.nome AS nomeCategoria FROM {$table} JOIN categoria ON categoria.id  = {$table}.idCategoria LIMIT 6";
+      $stmt = $this->pdo->prepare($sql);
+      try{
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_CLASS);
+      }catch (Exception $e){
+        die($e->getMessage());
+      }  
+
+    }
 }

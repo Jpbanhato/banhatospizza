@@ -67,8 +67,8 @@
         <h1 class="lp-title">Escolha. Peça. Saboreie!</h1>
         <div class="lp-cards">
         <?php foreach($ultimos as $ultimo): ?>
-          <div class="card col-sm-3">
-            <img src="../../../public/img/<?=$ultimo->imagem?>.webp" alt="pizzas salgadas"/>
+          <div class="card col-sm-3 cart">
+            <img src="../../../public/img/<?=$ultimo->imagem?>.jpg" />
             <h3><?=$ultimo->nome?></h3>
           </div>
         <?php endforeach;?> 

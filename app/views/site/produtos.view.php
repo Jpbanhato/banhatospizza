@@ -40,7 +40,7 @@
         <div class="col">
             <a href="/produto?id=<?=$produto->id?>">
               <div class="card prod">
-              <img src="../../../public\img\<?=$produto->imagem?>.webp" class="card-img-top" alt="...">
+              <img src="../../../public\img\<?=$produto->imagem?>.jpg" class="card-img-top" alt="...">
               <div class="card-body prod-body">
                 <div class="botao <?=$produto->nomeCategoria?>">
                   <a href="#"><?=$produto->nomeCategoria?></a>

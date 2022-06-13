@@ -110,19 +110,23 @@ h1 {
     font-size: 1.5rem;
 }
 
-.batata-frita{
+.Pizzas{
+    background-color: #99751a;
+}
+
+.Porções{
     background-color: rgb(158, 148, 62);
 }
 
-.esfiha{
+.Salgados{
     background-color: black;
 }
 
-.doce{
-    background-color: limegreen;
+.Doces{
+    background-color: rgb(182, 27, 202);
 }
 
-.salgada{
+.Entradas{
     background-color: rgba(141, 141, 6, 0.514);
 }
 
