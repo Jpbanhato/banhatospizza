@@ -1,7 +1,6 @@
 body {
-
+    
     text-align: center;
-    padding: 0;
     background-color: #ecd393;
     
 }
@@ -11,12 +10,17 @@ body {
     src: url('../assets/fonts/Bakeriebold.otf');
 }
 
+.main {
+
+    padding-top: 120px;
+}
+
 .titulo h1 {
     font-family: "Bakeriebold" ;
     src: url('../assets/fonts/Bakeriebold.otf');
     margin-top: 5%;
     margin-bottom: 3%;
-    color: #ecd393;
+    color: #301506;
     font-size: 60px;
 }
 
@@ -131,17 +135,21 @@ body {
     box-shadow: 0 0 1rem black;
     color: #eff0ea;
     background-color: #301506;
-    border-color: #eff0ea;
+    border-color: #301506;
     margin-bottom: 5%;
     margin-left: 30%;
     margin-right: 30%;
+
+
     
 }
 
 .botao_2 :hover {
     border-color: #eff0ea ;
-    background-color: #ecd393;
-    color:#eff0ea
+    background-color: #198754;
+    color:#eff0ea;
+    
+
 }
 
 

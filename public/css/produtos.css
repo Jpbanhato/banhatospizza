@@ -6,6 +6,7 @@
 body{
     background-color: #ecd393;
     justify-content: center;
+    padding-top: 152px;
 }
 
 a{
@@ -14,8 +15,10 @@ a{
 
 h1 {
     font-family: "BakerieBold";
-    color: #ecd393;
+    color: #301506;
 }
+
+
 
 .indicacao{
     display: flex;
@@ -32,7 +35,7 @@ h1 {
 
 .filter{
     display: flex;
-    background-color: #1d0505;
+    background-color: #ecd393;
     padding-left: 10%;
 }
 
@@ -40,6 +43,10 @@ h1 {
     font-family: "BakerieBold";
     color:#ecd393;
     border-radius: 10%;
+    background-color: #301506;
+    border: #301506;
+
+
 }
 
 .main{

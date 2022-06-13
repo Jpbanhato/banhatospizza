@@ -23,7 +23,6 @@
 
 <body>
 
-<?php include 'app/views/includes/navbar.php';?>  
 
   <div class="login-container">
 
@@ -65,6 +64,6 @@
     </div>
   </div>
 
-<?php include 'app/views/includes/footer.php';?>
+
 </body>
 </html>

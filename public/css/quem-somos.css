@@ -5,32 +5,23 @@
 
 body{
     background-color: #ecd393;
+    
 }
 
 h1{
     font-family: 'BakerieBold';
-    color:#ecd393;
+    margin-bottom: 2%;
 }
 
 .main{
     padding: 1%;
+    padding-top: 179px;
 }
 
 .barra-titulo{
     padding-top: 1%;
     height: 20%;
     color:#ecd393;
-}
-
-.barra-titulo a{
-    text-decoration: none;
-    color:ivory;
-    font-size:large;
-}
-
-.barra-titulo li{
-    padding-top: 1%;
-    padding-left: 1%;
 }
 
 .barra-titulo .crumb {
@@ -40,6 +31,8 @@ h1{
 }
 
 .barra-titulo h1{
+    font-size: 60px;
+    color: #331606;
     line-height: 100%;
     border-left: 10%;
     text-align: center;
