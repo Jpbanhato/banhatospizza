@@ -22,6 +22,8 @@ class ProdutosAdmController
         return view('admin/produtos', compact('resultGeral'));
 
     }
+
+    
    /* public function showCategorias()
     {
        

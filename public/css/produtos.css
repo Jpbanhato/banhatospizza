@@ -59,6 +59,7 @@ h1 {
 .prod{
     border-color:#ecd393;
     border-radius:1%;
+    background-color:#301506;
 }
 
 .prod-body{
@@ -70,10 +71,10 @@ h1 {
     box-shadow: 0 0 1em black;
 }
 
-.produto img{
-    height: 55%;
+.prod img{
+    height: 55vh;
     width: 100%;
-    padding: 3%;
+    padding: 1%;
     border-radius: 15%;
 }
 .prod-body h1{

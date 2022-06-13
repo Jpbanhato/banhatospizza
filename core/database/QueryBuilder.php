@@ -83,6 +83,18 @@ class QueryBuilder
             die($error->getMessage());
         }
     }
+    public function countAll($table)
+    {
+        $sql = "SELECT * FROM {$table}";
+
+        try {
+          $stmt = $this->pdo->prepare($sql);
+          $stmt->execute();
+          return $stmt->rowCount();
+        } catch (Exception $e) {
+            die("An error occurred when trying to count from database: {$e->getMessage()}");
+        }
+    }
 
     /**
      * Categorias:
@@ -117,6 +129,22 @@ class QueryBuilder
     public function selectAllProdutos($table)
     {
       $sql = "SELECT {$table}.*, categoria.nome AS nomeCategoria FROM {$table} JOIN categoria ON categoria.id  = {$table}.idCategoria ";
+      $stmt = $this->pdo->prepare($sql);
+      try{
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_CLASS);
+      }catch (Exception $e){
+        die($e->getMessage());
+      }  
+
+    }
+    public function selectAllProdutosPagination($table, $start_limit, $rows_amount)
+    {
+      $sql = "SELECT {$table}.*, categoria.nome AS nomeCategoria FROM {$table} JOIN categoria ON categoria.id  = {$table}.idCategoria ";
+      if  ($start_limit >= 0 && $rows_amount > 0)
+      {
+          $sql .= " LIMIT {$start_limit}, {$rows_amount}";
+      }
       $stmt = $this->pdo->prepare($sql);
       try{
         $stmt->execute();
