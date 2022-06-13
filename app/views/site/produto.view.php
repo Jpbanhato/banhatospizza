@@ -22,51 +22,36 @@
 
 <?php include 'app/views/includes/navbar.php';?>
 
-    </div>
-    <div class="container card-container">
-        <div class="row">
-            <div class="col-md-12">
-                <center>
-                    <div class="card text-center">
-                        <img src="../../../public/img/pizzaCalabresa.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Pizza de Calabresa</h5>
-                            <p class="card-text">R$40,00</p>
-                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                            <a href="#" class="btn btn-card">Pedir</a>
+    <?php foreach ($produto as $prod):?>
+        <div class="container card-container">
+            <div class="row">
+                <div class="col-md-12">
+                    <center>
+                        <div class="card text-center">
+                            <img src="../../../public/img/<?=$prod->imagem?>.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"><?=$prod->nome?></h5>
+                                <p class="card-text">R$<?=$prod->preco?>,00</p>
+                                <p class="card-text"><?=$prod->descricao?></p>
+                                <a href="#" class="btn btn-card">Pedir</a>
+                            </div>
                         </div>
-                    </div>
-                </center>
+                    </center>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="container info">
-        <div class="row">
-            <div class="col-md-12">
-                <h3>
-                    Ingredientes
-                </h3>
-                <hr>
-                <ul class="list-unstyled">
-                    <li>Queijo Mossarela</li>
-                    <li>Queijo Mossarela</li>
-                    <li>Queijo Mossarela</li>
-                    <li>Queijo Mossarela</li>
-                    <li>Queijo Mossarela</li>
-                </ul>
+        <div class="container info">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>
+                        Informações Úteis
+                    </h3>
+                    <hr>
+                    <p><?=$prod->informacoesUteis?></p>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12">
-                <h3>
-                    Descrição
-                </h3>
-                <hr>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae soluta distinctio consequuntur porro ipsa doloribus, tempora voluptas commodi! Perspiciatis, quisquam vel. Vero porro at ad illum tempore recusandae corrupti ipsa. Lorem
-                    ipsum dolor sit amet consectetur, adipisicing elit. Sunt aliquid illo expedita. A, dolore accusantium at distinctio possimus recusandae modi expedita corporis incidunt excepturi fuga ad. Reprehenderit placeat assumenda nisi.</p>
-            </div>
-        </div>
-    </div>
+    <?php endforeach; ?>
     
     <?php include 'app/views/includes/footer.php';?>
 </body>

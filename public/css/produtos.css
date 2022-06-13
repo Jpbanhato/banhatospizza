@@ -113,6 +113,20 @@ h1 {
     font-size: 1.5rem;
 }
 
+.btpesquisa{
+    display:flex;
+    flex-direction: row;
+    font-family: "BakerieBold";
+    justify-content: center;
+    font-size: medium;
+    text-decoration: none;
+    background-color: #2e0000;
+    padding-bottom: 0%;
+    border-radius: 10%;
+    color:#eff0ea;
+    border:none;
+}
+
 .Pizzas{
     background-color: #99751a;
 }

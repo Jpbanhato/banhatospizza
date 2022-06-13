@@ -263,4 +263,30 @@ class QueryBuilder
       }  
 
     }
+
+    public function selectPesquisaProdutosSite($table,$pesquisa)
+    {
+      $sql = "SELECT {$table}.*, categoria.nome AS nomeCategoria FROM {$table} JOIN categoria ON categoria.id  = {$table}.idCategoria WHERE produto.nome LIKE '%{$pesquisa}%'";
+      $stmt = $this->pdo->prepare($sql);
+      try{
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_CLASS);
+      }catch (Exception $e){
+        die($e->getMessage());
+      }  
+
+    }
+
+    public function selectProduto($table,$id)
+    {
+      $sql = "SELECT * FROM {$table} WHERE id = '$id'";
+      $stmt = $this->pdo->prepare($sql);
+      try{
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_CLASS);
+      }catch (Exception $e){
+        die($e->getMessage());
+      }  
+
+    }
 }

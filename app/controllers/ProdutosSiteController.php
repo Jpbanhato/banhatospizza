@@ -26,43 +26,12 @@ class ProdutosSiteController
      
     }
 
-    /**
-     * Renderizar página de criação de um registro
-     */
-    public function create()
+    public function search()
     {
+        $pesquisa = $_GET["search"];
+        $result = App::get('database')->selectPesquisaProdutosSite("produto", $pesquisa);
+        $tabela = ["produtos" => $result];
 
-    }
-
-    /**
-     * Armazenar um registro
-     */
-    public function store()
-    {
-
-    }
-
-    /**
-     * Renderizar página de edição de um registro
-     */
-    public function edit()
-    {
-
-    }
-
-    /**
-     * Atualizar um registro
-     */
-    public function update()
-    {
-        
-    }
-
-    /**
-     * Deletar um registro
-     */
-    public function delete()
-    {
- 
+        return view("site/produtos", $tabela);
     }
 }

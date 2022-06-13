@@ -25,9 +25,10 @@
           <h1>Produtos</h1>
           <nav class="navbar nav">
             <div class="container-fluid cont">
-              <form class="d-flex filter">
-                <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
-                <button class="btn btn-outline-success bot" type="submit">Buscar</button>
+              <form class="d-flex justify-content-end bar-search" action="produtos/search" method="get">
+                <input class="form-control me-2" type="search" placeholder="Nome do produto..." aria-label="Search"
+                    name="search">
+                <button class="btn btn-primary bottom-search btpesquisa" type="submit">Pesquisar</button>
               </form>
             </div>
           </nav>

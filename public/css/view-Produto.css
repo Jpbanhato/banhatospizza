@@ -4,15 +4,16 @@
 }
 
 body {
-    background-color: #1d0505;
+    background-color: #ecd393;
 }
 
 .card-container {
     max-width: 100%;
+    padding-top: 9vh;
 }
 
 .card {
-    background-color: #ecd393;
+    background-color: #301506;
     border-color: black;
     border-width: 5px;
     border-radius: 8px;
@@ -25,6 +26,7 @@ body {
 h3 {
     font-family: BakerieBold;
     font-size: 40px;
+    color:#ecd393;
 }
 
 hr {
@@ -47,5 +49,13 @@ hr {
 }
 
 .info {
+    color: #301506;
+}
+
+.info h3{
+    color: #301506;
+}
+
+.card-text {
     color: #eff0ea;
 }

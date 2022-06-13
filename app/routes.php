@@ -48,5 +48,5 @@ $router->post('logout','LoginController@logout');
 $router->get('admin/dashboard','DashboardController@show');
 $router->get('produtos','ProdutosSiteController@index');
 
-
+$router->get('produtos/search','ProdutosSiteController@search');
 ?>

@@ -9,6 +9,10 @@ class ProdutoController
 {
     public function show(){
 
-        return view('site/produto');
+        $id = $_GET["id"];
+
+        $produto =  App::get('database')->selectProduto("produto", $id);
+
+        return view('site/produto',compact('produto'));
     }
 }
