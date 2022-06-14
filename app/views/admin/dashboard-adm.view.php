@@ -33,7 +33,7 @@
                     <i class="fa-solid fa-circle-user"></i>
                     <div class="card-body">
                         <h5 class="card-title">Gerenciar Usuários</h5>
-                        <a href="#" class="btn btn-card">Abrir</a>
+                        <a href="/admin/usuarios" class="btn btn-card">Abrir</a>
                     </div>
                 </div>
             </div>
@@ -43,7 +43,7 @@
                     <i class="fa-solid fa-clipboard-list"></i>
                     <div class="card-body">
                         <h5 class="card-title">Gerenciar Categorias</h5>
-                        <a href="#" class="btn btn-card">Abrir</a>
+                        <a href="/admin/categorias" class="btn btn-card">Abrir</a>
                     </div>
                 </div>
             </div>
@@ -52,7 +52,7 @@
                     <i class="fa-solid fa-boxes-stacked"></i>
                     <div class="card-body">
                         <h5 class="card-title">Gerenciar Produtos</h5>
-                        <a href="#" class="btn btn-card">Abrir</a>
+                        <a href="/admin/produtos" class="btn btn-card">Abrir</a>
                     </div>
                 </div>
 

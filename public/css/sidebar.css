@@ -3,6 +3,13 @@
     src: url('../assets/fonts/BakerieBold.otf');
 }
 
+.botao-fechar {
+
+    background-color: #eff0ea;   
+
+}
+
+
 .botao-primario1 {
     color: #ecd393;
 }

@@ -9,7 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-        <!-- NAVBAR E FOOTER -->
+        
+      <!-- NAVBAR E FOOTER -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="../../../public/css/style_navbar.css" type="text/css">
@@ -47,8 +48,8 @@
             <h5 class="card-title">Redes sociais</h5>
             <h6 class="card-subtitle mb-2 text-muted">Conheça nosso trabalho nas redes sociais</h6>
             <p class="card-text">Em nossas redes sociais você irá encontrar nossos trabalhos mais recentes e nossas promoções.</p>
-            <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram cart_link1"></a>
-            <a href="https://pt-br.facebook.com/" target="_blank" class="fa fa-facebook cart_link1"></a>
+            <a href="https://www.instagram.com/" target="_blank" class="card-link cart_link1"><i class="fa fa-instagram"></i></a>
+            <a href="https://pt-br.facebook.com/" target="_blank" class="card-link cart_link1"><i class="fa fa-facebook"></i></a>
           </div>
         </div>
         

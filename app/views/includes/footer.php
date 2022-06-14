@@ -15,7 +15,8 @@
                                 <h5 class="text-uppercase titulo">Banhato's Pizza</h5>
 
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae modi cum ipsam ad, illo possimus laborum ut reiciendis obcaecati. Ducimus, quas. Corrupti, pariatur eaque? Reiciendis assumenda iusto sapiente inventore animi?
+                                 Nosso objetivo é fornecer a você uma experiência melhor a cada mordida. Conheça também nosso trabalho nas redes sociais.  
+                                
                                 </p>
                             </div>
                             <!--Grid column-->
@@ -51,50 +52,28 @@
                     </section>
                     <!-- Section: Links -->
 
-                    <hr class="mb-4" />
 
-                    <!-- Section: CTA -->
-                    <section class="">
-                        <p class="d-flex justify-content-center align-items-center">
-                            <span class="me-3">Registre-se agora</span>
-                            <button type="button" class="btn btn-outline-light btn-rounded footer-btn">
-                                Registrar-se
-                                
-                </button>
-                        </p>
-                    </section>
-                    <!-- Section: CTA -->
-
-                    <hr class="mb-4" />
 
                     <!-- Section: Social media -->
                     <section class="mb-4 text-center">
                         <!-- Facebook -->
-                        <a class="btn btn-outline-light btn-floating m-1 footer-icon" href="#!" role="button"><i class="fa fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-floating m-1 footer-icon" href="https://pt-br.facebook.com/" role="button"><i class="fa fa-facebook-f"></i></a>
 
                         <!-- Twitter -->
-                        <a class="btn btn-outline-light btn-floating m-1 footer-icon" href="#!" role="button"><i class="fa fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-floating m-1 footer-icon" href="https://twitter.com/?logout=1655245009821" role="button"><i class="fa fa-twitter"></i></a>
 
                         <!-- Google -->
-                        <a class="btn btn-outline-light btn-floating m-1 footer-icon" href="#!" role="button"><i class="fa fa-google"></i></a>
+                        <a class="btn btn-outline-light btn-floating m-1 footer-icon" href="https://www.google.com/intl/pt-BR/gmail/about/" role="button"><i class="fa fa-google"></i></a>
 
                         <!-- Instagram -->
-                        <a class="btn btn-outline-light btn-floating m-1 footer-icon" href="#!" role="button"><i class="fa fa-instagram"></i></a>
+                        <a class="btn btn-outline-light btn-floating m-1 footer-icon" href="https://www.instagram.com/" role="button"><i class="fa fa-instagram"></i></a>
 
                     </section>
                     <!-- Section: Social media -->
                 </div>
                 <!-- Grid container -->
-
-                <!-- Copyright -->
-                <div class="row">
-                    <div class="text-center p-3">
-                        © 2022 Copyright:
-                        <a class="text-white footer-link" href="https://mdbootstrap.com/">Codejr.com.br</a
-              >
-                    </div>
           </div>
-          <!-- Copyright -->
+          
         </footer>
         </div>
         <!-- Footer -->

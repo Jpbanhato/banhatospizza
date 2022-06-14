@@ -20,9 +20,9 @@
 
         <ul class="listas">
 
-          <li> <i class="bi bi-people"></i> <a class="usuarios-1" href="usuarios.html"> Usuários </a></li>
-          <li> <i class="bi bi-list-nested"></i> <a class="categorias-1" href="categorias.html"> Categorias </a></li>
-          <li> <i class="bi bi-boxes"></i> <a class="produtos-1" href="produtos.html"> Produtos </a></li>
+          <li> <i class="bi bi-people"></i> <a class="usuarios-1" href="/admin/usuarios"> Usuários </a></li>
+          <li> <i class="bi bi-list-nested"></i> <a class="categorias-1" href="/admin/categorias"> Categorias </a></li>
+          <li> <i class="bi bi-boxes"></i> <a class="produtos-1" href="/admin/produtos"> Produtos </a></li>
 
 
         </ul>
