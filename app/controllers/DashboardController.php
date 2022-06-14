@@ -4,7 +4,7 @@ namespace App\Controllers;
 
 use App\Core\App;
 use Exception;
-
+session_start();
 class DashboardController 
 {
     /**
@@ -12,7 +12,12 @@ class DashboardController
      */
     public function show()
     {
-        return view('admin/dashboard-adm');
+        if(!isset($_SESSION['email'])){
+            header('Location: /login');
+        }
+        $email = $_SESSION['email'];
+        $usuario = APP::get('database')->selectUsuario('usuario', $email);
+        return view('admin/dashboard-adm', compact('usuario'));
     }
 
   

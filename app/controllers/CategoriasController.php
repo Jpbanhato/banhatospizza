@@ -5,6 +5,7 @@ namespace App\Controllers;
 use App\Core\App;
 use Exception;
 
+session_start();
 class CategoriasController
 {
     /**
@@ -12,10 +13,13 @@ class CategoriasController
      */
     public function index()
     {
-       $categorias = App::get('database')->selectAll('categoria');
-       $table = ["categorias" => $categorias];
+        if(!isset($_SESSION['email'])){
+            header('Location: /login');
+        }
+        $categorias = App::get('database')->selectAll('categoria');
+        $table = ["categorias" => $categorias];
        
-       return view('admin/categorias', $table);
+        return view('admin/categorias', $table);
     }
 
     /**

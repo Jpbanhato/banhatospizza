@@ -20,38 +20,20 @@
 
         <ul class="listas">
 
-          <li> <i class="bi bi-people"></i> <a class="usuarios-1" href="usuarios.html"> Usuários </a></li>
-          <li> <i class="bi bi-list-nested"></i> <a class="categorias-1" href="categorias.html"> Categorias </a></li>
-          <li> <i class="bi bi-boxes"></i> <a class="produtos-1" href="produtos.html"> Produtos </a></li>
+          <li> <i class="bi bi-people"></i> <a class="usuarios-1" href="/admin/usuarios"> Usuários </a></li>
+          <li> <i class="bi bi-list-nested"></i> <a class="categorias-1" href="/admin/categorias"> Categorias </a></li>
+          <li> <i class="bi bi-boxes"></i> <a class="produtos-1" href="/admin/produtos"> Produtos </a></li>
 
 
         </ul>
 
         <div class="botao-logout1">
           <!-- Button trigger modal -->
-              <button type="button" class="btn btn-primary botao-logout2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          <form method="post" action="/logout">
+              <button type="submit" class="btn btn-primary botao-logout2" data-bs-toggle="modal" data-bs-target="#modalLogout">
                 Logout <i class="bi bi-box-arrow-right"></i>
               </button>
-
-              <!-- Modal -->
-              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="staticBackdropLabel">Sim Deseja mesmo sair ?</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      Após clicar no botão "Sim", você será direcionado para a área de login. Deseja prosseguir com essa decisão ?
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                      <button type="button" class="btn btn-primary">Sim</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          
+          </form> 
         </div>
 
     </div>

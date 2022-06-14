@@ -4,7 +4,7 @@ namespace App\Controllers;
 
 use App\Core\App;
 use Exception;
-
+session_start();
 class UserController
 {
     /**
@@ -12,6 +12,9 @@ class UserController
      */
     public function view()
     {
+        if(!isset($_SESSION['email'])){
+            header('Location: /login');
+        }
         $usuarios = App::get('database') -> selectAll('usuario');
         /**$tables = [
             'usuarios' => $usuarios

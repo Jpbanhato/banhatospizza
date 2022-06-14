@@ -5,6 +5,7 @@ namespace App\Controllers;
 use App\Core\App;
 use Exception;
 
+session_start();
 class ProdutosAdmController
 {
     /**
@@ -12,6 +13,9 @@ class ProdutosAdmController
      */
     public function index()
     {
+        if(!isset($_SESSION['email'])){
+            header('Location: /login');
+        }
         $resultProduto = App::get('database')->selectAllProdutos('produto');
         $resultCategoria = App::get('database')->selectAllCategorias('categoria');  
         $resultGeral = array();

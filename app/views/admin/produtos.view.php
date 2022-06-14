@@ -184,7 +184,7 @@
                             </div>
                             <div class="col-12">
                                 <label for="inputImageEditProdut" class="form-label">Imagem </label>
-                                <input type="text" class="form-control" name="imagem" id="inputImageEditProdut">
+                                <input type="text" value="<?= $row->imagem ?>" class="form-control" name="imagem" id="inputImageEditProdut">
                             </div>
                             
                             <div class="modal-footer">
@@ -242,8 +242,7 @@
                                 </div>
                                 <div class="col-12">
                                     <label for="ViewImageProduct" class="form-label">Imagem</label>
-                                    <input type="text" class="form-control" id="ViewImageProduct" placeholder="[IMAGEM]"
-                                        readonly>
+                                    <img src="../../../public/img/<?=$row->imagem?>.jpg" >
                                 </div>
                             </form>
                         </fieldset>

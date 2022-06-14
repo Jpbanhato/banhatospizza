@@ -272,6 +272,18 @@ class QueryBuilder
             die($e->getMessage());
         }
     }
+    public function selectUsuario($table, $email)
+    {
+      $sql = "SELECT * FROM {$table} WHERE email = '$email'";
+      $stmt = $this->pdo->prepare($sql);
+      try{
+        $stmt->execute();
+        return  $stmt->fetchAll(PDO::FETCH_CLASS);
+      }catch (Exception $e){
+        die($e->getMessage());
+      }  
+
+    }
 
     /**
      * Outros:

@@ -1,3 +1,4 @@
+
 <html>
 <!DOCTYPE html>
 <html lang="en">
@@ -24,7 +25,9 @@
     <?php include 'app/views/includes/sidebar-adm.php';?>
 
     <div class="jumbotron text-center">
-        <h1>Bem-vindo,<br> Bernardo Ortiz</h1>
+        <?php foreach ($usuario as $user): ?>
+        <h1>Bem-vindo,<br> <?= $user->nome ?> </h1>
+        <?php endforeach; ?>
     </div>
     <div class="container">
         <div class="row">
@@ -33,7 +36,7 @@
                     <i class="fa-solid fa-circle-user"></i>
                     <div class="card-body">
                         <h5 class="card-title">Gerenciar Usuários</h5>
-                        <a href="#" class="btn btn-card">Abrir</a>
+                        <a href="/admin/usuarios" class="btn btn-card">Abrir</a>
                     </div>
                 </div>
             </div>
@@ -43,7 +46,7 @@
                     <i class="fa-solid fa-clipboard-list"></i>
                     <div class="card-body">
                         <h5 class="card-title">Gerenciar Categorias</h5>
-                        <a href="#" class="btn btn-card">Abrir</a>
+                        <a href="/admin/categorias" class="btn btn-card">Abrir</a>
                     </div>
                 </div>
             </div>
@@ -52,7 +55,7 @@
                     <i class="fa-solid fa-boxes-stacked"></i>
                     <div class="card-body">
                         <h5 class="card-title">Gerenciar Produtos</h5>
-                        <a href="#" class="btn btn-card">Abrir</a>
+                        <a href="/admin/produtos" class="btn btn-card">Abrir</a>
                     </div>
                 </div>
 
