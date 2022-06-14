@@ -23,6 +23,9 @@
 $router ->get('contato','ContatoController@view');
 $router ->post('contato/sendEmail', 'ContatoController@sendEmail');
  $router->get('admin/usuarios','UserController@view');
+ /**  
+  * Usuarios:
+  */
  $router->post('admin/usuarios/create','UserController@create');
  $router->post('admin/usuarios/update','UserController@update');
  $router->post('admin/usuarios/delete','UserController@delete');
@@ -48,5 +51,5 @@ $router->post('logout','LoginController@logout');
 $router->get('admin/dashboard','DashboardController@show');
 $router->get('produtos','ProdutosSiteController@index');
 
-$router->get('produtos/search','ProdutosSiteController@search');
+$router->get('produtos/search','ProdutosSiteController@index');
 ?>

@@ -1,6 +1,4 @@
-<?php 
-// var_dump($resultCategoria);
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -180,7 +178,7 @@
                                 <select id="inputCategoryEditProdut" class="form-select" name="categoria">
                                     <option >Insira a categoria do produto...</option>
                                     <?php foreach($resultGeral['categorias'] as $row2):   ?>    
-                                    <option value="<?= $row2->idCategoria ?> " <?= $row2->id == $row->idCategoria ? "selected" : ""  ?>><?=  $row2->nome ?></option>
+                                    <option value="<?= $row2->id ?>" <?= $row2->id == $row->idCategoria ? "selected" : ""  ?>><?=  $row2->nome ?></option>
                                     <?php endforeach; ?>
                                 </select>
                             </div>

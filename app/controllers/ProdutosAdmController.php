@@ -51,6 +51,7 @@ class ProdutosAdmController
             'descricao' => $_POST['descricao'],
             'idCategoria' => $_POST['categoria'],
             'informacoesUteis' => $_POST['informacoesUteis'],
+            'imagem' => $_POST['imagem'],
 
         ];
         App::get('database')->insertProdutos('produto', $parameters);
