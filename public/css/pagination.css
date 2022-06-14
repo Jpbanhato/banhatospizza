@@ -1,0 +1,21 @@
+.pagination-pag{
+    justify-content:center;
+}
+
+.item-pagination{
+    color:#ecd393;
+    background-color: #301506;
+    border:#301506;
+}
+
+.actived{
+    color:#301506;
+    background-color: #ecd393;
+    border:#301506;
+}
+
+.disabledd{
+    color:#ecd393;
+    background-color: #301506;
+    border:#301506;
+}

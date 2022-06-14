@@ -16,6 +16,7 @@ h1{
 .main{
     padding: 1%;
     padding-top: 179px;
+    height:fit-content;
 }
 
 .barra-titulo{
@@ -100,8 +101,14 @@ h1{
     box-shadow: 0 0 2em black;
     transition: 0.5s;
 }
+
 .carrossel{
     padding: 3%;
+    height: 85vh;
+}
+
+.carrossel img{
+    height: 80vh;
 }
 
 @media(max-width:1000px){

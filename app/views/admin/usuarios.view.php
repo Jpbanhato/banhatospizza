@@ -12,7 +12,9 @@
 
     <!-- SIDEBAR -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
     <link rel="stylesheet" href="../../../public/css/sidebar.css" type="text/css">
 
     <title>Banhato's Pizza - Usuários</title>
@@ -22,7 +24,7 @@
 
     <?php include 'app/views/includes/sidebar-adm.php';?>
     <div class="container">
-        
+
         <div class="user-header">
             <h1>Usuários</h1>
         </div>
@@ -107,7 +109,7 @@
                             </div>
                             <div class="col-12">
                                 <label for="inputPasswordAddUser" class="form-label">Senha</label>
-                                <input class="form-control" name="senha" id="inputPasswordAddUser" 
+                                <input class="form-control" name="senha" id="inputPasswordAddUser"
                                     placeholder="Senha...">
                             </div>
                             <div class="modal-footer">
@@ -122,48 +124,48 @@
         </div>
         <!-- Modal Editar Usuario -->
         <?php foreach ($usuarios as $usuario):?>
-            <div class="modal fade" id="EditUser-<?=$usuario->id?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-                aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-xl">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="staticBackdropLabel">Editar Usuário</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
+        <div class="modal fade" id="EditUser-<?=$usuario->id?>" data-bs-backdrop="static" data-bs-keyboard="false"
+            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Editar Usuário</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
 
-                            <form action="/admin/usuarios/update" method="post" class="row g-3">
-                                <div class="col-md-8">
-                                    <input type="hidden" name="id" value="<?=$usuario->id?>">
-                                    <label for="inputNameEditUser" class="form-label">Nome</label>
-                                    <input type="text" class="form-control" name="nome" id="inputNameEditUser"
-                                        value="<?=$usuario->nome?>">
-                                </div>
-                                <div class="col-md-4">
-                                    <label for="inputEmailEditUser" class="form-label">E-mail</label>
-                                    <input type="text" class="form-control" name="email" id="inputEmailEditUser"
-                                        value="<?=$usuario->email?>">
-                                </div>
-                                <div class="col-12">
-                                    <label for="inputPasswordEditUser" class="form-label">Senha</label>
-                                    <input class="form-control" name="senha" id="inputPasswordEditUser"
-                                        value="<?=$usuario->senha?>">
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
-                                    <button type="submit" class="btn btn-principal">Editar</button>
-                                </div>
-                            </form>
-                        </div>
+                        <form action="/admin/usuarios/update" method="post" class="row g-3">
+                            <div class="col-md-8">
+                                <input type="hidden" name="id" value="<?=$usuario->id?>">
+                                <label for="inputNameEditUser" class="form-label">Nome</label>
+                                <input type="text" class="form-control" name="nome" id="inputNameEditUser"
+                                    value="<?=$usuario->nome?>">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="inputEmailEditUser" class="form-label">E-mail</label>
+                                <input type="text" class="form-control" name="email" id="inputEmailEditUser"
+                                    value="<?=$usuario->email?>">
+                            </div>
+                            <div class="col-12">
+                                <label for="inputPasswordEditUser" class="form-label">Senha</label>
+                                <input class="form-control" name="senha" id="inputPasswordEditUser"
+                                    value="<?=$usuario->senha?>">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                                <button type="submit" class="btn btn-principal">Editar</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
-        <?php endforeach;?>    
+        </div>
+        <?php endforeach;?>
 
         <!-- Modal Visualizar Usuario-->
         <?php foreach ($usuarios as $usuario):?>
-        <div class="modal fade" id="ViewUser-<?=$usuario->id?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal fade" id="ViewUser-<?=$usuario->id?>" data-bs-backdrop="static" data-bs-keyboard="false"
+            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-xl">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -176,13 +178,13 @@
                             <form class="row g-3">
                                 <div class="col-md-8">
                                     <label for="ViewNameUser" class="form-label">Nome</label>
-                                    <input type="text" class="form-control" id="ViewNameUser" placeholder="<?=$usuario->nome?>"
-                                        readonly>
+                                    <input type="text" class="form-control" id="ViewNameUser"
+                                        placeholder="<?=$usuario->nome?>" readonly>
                                 </div>
                                 <div class="col-md-4">
                                     <label for="ViewEmailUser" class="form-label">E-mail</label>
-                                    <input type="text" class="form-control" id="ViewEmailUser" placeholder="<?=$usuario->email?>"
-                                        readonly>
+                                    <input type="text" class="form-control" id="ViewEmailUser"
+                                        placeholder="<?=$usuario->email?>" readonly>
                                 </div>
                                 <div class="col-12">
                                     <label for="ViewPasswordUser" class="form-label">Senha</label>
@@ -203,8 +205,8 @@
 
         <!-- Modal excluir Usuario-->
         <?php foreach ($usuarios as $usuario):?>
-        <div class="modal fade" id="DeleteUser-<?=$usuario->id?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal fade" id="DeleteUser-<?=$usuario->id?>" data-bs-backdrop="static" data-bs-keyboard="false"
+            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -215,7 +217,8 @@
                         <p class="text-center">Deseja mesmo excluir esse usuário?</p>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-principal bottom-add" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-principal bottom-add"
+                            data-bs-dismiss="modal">Cancelar</button>
                         <form action="/admin/usuarios/delete" method="post">
                             <input type="hidden" value="<?=$usuario->id?>" name="id">
                             <button type="submit" class="btn btn-danger">Excluir</button>
@@ -227,8 +230,8 @@
         <?php endforeach;?>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

@@ -137,25 +137,25 @@ h1 {
 }
 
 .Salgados{
+    background-color: rgb(153, 126, 7);
+}
+
+.Cafés{
     background-color: black;
 }
 
 .Doces{
-    background-color: rgb(182, 27, 202);
+    background-color: rgb(205, 3, 231);
 }
 
 .Entradas{
     background-color: rgba(141, 141, 6, 0.514);
 }
 
-.pagina{
-    justify-content: center;
-    margin-right: 1%;
-    margin-top: 2%;
+.Alcoólicos{
+    background-color: purple;
 }
 
-.item-pag a{
-    color:#ecd393;
-    background-color: rgb(70, 34, 11);
-    border: #8f0e0e;
+.Queijos{
+    background-color: rgb(175, 175, 92);
 }
