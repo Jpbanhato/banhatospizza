@@ -15,11 +15,20 @@ body {
 .card {
     background-color: #301506;
     border-color: black;
-    border-width: 5px;
+    border-width: 2px;
     border-radius: 8px;
-    margin-top: 50px;
+    margin-top: 10%;
     max-width: 722px;
     flex-direction: row-reverse;
+
+    border-radius: 22px;
+    background: linear-gradient(225deg, #2b1305, #331606);
+    box-shadow:  -10px 8px 0px #1b0c03,
+                 8px -10px 0px #451e09;
+}
+
+.card img {
+    border-radius: 19px;
 }
 
 .card-title,
@@ -30,18 +39,20 @@ h3 {
 }
 
 hr {
-    border-top: 3px solid #eff0ea;
+    border-top: 3px solid #301506;
 }
 
 .btn-card {
-    background-color: #301506;
-    color: #eff0ea;
-    border-color: black;
-    border-width: 2px;
+    background-color: #ecd393;
+    color: #301506;
+    border-radius: 8px;
+    background: linear-gradient(225deg, #d4be84, #fde29d);
+    box-shadow:  -2px 3px 0px #5e543b,
+                3px -2px 0px #ffffeb;
 }
 
 .btn-card:hover {
-    color: #ecd393;
+    color: #1b0c03;
 }
 
 .card-img-top {
@@ -53,9 +64,59 @@ hr {
 }
 
 .info h3{
+    margin-top: 8%;
     color: #301506;
 }
 
 .card-text {
     color: #eff0ea;
+}
+
+
+
+.card-title,
+h3 {
+    font-family: BakerieBold;
+    font-size: 33px;
+    color:#ecd393;
+}
+
+@media (max-width: 700px) {
+
+    .card {
+        margin-left: 11%;
+        margin-right: 11%;
+        background-color: #301506;
+        border-color: black;
+        border-width: 2px;
+        border-radius: 8px;
+        margin-top: 20%;
+        max-width: 722px;
+        flex-direction: column;
+    
+        border-radius: 13px;
+        background: linear-gradient(225deg, #2b1305, #331606);
+        box-shadow:  -8px 8px 0px #1b0c03,
+                     8px -8px 0px #451e09;
+    }
+
+    .card-title,
+    h3 {
+        font-family: BakerieBold;
+        font-size: 9vw;
+        color:#ecd393;
+    }
+
+    .info h3{
+        margin-left: 10%;
+        font-size: 8vw; 
+        margin-top: 8%;
+        color: #301506;
+    }
+    
+    .info p {
+        margin-left: 10%;
+        margin-bottom: 10%;
+    }
+    
 }
