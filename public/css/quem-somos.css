@@ -36,6 +36,8 @@ h1{
     line-height: 100%;
     border-left: 10%;
     text-align: center;
+
+    animation: animation 3s;
 }
 
 .blackbox{
@@ -111,6 +113,17 @@ h1{
 .carousel-inner{
     border: double #301506 8px;
 }
+
+@keyframes animation {
+
+    0% {
+      transform: translateX(100px);
+    }
+  100% {
+      transform: translateX(0);
+    }
+    
+  }
 
 @media(max-width:1000px){
 

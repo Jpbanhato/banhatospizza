@@ -22,6 +22,8 @@ body {
     margin-bottom: 3%;
     color: #301506;
     font-size: 60px;
+
+    animation: animation 3s;
 }
 
 .flx_cont{
@@ -168,6 +170,17 @@ body {
 
 
 }
+
+@keyframes animation {
+
+    0% {
+      transform: translateX(100px);
+    }
+  100% {
+      transform: translateX(0);
+    }
+    
+  }
 
 @media (max-width: 1000px) {
 

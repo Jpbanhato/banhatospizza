@@ -29,6 +29,8 @@ h1 {
 .indicacao h1{
     width: 10rem;
     font-size: 60px;
+    animation: animation 3s;
+  
 }
 
 .filter{
@@ -159,3 +161,14 @@ h1 {
     background-color: rgb(70, 34, 11);
     border: #8f0e0e;
 }
+
+@keyframes animation {
+
+    0% {
+      transform: translateX(100px);
+    }
+  100% {
+      transform: translateX(0);
+    }
+    
+  }

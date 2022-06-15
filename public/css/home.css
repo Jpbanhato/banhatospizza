@@ -27,6 +27,8 @@ main {
 .lp-title {
   color: var(--marrom);
   font-size: 60px;
+  animation: animation 3s;
+  
 }
 
 .lp-cards {
@@ -74,6 +76,8 @@ main {
 
 .call-to-action {
   margin: 10px 11%;
+  animation: animation 10s;
+  
 }
 
 .cta-container {
@@ -125,6 +129,7 @@ main {
   color: #eff0ea;
   margin-bottom: 25px;
   font-size: 30px;
+ 
 }
 
 .btn-cta {
@@ -161,6 +166,17 @@ main {
 
 .cart img{
   height: 25vh;
+}
+
+@keyframes animation {
+
+  0% {
+    transform: translateX(100px);
+  }
+100% {
+    transform: translateX(0);
+  }
+  
 }
 
 
