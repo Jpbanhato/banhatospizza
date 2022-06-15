@@ -36,6 +36,11 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   gap: 50px;
+
+  border-radius: 37px;
+    background: linear-gradient(225deg, #2b1305, #331606);
+    box-shadow:  -8px 8px 0px #1b0c03,
+                 8px -8px 0px #451e09;
 }
 
 .card {
@@ -137,6 +142,7 @@ main {
 
 }
 
+
 .btn-cta:hover {
   background-color: #eff0ea;
 
@@ -155,4 +161,87 @@ main {
 
 .cart img{
   height: 25vh;
+}
+
+
+@media (max-width: 1000px) {
+
+  .lp-title {
+    color: var(--marrom);
+    font-size: 45px;
+  }
+
+  .text-cta h1 {
+    font-family: 'BakerieBold';
+    font-size: 29px;
+    margin-bottom: 20px;
+    color: var(--amarelo);
+  }
+
+  .text-cta p {
+  
+    color: #eff0ea;
+    margin-bottom: 25px;
+    font-size: 16px;
+  }
+
+  .btn-cta {
+    background-color: var(--amarelo);
+    color: var(--marrom);
+    height: auto;
+    width: auto;
+    box-shadow: 2px 2px 30px black;
+    font-size: 18px;
+  
+  
+    border-radius: 15px;
+    background: linear-gradient(225deg, #d4be84, #fde29d);
+    box-shadow:  -5px 5px 0px #5e543b,
+                 5px -5px 0px #ffffeb;
+  
+  }
+
+  
+
+  .lp-cards {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+
+    border-radius: 37px;
+    background: linear-gradient(225deg, #2b1305, #331606);
+    box-shadow:  -8px 8px 0px #1b0c03,
+                 8px -8px 0px #451e09;
+
+    
+  }
+  
+  .card {
+    background-color: #301506;
+    height: 50%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 15px;
+
+  }
+  
+.image-cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-cta img{
+  height: 70%;
+  width: 70%;
+}
+
+
 }
