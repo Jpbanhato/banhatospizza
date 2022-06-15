@@ -33,7 +33,7 @@
                                 <h5 class="card-title"><?=$prod->nome?></h5>
                                 <p class="card-text">R$<?=$prod->preco?>,00</p>
                                 <p class="card-text"><?=$prod->descricao?></p>
-                                <a href="#" class="btn btn-card">Pedir</a>
+                                <a href="/contato" class="btn btn-card"><b>Pedir</b></a>
                             </div>
                         </div>
                     </center>

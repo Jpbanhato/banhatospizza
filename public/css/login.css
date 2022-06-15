@@ -16,6 +16,7 @@
   background-color: var(--amarelo);
 }
 
+
 .right-container {
   width: 50%;
   height: 100vh;
@@ -26,11 +27,23 @@
   justify-content:center;
   align-items:center;
   background-color: var(--marrom);
+  
+}
+
+.right-container img {
+ animation: animation 10s; 
+ border: double black 10px ;
+ border-radius: 20%; 
+
+    box-shadow:  -8px 8px 0px #1b0c03,
+                 8px -8px 0px #301506;
 }
 
 .login-title {
   background-color: var (--marrom);
   font-size: 4rem;
+
+  animation: animation 4s;
 }
 
 .login-subtitle {
@@ -72,6 +85,17 @@ button {
 
 .logo {
   display: none;
+}
+
+@keyframes animation {
+
+  0% {
+    transform: translateX(100px);
+  }
+100% {
+    transform: translateX(0);
+  }
+  
 }
 
 @media(max-width : 980px){

@@ -39,7 +39,7 @@
         <div class="caixas">
           <div class="preceitos">
               <h1> &#10004; Valores</h1>
-              <p>Competência, Tradição, Criatividade, Higiene, Qualidade, Adaptação e Zelo.</p>
+              <p>Competência, Tradição, Criatividade, Higiene, Qualidade, Adaptação e zelo .</p>
           </div>
           <div class="preceitos">
               <h1> &#10025; Visão</h1>
@@ -47,7 +47,7 @@
           </div>
           <div class="preceitos">
               <h1> &#10140; Missão</h1>
-              <p>Oferecer alimentos saborosos e produtos de qualidade, visando  total satisfação.</p>
+              <p>Oferecer alimentos saborosos e produtos de qualidade, visando total satisfação.</p>
           </div>
         </div>  
         <div id="carouselExampleIndicators" class="carousel slide carrossel" data-bs-ride="carousel">

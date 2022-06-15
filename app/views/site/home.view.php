@@ -89,9 +89,9 @@
                 ótimo ambiente para você e sua fámilia.</p>
               <a href="/quem-somos"><button class="btn btn-cta"><b>Conheça-nos</b></button></a>
           </div>
-      </section>
+        </section>
   
-      <section class="cta-container contato">
+        <section class="cta-container contato">
           <div class="text-cta">
               <h1>Como entrar em contato ?</h1>
               <p> Para entrar em contato e realizar o seu pedido recomendamos que envie uma mensagem para o nosso
@@ -106,7 +106,7 @@
           <div class="image-cta image-quem-somos imagem-home">
               <img src="../../../public/img/Pizza sharing-amico.png" alt="contato">
           </div>
-      </section>
+        </section>
       </div>
     </main>
     <!-- Footer -->

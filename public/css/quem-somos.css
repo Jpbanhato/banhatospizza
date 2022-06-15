@@ -36,9 +36,12 @@ h1{
     line-height: 100%;
     border-left: 10%;
     text-align: center;
+
+    animation: animation 3s;
 }
 
 .blackbox{
+    border: double #301506 8px;
     height: 100%;
     width: 100%;
     background-color: black;
@@ -79,6 +82,8 @@ h1{
     height: fit-content;
     width: 32%;
     height: 15%;
+    margin-left: 0.9%;
+    margin-right: 0.9%;
     margin-top: 3%;
     margin-bottom: 3%;
     text-align: center;
@@ -101,10 +106,36 @@ h1{
     transition: 0.5s;
 }
 .carrossel{
+
     padding: 3%;
 }
 
+.carousel-inner{
+    border: double #301506 8px;
+}
+
+@keyframes animation {
+
+    0% {
+      transform: translateX(100px);
+    }
+  100% {
+      transform: translateX(0);
+    }
+    
+  }
+
 @media(max-width:1000px){
+
+    .barra-titulo h1{
+        font-size: 60px;
+        color: #331606;
+        line-height: 100%;
+        border-left: 10%;
+        text-align: center;
+        margin-bottom: 8%;
+    }
+
     .texto-institucional{
         width: 100%;
     }
@@ -116,6 +147,8 @@ h1{
     }
 
     .preceitos{
+
+        margin-top: 10%;
         width: 80%;
 
         border-radius: 47px;

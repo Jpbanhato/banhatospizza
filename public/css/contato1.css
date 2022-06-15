@@ -22,6 +22,8 @@ body {
     margin-bottom: 3%;
     color: #301506;
     font-size: 60px;
+
+    animation: animation 3s;
 }
 
 .flx_cont{
@@ -169,7 +171,24 @@ body {
 
 }
 
+@keyframes animation {
+
+    0% {
+      transform: translateX(100px);
+    }
+  100% {
+      transform: translateX(0);
+    }
+    
+  }
+
 @media (max-width: 1000px) {
+
+    .main {
+
+        padding-top: 140px;
+    }
+    
 
     .flx_cont {
         display: flex;
@@ -184,7 +203,7 @@ body {
         src: url('../assets/fonts/Bakeriebold.otf');
         margin-top: 7%;
         margin-bottom: 5%;
-        color: #ecd393;
+        color: #301506 ;
     
     }
 
@@ -216,8 +235,14 @@ body {
         color: #eff0ea;
     }
 
+    .titulo_form {
+        margin-top: 10%;
+
+
+    }
+
     .form_2 {
-        color: #eff0ea;
+        color: #ecd393;
         font-size: 16px;
     }
 
@@ -234,7 +259,12 @@ body {
     
     .botao_2 :hover {
         border-color: #eff0ea ;
-        background-color: #ecd393;
-        color:#eff0ea
+        background-color: #198754;
+        color:#eff0ea;
+    }
+
+    .maps h1 {
+
+        margin-top: 10%;
     }
 }
