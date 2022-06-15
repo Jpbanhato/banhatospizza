@@ -1,5 +1,9 @@
+body {
+    background-color: var(--amarelo);
+}
+
 .container{
-    height: 80vh;
+    height: 90vh;
     width: 80vw;
     background-color: var(--marfim);
 
@@ -7,7 +11,8 @@
     flex-direction: column;
     justify-content: flex-start; 
     border-radius: 15px;
-    overflow-y: scroll;
+    padding: 50px;
+    margin: 5vh auto;
 }
 
 .user-header {
@@ -35,8 +40,8 @@
     border-color: var(--marrom);
     color: var(--marfim);
 }
+.user-table {  
+    overflow-y: scroll;
+ }
 
-body {
-    background-color: var(--amarelo);
-}
 

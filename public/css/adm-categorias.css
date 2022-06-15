@@ -1,14 +1,18 @@
+body {
+    background-color: var(--amarelo);
+}
+
 .container{
-    height: 100vh;
-    width: 100vw;
-    position: absolute;
-    right: 0;
+    height: 90vh;
+    width: 80vw;
     background-color: var(--marfim);
 
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    padding: 5%;
+    justify-content: flex-start; 
+    border-radius: 15px;
+    padding: 50px;
+    margin: 5vh auto;
 }
 
 .Category-header {
