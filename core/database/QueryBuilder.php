@@ -335,7 +335,7 @@ class QueryBuilder
 
     public function selectProduto($table,$id)
     {
-      $sql = "SELECT * FROM {$table} WHERE id = '$id'";
+      $sql = "SELECT {$table}.*, categoria.nome AS nomeCategoria FROM {$table} JOIN categoria ON categoria.id  = {$table}.idCategoria WHERE {$table}.id = '$id'";
       $stmt = $this->pdo->prepare($sql);
       try{
         $stmt->execute();

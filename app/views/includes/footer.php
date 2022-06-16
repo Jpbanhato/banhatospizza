@@ -14,16 +14,15 @@
                             <h5 class="text-uppercase titulo">Banhato's Pizza</h5>
 
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae modi cum ipsam ad,
-                                illo possimus laborum ut reiciendis obcaecati. Ducimus, quas. Corrupti, pariatur eaque?
-                                Reiciendis assumenda iusto sapiente inventore animi?
+                                Nosso objetivo é fornecer a você uma experiência melhor a cada mordida. Conheça também
+                                nosso trabalho nas redes sociais.
                             </p>
                         </div>
                         <!--Grid column-->
                         <div class="col-md-6">
                             <center>
-                                <img src="../../../public/img/Icone Marrom Circular sem Fundo.png" alt="" height="300"
-                                    width="300">
+                                <img src="../../../public/img/Icone Marrom Circular sem Fundo.png" alt="" height="250"
+                                    width="250">
                             </center>
                         </div>
                         <!--Grid column-->

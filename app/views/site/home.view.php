@@ -76,7 +76,9 @@
             <div class="lp-cards">
                 <?php foreach($ultimos as $ultimo): ?>
                 <div class="card col-sm-3 cart">
-                    <img src="../../../public/img/<?=$ultimo->imagem?>.jpg" />
+                    <a href="/produto?id=<?=$ultimo->id?>">
+                        <img src="../../../public/img/<?=$ultimo->imagem?>.jpg" />
+                    </a>
                     <h3><?=$ultimo->nome?></h3>
                 </div>
                 <?php endforeach;?>

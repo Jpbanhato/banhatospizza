@@ -32,6 +32,7 @@
                         <div class="card-body">
                             <h5 class="card-title"><?=$prod->nome?></h5>
                             <p class="card-text">R$<?=$prod->preco?>,00</p>
+                            <h6 class="card-text"><?=$prod->nomeCategoria?></h6>
                             <p class="card-text"><?=$prod->descricao?></p>
                             <a href="#" class="btn btn-card">Pedir</a>
                         </div>
