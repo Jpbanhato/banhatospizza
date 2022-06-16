@@ -159,3 +159,20 @@ main {
 .cart img{
   height: 25vh;
 }
+
+@media(max-width:992px){
+  .lp-cards{
+    flex-direction: column;
+
+  }
+
+  .text-cta {
+    width: 90%;
+    
+  }
+
+  .text-cta p{
+    font-size: 20px;
+  }
+
+}
