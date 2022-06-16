@@ -2,7 +2,7 @@
 <div class="container-fluid">
     <div class="row">
         <!-- Footer -->
-        <footer class="text-center text-lg-start">
+        <footer class="text-center text-lg-start footer">
             <!-- Grid container -->
             <div class="container p-4 pb-0">
                 <!-- Section: Links -->
