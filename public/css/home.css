@@ -1,5 +1,4 @@
 main {
-  
   background-color: var(--amarelo);
   display: flex;
   flex-direction: column;
@@ -9,8 +8,12 @@ main {
   padding-top: 170px;
 }
 
+.carousel-item img {
+  height: auto;
+  min-width: 90vw;
+}
+
 .carousel-caption h5 {
-  
   font-size: 300%;
   font-weight: bolder;
 }
@@ -20,7 +23,6 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   gap: 2rem;
 }
 
@@ -30,27 +32,32 @@ main {
 }
 
 .lp-cards {
+  width: 90vw;
   overflow: hidden;
   display: flex;
   flex-direction: row !important;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 50px;
+  justify-content: space-around;
+  margin-bottom: 50px;
+  gap: 4rem;
 }
 
 .card {
   height: 50%;
+  max-width: 30rem;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  
-  padding: 15px;
+  background-color: var(--marrom);
+  border-radius: 15px;
+  padding: 2rem 4rem;
 }
 
 .card img {
-  width: 90%;
+  height: auto;
+  width: 15rem;
   border-radius: 15px;
   transition: all 0.3s;
 }
@@ -68,26 +75,26 @@ main {
 }
 
 .call-to-action {
-  margin: 10px 11%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin: auto 5vw;
 }
 
 .cta-container {
+  width: 90vw;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
   border-radius: 20px;
   padding: 3%;
-}
-
-.quem-somos {
   background-color: var(--marrom);
 }
 
 .contato {
   margin-top: 30px;
   margin-bottom: 30px;
-  background-color: var(--marrom);
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -100,8 +107,9 @@ main {
 }
 
 .image-cta img{
-  height: 500px;
+  height: auto;
   width: 500px;
+  max-width: 85vw;
 }
 
 .text-cta {
@@ -116,7 +124,6 @@ main {
 }
 
 .text-cta p {
-  
   color: #eff0ea;
   margin-bottom: 25px;
   font-size: 30px;
@@ -128,18 +135,14 @@ main {
   width: auto;
   box-shadow: 2px 2px 30px black;
   font-size: 30px;
-
-
   border-radius: 15px;
   background: linear-gradient(225deg, #d4be84, #fde29d);
   box-shadow:  -5px 5px 0px #5e543b,
                5px -5px 0px #ffffeb;
-
 }
 
 .btn-cta:hover {
   background-color: #eff0ea;
-
 }
 
 .interior-carrossel{
