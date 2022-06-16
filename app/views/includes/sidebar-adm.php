@@ -11,7 +11,7 @@
                 <i class="bi bi-clipboard-data-fill"></i> <span class="ms-1 d-none d-sm-inline">Categorias</span></a>
         </li>
         <li>
-            <a href="/admin/produtos" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+            <a href="/admin/produtos" class="nav-link px-0 align-middle">
                 <i class="bi bi-boxes"></i> <span class="ms-1 d-none d-sm-inline">Produtos</span> </a>
         </li>
         <li>

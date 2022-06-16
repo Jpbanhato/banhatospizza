@@ -35,10 +35,11 @@
     <div class="login-container">
 
         <div class="left-container">
-            <div class="logo">
-                <img src="../../../public/assets/Icone Marrom Circular sem Fundo.png" alt="logo banhato's pizza">
-            </div>
-
+            <a href="/">
+                <div class="logo">
+                    <img src="../../../public/assets/Icone Marrom Circular sem Fundo.png" alt="logo banhato's pizza">
+                </div>
+            </a>
             <h1 class="login-title">Todo dia é dia de pizza 🍕</h1>
             <p class="login-subtitle">Faça seu login:</p>
 
@@ -68,7 +69,9 @@
         </div>
 
         <div class="right-container">
-            <img src="../../../public/assets/Icone Redondo sem Fundo.png" alt="logo banhato's pizza">
+            <a href="/">
+                <img src="../../../public/assets/Icone Redondo sem Fundo.png" alt="logo banhato's pizza">
+            </a>
         </div>
     </div>
 
