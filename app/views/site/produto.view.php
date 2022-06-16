@@ -21,39 +21,40 @@
 <body>
 
     <?php include 'app/views/includes/navbar.php';?>
-
-    <?php foreach ($produto as $prod):?>
-    <div class="container card-container">
-        <div class="row">
-            <div class="col-md-12">
-                <center>
-                    <div class="card text-center">
-                        <img src="../../../public/img/<?=$prod->imagem?>.jpg" class="card-img-top center" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title"><?=$prod->nome?></h5>
-                            <p class="card-text">R$<?=$prod->preco?>,00</p>
-                            <h6 class="card-text"><?=$prod->nomeCategoria?></h6>
-                            <p class="card-text"><?=$prod->descricao?></p>
-                            <a href="#" class="btn btn-card">Pedir</a>
+    <div class="content">
+        <?php foreach ($produto as $prod):?>
+        <div class="container card-container">
+            <div class="row">
+                <div class="col-md-12">
+                    <center>
+                        <div class="card text-center">
+                            <img src="../../../public/img/<?=$prod->imagem?>.jpg" class="card-img-top center" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"><?=$prod->nome?></h5>
+                                <p class="card-text">R$<?=$prod->preco?>,00</p>
+                                <h6 class="card-text"><?=$prod->nomeCategoria?></h6>
+                                <p class="card-text"><?=$prod->descricao?></p>
+                                <a href="#" class="btn btn-card">Pedir</a>
+                            </div>
                         </div>
-                    </div>
-                </center>
+                    </center>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="container info">
-        <div class="row">
-            <div class="col-md-12">
-                <h3>
-                    Informações Úteis
-                </h3>
-                <hr>
-                <p><?=$prod->informacoesUteis?></p>
+        <div class="container info">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>
+                        Informações Úteis
+                    </h3>
+                    <hr>
+                    <p><?=$prod->informacoesUteis?></p>
+                </div>
             </div>
         </div>
+        <?php endforeach; ?>
+        <div class="push"></div>
     </div>
-    <?php endforeach; ?>
-
     <?php include 'app/views/includes/footer.php';?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
