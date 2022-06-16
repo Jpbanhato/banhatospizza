@@ -96,6 +96,10 @@ h1{
                  8px -8px 0px #451e09;
 }
 
+.preceitos h1{
+    color:#ecd393;
+}
+
 .preceitos:hover{
     border: groove #000000 3px;
     box-shadow: 0 0 2em black;
@@ -111,7 +115,7 @@ h1{
     height: 80vh;
 }
 
-@media(max-width:1000px){
+@media(max-width:992px){
     .texto-institucional{
         width: 100%;
     }
