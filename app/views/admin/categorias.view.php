@@ -34,7 +34,8 @@
 
                 <nav class="navbar navbar-light bg-light nav-search">
                     <div class="container-fluid bottom-add d-flex">
-                        <form class="d-flex justify-content-end bar-search" method="get" action="categorias/result">
+                        <form class="d-flex justify-content-end bar-search" method="get"
+                            action="/admin/categorias/result">
                             <input class="form-control me-2" type="search" placeholder="Pesquisar..."
                                 aria-label="Search" name="pesquisa">
                             <button class="btn btn-primary bottom-search" type="submit">Pesquisar</button>

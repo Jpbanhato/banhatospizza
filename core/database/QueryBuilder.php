@@ -20,7 +20,7 @@ class QueryBuilder
      */
     public function selectPesquisaProdutos($table, $pesquisa)
     {
-        $query = "SELECT {$table}.*, categoria.nome AS nomeCategoria FROM {$table} JOIN categoria ON categoria.idCategoria = produto.idCategoria WHERE produto.nome LIKE '%{$pesquisa}%'";
+        $query = "SELECT {$table}.*, categoria.nome AS nomeCategoria FROM {$table} JOIN categoria ON categoria.id = produto.idCategoria WHERE produto.nome LIKE '%{$pesquisa}%'";
 
         try {
             $stmt = $this->pdo->prepare($query);

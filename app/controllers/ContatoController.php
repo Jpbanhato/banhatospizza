@@ -36,9 +36,9 @@ class ContatoController
             $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
         
             //Recipients
-            $mail->setFrom($emailDestinatario);
+            $mail->setFrom($emailDestinatario,$nome);
             $mail->addAddress('throwaway20030128@gmail.com', 'banhatospizza');     //Add a recipient
-            $mail->addReplyTo('no-reply@gmail.com', 'No reply');
+            $mail->addReplyTo($emailDestinatario);
         
         
             //Content

@@ -1,6 +1,3 @@
-<?php 
-// var_dump($resultCategoria);
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -193,7 +190,7 @@
                                         <select id="inputCategoryEditProdut" class="form-select" name="categoria">
                                             <option>Insira a categoria do produto...</option>
                                             <?php foreach($resultGeral['categorias'] as $row2):   ?>
-                                            <option value="<?= $row2->idCategoria ?> "
+                                            <option value="<?= $row2->id ?> "
                                                 <?= $row2->id == $row->idCategoria ? "selected" : ""  ?>>
                                                 <?=  $row2->nome ?></option>
                                             <?php endforeach; ?>
@@ -201,9 +198,9 @@
                                     </div>
                                     <div class="col-12">
                                         <label for="inputImageEditProdut" class="form-label">Imagem </label>
-                                        <input type="text" class="form-control" name="imagem" id="inputImageEditProdut">
+                                        <input type="text" value="<?= $row->imagem ?>" class="form-control"
+                                            name="imagem" id="inputImageEditProdut">
                                     </div>
-
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-danger"
                                             data-bs-dismiss="modal">Cancelar</button>
@@ -264,8 +261,7 @@
                                         </div>
                                         <div class="col-12">
                                             <label for="ViewImageProduct" class="form-label">Imagem</label>
-                                            <input type="text" class="form-control" id="ViewImageProduct"
-                                                placeholder="[IMAGEM]" readonly>
+                                            <img src="../../../public\img\<?=$row->imagem?>.jpg">
                                         </div>
                                     </form>
                                 </fieldset>
