@@ -1,125 +1,28 @@
-@font-face {
-    font-family: "BakerieBold";
-    src: url('../assets/fonts/BakerieBold.otf');
+
+.styled-sidebar{
+   background-color: var(--marrom);
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
 }
 
-.botao-primario1 {
-    color: #ecd393;
+.nav-button{
+    all: unset;
 }
 
-.botao-primario2 {
-    background-color: #301506;
-    color: #ecd393;
-    border: none;
-}
-
-.botao-primario2:focus {
-    background-color: #301506;
-    color: #ecd393;
-
-}
-
-
-.botao-primario1 :hover {
-    background-color: #ecd393;
-    color: #301506;
-}
-
-
-.flexbox_cont {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-}
-
-.titulo-topo img {
-    width: 70px;
-    margin-left: 0rem;
-
-}
-
-
-.titulo-topo h5 {
+.nav-link {
     
-    position: fixed;
-    font-size: 1.5rem;
-    font-family: "BakerieBold";
-    src: url('../assets/fonts/BakerieBold.otf');
-    margin-left: 73px;
-    color:#ecd393;
-    
-}
-
-
-
-
-
-.inicio-sidebar {
-    width: 280px;
-    position: fixed;
-    background-color: #301506;
-}
-
-.corpo-sidebar {
-    background-color: #301506;
+    color: var(--amarelo);
+    font-size: 20px;
+    padding: 15px;
 
 }
 
-
-.listas {
-    margin-top: 5%;
-    margin-bottom: 5%;
-    width: 100%;
-    
+.nav-link:hover{
+    color: var(--marfim);
 }
 
-.listas li{
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    margin-left: -7px;
-    color: #eff0ea;
-    text-decoration: none;
-    list-style: none;
-}
-
-.listas li:hover {
-    color: #ecd393;
-}
-
-.listas a {
-    font-size: 1.2rem;
-    list-style: none;
-    color: #eff0ea;
-    text-decoration: none;
-    margin-left: 5%;
-}
-
-.listas a:hover {
-    color: #ecd393;
-}
-
-
-
-
-
-.botao-logout2 {
-    width: auto;
-    margin-left: 25px;
-    background-color: red;
-    border: none;
-    position: fixed;
-    bottom: 0;
-    
-}
-
-
-
-.botao-logout1 :hover {
-    background-color: rgb(163, 0, 0);
-}
-
-
-.linkdashboard{
-    all:unset;
+i{
+    font-size: 25px;
 }

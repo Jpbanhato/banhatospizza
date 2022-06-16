@@ -3,7 +3,13 @@ footer {
     color: #eff0ea;
 }
 
-.fa {
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fa-footer {
     text-align: center;
     text-decoration: none;
     border-radius: 100%;

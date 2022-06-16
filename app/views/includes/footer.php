@@ -8,7 +8,7 @@
                 <!-- Section: Links -->
                 <section class="">
                     <!--Grid row-->
-                    <div class="row justify-content-center">
+                    <div class="row justify-content-center footer-container">
                         <!--Grid column-->
                         <div class="col-md-3">
                             <h5 class="text-uppercase titulo">Banhato's Pizza</h5>
@@ -47,43 +47,37 @@
                                     <a href="/login" class="footer-link">Login</a>
                                 </li>
                             </ul>
+                            <br />
+                            <!-- Section: Social media -->
+                            <section class="mb-4 text-left">
+                                <!-- Facebook -->
+                                <a class="btn btn-outline-light btn-floating m-1 footer-icon" href="#!" role="button"><i
+                                        class="fa fa-facebook-f fa-footer"></i></a>
+
+                                <!-- Twitter -->
+                                <a class="btn btn-outline-light btn-floating m-1 footer-icon" href="#!" role="button"><i
+                                        class="fa fa-twitter fa-footer"></i></a>
+
+                                <!-- Google -->
+                                <a class="btn btn-outline-light btn-floating m-1 footer-icon" href="#!" role="button"><i
+                                        class="fa fa-google fa-footer"></i></a>
+
+                                <!-- Instagram -->
+                                <a class="btn btn-outline-light btn-floating m-1 footer-icon" href="#!" role="button"><i
+                                        class="fa fa-instagram fa-footer"></i></a>
+
+                            </section>
+                            <!-- Section: Social media -->
                         </div>
                     </div>
                     <!--Grid row-->
                 </section>
                 <!-- Section: Links -->
 
-                <!-- Section: Social media -->
-                <section class="mb-4 text-center">
-                    <!-- Facebook -->
-                    <a class="btn btn-outline-light btn-floating m-1 footer-icon" href="#!" role="button"><i
-                            class="fa fa-facebook-f"></i></a>
 
-                    <!-- Twitter -->
-                    <a class="btn btn-outline-light btn-floating m-1 footer-icon" href="#!" role="button"><i
-                            class="fa fa-twitter"></i></a>
-
-                    <!-- Google -->
-                    <a class="btn btn-outline-light btn-floating m-1 footer-icon" href="#!" role="button"><i
-                            class="fa fa-google"></i></a>
-
-                    <!-- Instagram -->
-                    <a class="btn btn-outline-light btn-floating m-1 footer-icon" href="#!" role="button"><i
-                            class="fa fa-instagram"></i></a>
-
-                </section>
-                <!-- Section: Social media -->
             </div>
             <!-- Grid container -->
 
-            <!-- Copyright -->
-            <div class="row">
-                <div class="text-center p-3">
-                    © 2022 Copyright:
-                    <a class="text-white footer-link" href="https://mdbootstrap.com/">Codejr.com.br</a>
-                </div>
-            </div>
-            <!-- Copyright -->
         </footer>
     </div>
     <!-- Footer -->

@@ -1,6 +1,4 @@
 body {
-    
-    text-align: center;
     background-color: #ecd393;
     
 }
@@ -11,7 +9,7 @@ body {
 }
 
 .main {
-
+    text-align: center;
     padding-top: 120px;
 }
 

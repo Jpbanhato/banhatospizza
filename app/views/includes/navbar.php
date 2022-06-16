@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-md fixed-top navigation">
     <div class="container-fluid">
-        <a clasrs="navbar-brand m" hef="#">
+        <a clasrs="navbar-brand m" hef="/">
             <img src="../../../public/img/Icone Marrom Circular sem Fundo.png" alt="" width="110" height="110"
                 class="nav-img">
         </a>

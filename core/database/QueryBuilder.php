@@ -20,7 +20,7 @@ class QueryBuilder
      */
     public function selectPesquisaProdutos($table, $pesquisa)
     {
-        $query = "SELECT * FROM {$table} JOIN categoria ON categoria.idCategoria = produto.idCategoria WHERE nome LIKE '%{$pesquisa}%'";
+        $query = "SELECT {$table}.*, categoria.nome AS nomeCategoria FROM {$table} JOIN categoria ON categoria.idCategoria = produto.idCategoria WHERE produto.nome LIKE '%{$pesquisa}%'";
 
         try {
             $stmt = $this->pdo->prepare($query);
@@ -86,6 +86,18 @@ class QueryBuilder
     public function countAll($table)
     {
         $sql = "SELECT * FROM {$table}";
+
+        try {
+          $stmt = $this->pdo->prepare($sql);
+          $stmt->execute();
+          return $stmt->rowCount();
+        } catch (Exception $e) {
+            die("An error occurred when trying to count from database: {$e->getMessage()}");
+        }
+    }
+    public function countAllPesquisa($table,$pesquisa)
+    {
+        $sql = "SELECT * FROM {$table} WHERE nome LIKE '%{$pesquisa}%'";
 
         try {
           $stmt = $this->pdo->prepare($sql);
@@ -260,6 +272,18 @@ class QueryBuilder
             die($e->getMessage());
         }
     }
+    public function selectUsuario($table, $email)
+    {
+      $sql = "SELECT * FROM {$table} WHERE email = '$email'";
+      $stmt = $this->pdo->prepare($sql);
+      try{
+        $stmt->execute();
+        return  $stmt->fetchAll(PDO::FETCH_CLASS);
+      }catch (Exception $e){
+        die($e->getMessage());
+      }  
+
+    }
 
     /**
      * Outros:
@@ -292,9 +316,13 @@ class QueryBuilder
 
     }
 
-    public function selectPesquisaProdutosSite($table,$pesquisa)
+    public function selectPesquisaProdutosSite($table,$start_limit,$rows_amount, $pesquisa)
     {
       $sql = "SELECT {$table}.*, categoria.nome AS nomeCategoria FROM {$table} JOIN categoria ON categoria.id  = {$table}.idCategoria WHERE produto.nome LIKE '%{$pesquisa}%'";
+      if  ($start_limit >= 0 && $rows_amount > 0)
+      {
+          $sql .= " LIMIT {$start_limit}, {$rows_amount}";
+      }
       $stmt = $this->pdo->prepare($sql);
       try{
         $stmt->execute();
