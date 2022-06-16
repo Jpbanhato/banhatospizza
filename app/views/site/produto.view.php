@@ -31,7 +31,7 @@
             <div class="col-md-12">
                 <center>
                     <div class="card text-center">
-                        <img src="../../../public/img/<?=$prod->imagem?>.jpg" class="card-img-top" alt="...">
+                        <img src="../../../public/img/<?=$prod->imagem?>.jpg" class="card-img-top center" alt="...">
                         <div class="card-body">
                             <h5 class="card-title"><?=$prod->nome?></h5>
                             <p class="card-text">R$<?=$prod->preco?>,00</p>
