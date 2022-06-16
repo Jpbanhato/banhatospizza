@@ -101,7 +101,7 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <form action="categorias/create" method="post" class="row g-3">
+                                <form action="/admin/categorias/create" method="post" class="row g-3">
                                     <div class="col-md-8">
                                         <label for="inputNameAddCategory" class="form-label">Nome</label>
                                         <input type="text" name="nome" class="form-control" id="inputNameAddCategory"
@@ -132,7 +132,7 @@
                             </div>
                             <div class="modal-body">
 
-                                <form action="categorias/update" method="post" class="row g-3">
+                                <form action="/admin/categorias/update" method="post" class="row g-3">
                                     <div class="col-md-8">
                                         <input type="hidden" name="id" value="<?= $categoria->id ?>">
                                         <label for="inputNameEditCategory" class="form-label">Nome</label>
@@ -204,7 +204,7 @@
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-principal bottom-add"
                                     data-bs-dismiss="modal">Cancelar</button>
-                                <form action="categorias/delete" method="post">
+                                <form action="/admin/categorias/delete" method="post">
                                     <input type="hidden" value="<?= $categoria->id ?>" name="id">
                                     <button type="submit" class="btn btn-danger">Excluir</button>
                                 </form>
