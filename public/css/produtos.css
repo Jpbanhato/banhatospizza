@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: #ecd393;
+    background-color: var(--amarelo);
     justify-content: center;
     padding-top: 152px;
 }
@@ -15,7 +15,7 @@ a{
 
 h1 {
     font-family: "BakerieBold";
-    color: #301506;
+    color: var(--marrom);
 }
 
 .indicacao{
@@ -33,16 +33,16 @@ h1 {
 
 .filter{
     display: flex;
-    background-color: #ecd393;
+    background-color: var(--amarelo);
     padding-left: 10%;
 }
 
 .bot{
     font-family: "BakerieBold";
-    color:#ecd393;
+    color:var(--amarelo);
     border-radius: 10%;
-    background-color: #301506;
-    border: #301506;
+    background-color: var(--marrom);
+    border: var(--marrom);
 }
 
 .main{
@@ -57,14 +57,14 @@ h1 {
 }
 
 .prod{
-    border-color:#ecd393;
+    border-color:var(--amarelo);
     border-radius:1%;
-    background-color:#301506;
+    background-color:var(--marrom);
 }
 
 .prod-body{
-    background-color: #301506;
-    color:aliceblue;
+    background-color: var(--marrom);
+    color:var(--marfim);
 }
 
 .col :hover{
@@ -79,7 +79,7 @@ h1 {
 }
 .prod-body h1{
     font-size:xx-large;
-    color: #e4c26e;
+    color: var(--amarelo);
     margin-left: 3%;
 }
 
@@ -97,12 +97,12 @@ h1 {
     justify-content: center;
     font-size: medium;
     text-decoration: none;
-    background-color: #2e0000;
+    background-color: var(--marrom);
     width: 40%;
     height: 1.8rem;
     padding-bottom: 0%;
     border-radius: 10%;
-    color:#eff0ea;
+    color:var(--marfim);
 }
 
 .botao a{
@@ -110,7 +110,7 @@ h1 {
 }
 
 .botao h4{
-    color: #eff0ea;
+    color: var(--marfim);
     font-size: 1.5rem;
 }
 
@@ -121,10 +121,10 @@ h1 {
     justify-content: center;
     font-size: medium;
     text-decoration: none;
-    background-color: #2e0000;
+    background-color: var(--marrom);
     padding-bottom: 0%;
     border-radius: 10%;
-    color:#eff0ea;
+    color:var(--marfim);
     border:none;
 }
 

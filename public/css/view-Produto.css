@@ -7,7 +7,7 @@ html, body {
     margin: 0;
   }
 body {
-    background-color: #ecd393;
+    background-color: var(--amarelo);
 }
 
 .card-container {
@@ -16,7 +16,7 @@ body {
 }
 
 .card {
-    background-color: #301506;
+    background-color: var(--marrom);
     border-color: black;
     border-width: 5px;
     border-radius: 8px;
@@ -30,22 +30,22 @@ body {
 h3 {
     font-family: BakerieBold;
     font-size: 40px;
-    color:#ecd393;
+    color:var(--amarelo);
 }
 
 hr {
-    border-top: 3px solid #eff0ea;
+    border-top: 3px solid var(--marfim);
 }
 
 .btn-card {
-    background-color: #301506;
-    color: #eff0ea;
+    background-color: var(--marrom);
+    color: var(--marfim);
     border-color: black;
     border-width: 2px;
 }
 
 .btn-card:hover {
-    color: #ecd393;
+    color: var(--amarelo);
 }
 
 .card-img-top {
@@ -53,15 +53,15 @@ hr {
 }
 
 .info {
-    color: #301506;
+    color: var(--marrom);
 }
 
 .info h3{
-    color: #301506;
+    color: var(--marrom);
 }
 
 .card-text {
-    color: #eff0ea;
+    color: var(--marfim);
 }
 
 .content {

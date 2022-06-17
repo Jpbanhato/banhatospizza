@@ -66,7 +66,7 @@ main {
   margin-top: 20px;
   font-weight: 700;
   font-size: 40px;
-  color: #ecd393;
+  color: var(--amarelo);
   font-family: "BakerieBold";
 }
 
@@ -124,7 +124,7 @@ main {
 }
 
 .text-cta p {
-  color: #eff0ea;
+  color: var(--marfim);
   margin-bottom: 25px;
   font-size: 30px;
 }
@@ -142,7 +142,7 @@ main {
 }
 
 .btn-cta:hover {
-  background-color: #eff0ea;
+  background-color: var(--marfim);
 }
 
 .interior-carrossel{

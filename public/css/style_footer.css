@@ -1,6 +1,6 @@
 footer {
-    background-color: #301506;
-    color: #eff0ea;
+    background-color: var(--marrom);
+    color: var(--marfim);
     width: 100%;
 }
 
@@ -18,22 +18,22 @@ footer {
 
 .footer-link {
     text-decoration: none;
-    color: #eff0ea;
+    color: var(--marfim);
 }
 
 .footer-link:hover {
-    color: #ecd393;
+    color: var(--amarelo);
     text-decoration: none;
 }
 
 .footer-btn:hover {
-    border-color: #ecd393;
-    background-color: #ecd393;
-    color: #eff0ea;
+    border-color: var(--amarelo);
+    background-color: var(--amarelo);
+    color: var(--marfim);
 }
 
 .footer-icon:hover {
-    border-color: #ecd393;
-    color: #ecd393;
-    background-color: #301506;
+    border-color: var(--amarelo);
+    color: var(--amarelo);
+    background-color: var(--marrom);
 }

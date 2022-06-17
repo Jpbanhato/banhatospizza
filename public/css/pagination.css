@@ -3,19 +3,19 @@
 }
 
 .item-pagination{
-    color:#ecd393;
-    background-color: #301506;
-    border:#301506;
+    color:var(--amarelo);
+    background-color: var(--marrom);
+    border:var(--marrom);
 }
 
 .actived{
-    color:#301506;
-    background-color: #ecd393;
-    border:#301506;
+    color:var(--marrom);
+    background-color: var(--amarelo);
+    border:var(--marrom);
 }
 
 .disabledd{
-    color:#ecd393;
-    background-color: #301506;
-    border:#301506;
+    color:var(--amarelo);
+    background-color: var(--marrom);
+    border: var(--marrom);
 }

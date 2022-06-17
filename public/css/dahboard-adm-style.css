@@ -4,11 +4,11 @@
 }
 
 body {
-    background-color: #fdf5e6;
+    background-color: var(--marfim);
 }
 
 .card {
-    background-color: #ecd393;
+    background-color: var(--amarelo);
     border-color: black;
     border-width: 7px;
     border-radius: 15px;
@@ -22,19 +22,19 @@ body {
 }
 
 .jumbotron {
-    color: #301506;
+    color: var(--marrom);
     font-family: BakerieBold;
 }
 
 .btn-card {
-    background-color: #301506;
-    color: white;
+    background-color: var(--marrom);
+    color: var(--marfim);
     border-color: black;
     border-width: 2px;
 }
 
 .btn-card:hover {
-    color: #ecd393;
+    color: var(--amarelo);
 }
 
 .logout {

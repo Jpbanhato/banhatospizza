@@ -36,7 +36,7 @@
 .login-subtitle {
   font-family: 'Poppins';
   font-size: 2rem;
-  color: #3015066e;
+  color: var(--marrom);
 }
 
 form {

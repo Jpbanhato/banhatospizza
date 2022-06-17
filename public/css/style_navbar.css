@@ -4,18 +4,18 @@
 }
 
 .navigation {
-    background-color: #301506;
+    background-color: var(--marrom);
     height: 100px;
 }
 
 .nav-link {
-    color: #eff0ea;
+    color: var(--marfim);
     text-decoration: none;
     font-size: 20px;
 }
 
 .nav-link:hover {
-    color: #ecd393;
+    color: var(--amarelo);
     text-decoration: none;
 }
 
@@ -30,7 +30,7 @@
 }
 
 .navbar-toggler {
-    border-color: #eff0ea;
+    border-color: var(--marfim);
     opacity: 1.0;
 }
 
